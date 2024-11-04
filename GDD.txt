@@ -1,0 +1,88 @@
+Ferramentas:
+	- Ferramenta de programação e desenvolvimento geral: Godot
+	- Ferramentas de versionamento: Git e GitHub
+	- Ferramentas de arte: Aseprite, Drawpile, Krita
+	- 04/11 até 08/11
+
+Estrutura do jogo:
+- Bosses:
+	> 3 Bosses
+	> 2 tipos de inimigos por sala (Um meele e outro ranged) [6 inimigos diferentes]
+	> Aspecto de arma (Martelo, Machado, Chakram)
+	> Barra de vida
+	> 2 Ataques diferentes
+	> Invoca mobs
+	> Cada boss tem um tema: Martelo, Machado, Chakram
+- Andares:
+	> 8 - 12 Salas
+	> 1 Sala de boss
+	> 1 Loja
+	> 1 - 2 Sala de bau
+- Salas:
+	> Tem inimigos a não ser que seja uma sala de bau e/ou loja
+	> Salas tem tochas
+	> Tem buracos
+	> Portas (Meio que teleportam o personagem ao mesmo tempo que carregam telas)
+- Inimigos:
+	> Podem ser ranged: Atiram projeteis flechas
+	> Podem ser meele: Mãos, Espadas, Ossos
+	> Dropam Almas
+- NPCs:
+	> Lojista: Succubus (Se alimenta de "almas")
+	> Guia da dungeon: Alfred (O mordomo do primeiro herói)
+	> Primeiro herói: Lancelot, Brian Herdeiro Terceiro O cara que tá no jogo só pra morrer
+	> Aventureiro Qualquer: Muda de nome, uma pessoa diferente toda vez que um loop da dungeon acontece, ou seja ele muda de nome todas as vezes
+- Armas:
+	> Espada
+	> Martelo
+	> Machado
+	> Chakram 
+	> Tipos de ataques: 2 tipos de ataques
+- Itens:
+	> Dinheiro: Almas
+	> Consumíveis:
+		- Poções de vida
+		- Chaves
+	> Modificadores:
+		- Power Ups
+		- Armadura
+	> Baus:
+		- Ouro que pode ser convertido em almas
+		- Vida maxima
+		- Pedaços de armadura
+		- Power Ups
+Estilo da arte dos andares:
+	> 1° Verde, roxo, marrom, amarelos, focado em floresta sombria com fungos e arvores: Floresta Mística ou fúngica, Raças de goblins que mexem com cogumelos, 
+	> Goblins (Meele Machado, Ranged coletor de fungos com uma cesta nas costas que arremessa cogumelos) e Hoboglobin com machadão cabuloso
+
+	> 2° Cinza, Marrom, ciano, laranja, vermelho, roxo, elementos de caverna rochosa, pedras, terra, minérios místicos brilhando na caverna: Profundezas das cavernas, 
+	> Boss: Golem Elemental mágico gigante (A mão do boss vira um martelo), mini golens como mobs alternativos (Meele desce o kacete com a mão mesmo, ranged atira feixes de luz com os cristais)
+
+	> 3° cinza escuro, dourado, fortaleza de rocha negra e ouro, Masmorra final, Esqueletos contaminados com ouro (Meele espada de osso contaminada com ouro, Ranged atirar ossos ou flechas), Chakrich mago do mal que na verdade utiliza chakrams para atacar ULTRA boladão
+- UI:
+	> Vida em barrinha
+	> Quantidade de dinheiro (Gold ou Souls)
+	> Quantidade de chaves
+	> Arma atual
+	> Dano, Velocidade de movimento, Velocidade de ataque, Defesa, Critico (200% do dano)
+- Menu:
+	> Botão de play
+	> Botão de settings:
+		- Tela cheia
+		- Som principal
+		- Musica
+		- Resolução
+	> Quit
+- Pause:
+	> Resume
+	> Restart
+	> Settings
+	> Quit
+Futuro:
+	> Sistema de meta upgrades:
+		- Usa almas
+		- São continuos
+		- Simples
+		- Não unicos
+Alternativas:
+	> "saprofitas mobs alternativas", "Super saprófita", 
