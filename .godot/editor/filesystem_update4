@@ -1,3 +1,13 @@
 res://UI/DeathScreen/death_screen.tscn
 res://UI/StartMenuUI/start_menu_ui.tscn
 res://components/DeathComponent/death_component.tscn
+res://components/DeathComponent/death_component.gd
+res://entities/basic_enemy/basic_enemy.tscn
+res://components/DropComponent/drop_component.tscn
+res://components/DropComponent/drop_component.gd
+res://entities/player/player.tscn
+res://entities/basic_enemy/basic_enemy.gd
+res://components/HurtboxComponent/hurtbox_component.tscn
+res://components/HitboxComponent/hitbox_component.tscn
+res://components/HitboxComponent/hitbox_component.gd
+res://components/HurtboxComponent/hurtbox_component.gd

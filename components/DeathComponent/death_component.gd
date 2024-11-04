@@ -1,11 +1,18 @@
 extends Node2D
+class_name DeathComponent
+@export var health_component: HealthComponent
+@export var sprite: Sprite2D
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$GPUParticles2D.texture = sprite.texture
+	health_component.died.connect(on_died)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func on_died():
+	if owner == null || not owner is Node2D:
+		return
+	var spawn_position = owner.global_position
+	var entities = get_tree().get_first_node_in_group("entities_layer")
+	entities.remove_child(self) # Remove o personagem da árvore principal do jogo
+	entities.add_child(self) # Adiciona uma versão baseada no death component
+	global_position = spawn_position
+	$AnimationPlayer.play("default")

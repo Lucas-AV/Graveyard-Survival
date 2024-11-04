@@ -1,3 +1,7 @@
+Area2D
+Node
+VisibleOnScreenNotifier2D
+AnimationPlayer
 GPUParticles2D
 CanvasLayer
 Button
@@ -8,8 +12,4 @@ PanelContainer
 Control
 Timer
 CharacterBody2D
-Node
 CollisionShape2D
-Area2D
-AnimationPlayer
-Sprite2D
