@@ -3,7 +3,8 @@ ea4bc82a6ad023ab7ee23ee620429895
 icon.svg::CompressedTexture2D::1888965920973442060::1730743425::1730744125::1::::<><>::
 README.md::TextFile::-1::1730743425::0::1::::<><>::
 tilemap_packed.png::CompressedTexture2D::4169291309610474070::1730750696::1730750702::1::::<><>::
-::res://components/::1730752665
+::res://components/::1730753195
+velocity_component.tscn::PackedScene::2791530399888236234::1730753180::0::1::::<><>::
 ::res://components/DeathComponent/::1730752266
 death_component.gd::GDScript::-1::1730752266::0::1::::DeathComponent<>Node2D<>::
 death_component.tscn::PackedScene::7826314591044474408::1730752266::0::1::::<><>::res://components/DeathComponent/death_component.gd<>uid://b0nvvbiq1e4ba::::res://tilemap_packed.png
@@ -13,7 +14,13 @@ drop_component.tscn::PackedScene::1261771113308906580::1730752337::0::1::::<><>:
 ::res://components/HealthComponent/::1730744884
 health_component.gd::GDScript::-1::1730744884::0::1::::HealthComponent<>Node<>::
 health_component.tscn::PackedScene::7987442895117373473::1730744403::0::1::::<><>::res://components/HealthComponent/health_component.gd
-::res://components/HitboxComponent/::1730752665
+::res://components/HitboxComponent/::1730753000
+hitbox_component.gd::GDScript::-1::1730753000::0::1::::HitboxComponent<>Area2D<>::
+hitbox_component.tscn::PackedScene::3232324427761106909::1730752806::0::1::::<><>::res://components/HitboxComponent/hitbox_component.gd
+::res://components/HurtboxComponent/::1730753000
+hurtbox_component.gd::GDScript::-1::1730752950::0::1::::HurtboxComponent<>Area2D<>::
+hurtbox_component.tscn::PackedScene::7289528662899733916::1730753000::0::1::::<><>::res://components/HurtboxComponent/hurtbox_component.gd
+::res://components/VelocityComponent/::1730753195
 ::res://entities/::1730744691
 ::res://entities/basic_enemy/::1730752528
 basic_enemy.gd::GDScript::-1::1730752528::0::1::::BasicEnemy<>CharacterBody2D<>::

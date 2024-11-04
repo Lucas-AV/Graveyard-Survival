@@ -1,5 +1,5 @@
-Area2D
 Node
+Area2D
 VisibleOnScreenNotifier2D
 AnimationPlayer
 GPUParticles2D
@@ -12,4 +12,3 @@ PanelContainer
 Control
 Timer
 CharacterBody2D
-CollisionShape2D

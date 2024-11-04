@@ -11,3 +11,5 @@ res://components/HurtboxComponent/hurtbox_component.tscn
 res://components/HitboxComponent/hitbox_component.tscn
 res://components/HitboxComponent/hitbox_component.gd
 res://components/HurtboxComponent/hurtbox_component.gd
+res://components/VelocityComponent/velocity_component.tscn
+res://components/VelocityComponent/velocity_component.gd
