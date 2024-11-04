@@ -1,2 +1,3 @@
 res://UI/DeathScreen/death_screen.tscn
 res://UI/StartMenuUI/start_menu_ui.tscn
+res://components/DeathComponent/death_component.tscn

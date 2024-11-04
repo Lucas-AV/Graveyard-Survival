@@ -1,6 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://djrei1dsqu6tg"]
+[gd_scene load_steps=7 format=3 uid="uid://djrei1dsqu6tg"]
 
 [ext_resource type="Script" path="res://components/DeathComponent/death_component.gd" id="1_73lfk"]
+[ext_resource type="Texture2D" uid="uid://b0nvvbiq1e4ba" path="res://tilemap_packed.png" id="2_wxkaw"]
+
+[sub_resource type="Curve" id="Curve_84wo1"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.581028, 0.634711), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_fa5tj"]
+curve = SubResource("Curve_84wo1")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rud5k"]
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+spread = 15.0
+initial_velocity_min = 125.0
+initial_velocity_max = 200.0
+angular_velocity_min = -720.0
+angular_velocity_max = 720.0
+gravity = Vector3(0, 400, 0)
+scale_curve = SubResource("CurveTexture_fa5tj")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxeop"]
+atlas = ExtResource("2_wxkaw")
+region = Rect2(48, 160, 16, 16)
 
 [node name="DeathComponent" type="Node2D"]
 script = ExtResource("1_73lfk")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+amount = 1
+process_material = SubResource("ParticleProcessMaterial_rud5k")
+texture = SubResource("AtlasTexture_oxeop")
+lifetime = 0.66
+fixed_fps = 0
+interpolate = false
