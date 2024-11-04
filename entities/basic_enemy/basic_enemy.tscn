@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://6osmjos15ael"]
+
+[ext_resource type="Script" path="res://entities/basic_enemy/basic_enemy.gd" id="1_ihs6w"]
+[ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_q2fs8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_naook"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o32t4"]
+
+[node name="BasicEnemy" type="CharacterBody2D"]
+script = ExtResource("1_ihs6w")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="HealthComponent" parent="." instance=ExtResource("2_q2fs8")]
+
+[node name="CollisionArea2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionArea2D"]
+shape = SubResource("CircleShape2D_naook")
+
+[node name="Visuals" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Visuals"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_o32t4")
