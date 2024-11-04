@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730745099
+::res://::1730749127
 icon.svg::CompressedTexture2D::1888965920973442060::1730743425::1730744125::1::::<><>::
 README.md::TextFile::-1::1730743425::0::1::::<><>::
 ::res://components/::1730744213
@@ -10,17 +10,31 @@ death_component.tscn::PackedScene::7826314591044474408::1730744884::0::1::::<><>
 health_component.gd::GDScript::-1::1730744884::0::1::::HealthComponent<>Node<>::
 health_component.tscn::PackedScene::7987442895117373473::1730744403::0::1::::<><>::res://components/HealthComponent/health_component.gd
 ::res://entities/::1730744691
-::res://entities/basic_enemy/::1730744830
-basic_enemy.gd::GDScript::-1::1730744706::0::1::::<>CharacterBody2D<>::
+::res://entities/basic_enemy/::1730745120
+basic_enemy.gd::GDScript::-1::1730745120::0::1::::BasicEnemy<>CharacterBody2D<>::
 basic_enemy.tscn::PackedScene::2205870271923670627::1730744830::0::1::::<><>::res://entities/basic_enemy/basic_enemy.gd<>uid://dl2gauh6k0ujx::::res://components/HealthComponent/health_component.tscn
-::res://entities/player/::1730745094
+::res://entities/player/::1730745120
 player.gd::GDScript::-1::1730745058::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::5606901738158006958::1730745094::0::1::::<><>::res://entities/player/player.gd<>uid://dl2gauh6k0ujx::::res://components/HealthComponent/health_component.tscn
-::res://GDD/::1730744271
-GDD Ver1.txt::TextFile::-1::1730743425::0::1::::<><>::
+player.tscn::PackedScene::5606901738158006958::1730745120::0::1::::<><>::res://entities/player/player.gd<>uid://dl2gauh6k0ujx::::res://components/HealthComponent/health_component.tscn
+::res://GDD/::1730745480
+GDD Ver1.txt::TextFile::-1::1730745480::0::1::::<><>::
 ::res://items/::1730744384
 ::res://managers/::1730744640
 ::res://managers/GameEvents/::1730744703
 game_events.gd::GDScript::-1::1730744703::0::1::::<>Node<>::
 game_events.tscn::PackedScene::2967391105159222241::1730744663::0::1::::<><>::res://managers/GameEvents/game_events.gd
 ::res://scenes/::1730744622
+::res://UI/::1730749100
+::res://UI/DeathScreen/::1730749029
+death_screen.gd::GDScript::-1::1730749029::0::1::::<>CanvasLayer<>::
+death_screen.tscn::PackedScene::3427003520567165904::1730749001::0::1::::<><>::
+::res://UI/PauseUI/::1730747753
+pause_ui.gd::GDScript::-1::1730745483::0::1::::<>Control<>::
+pause_ui.tscn::PackedScene::116356651884513865::1730747753::0::1::::<><>::res://UI/PauseUI/pause_ui.gd
+::res://UI/SettingsUI/::1730749038
+settings_ui.gd::GDScript::-1::1730749038::0::1::::<>CanvasLayer<>::
+settings_ui.tscn::PackedScene::224965941792887671::1730749003::0::1::::<><>::
+::res://UI/StartMenuUI/::1730749100
+::res://UI/TimerUI/::1730747376
+timer_ui.gd::GDScript::-1::1730747158::0::1::::<>CanvasLayer<>::
+timer_UI.tscn::PackedScene::7316574495973879839::1730747376::0::1::::<><>::res://UI/TimerUI/timer_ui.gd

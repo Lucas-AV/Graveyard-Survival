@@ -1,2 +1,2 @@
-res://entities/player/player.tscn
-res://entities/basic_enemy/basic_enemy.gd
+res://UI/DeathScreen/death_screen.tscn
+res://UI/StartMenuUI/start_menu_ui.tscn

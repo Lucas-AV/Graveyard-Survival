@@ -1,3 +1,10 @@
+CanvasLayer
+Button
+Label
+VBoxContainer
+MarginContainer
+PanelContainer
+Control
 Timer
 CharacterBody2D
 Node
@@ -5,4 +12,3 @@ CollisionShape2D
 Area2D
 AnimationPlayer
 Sprite2D
-Node2D

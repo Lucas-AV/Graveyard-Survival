@@ -78,6 +78,7 @@ Estilo da arte dos andares:
 	> Restart
 	> Settings
 	> Quit
+	
 Futuro:
 	> Sistema de meta upgrades:
 		- Usa almas
