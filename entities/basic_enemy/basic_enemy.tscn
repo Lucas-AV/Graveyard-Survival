@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://6osmjos15ael"]
+[gd_scene load_steps=11 format=3 uid="uid://6osmjos15ael"]
 
 [ext_resource type="Script" path="res://entities/basic_enemy/basic_enemy.gd" id="1_ihs6w"]
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_q2fs8"]
@@ -6,8 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://djrei1dsqu6tg" path="res://components/DeathComponent/death_component.tscn" id="3_kogyt"]
 [ext_resource type="PackedScene" uid="uid://bf1idldpccv2q" path="res://components/VelocityComponent/velocity_component.tscn" id="4_66pxk"]
 [ext_resource type="Texture2D" uid="uid://b0nvvbiq1e4ba" path="res://tilemap_packed.png" id="4_a8xqy"]
+[ext_resource type="PackedScene" uid="uid://db4dqbya1mmwa" path="res://components/HurtboxComponent/hurtbox_component.tscn" id="5_dq3hs"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_naook"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_rbjq7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r0yvl"]
 atlas = ExtResource("4_a8xqy")
@@ -26,14 +27,15 @@ script = ExtResource("1_ihs6w")
 
 [node name="VelocityComponent" parent="." instance=ExtResource("4_66pxk")]
 
+[node name="HurtboxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("5_dq3hs")]
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
+shape = SubResource("CircleShape2D_rbjq7")
+
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("3_kogyt")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/Sprite2D")
-
-[node name="CollisionArea2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionArea2D"]
-shape = SubResource("CircleShape2D_naook")
 
 [node name="Visuals" type="Node2D" parent="."]
 
