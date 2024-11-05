@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 
 @onready var health_component: HealthComponent = $HealthComponent
 @onready var damage_interval_timer: Timer = $DamageIntervalTimer

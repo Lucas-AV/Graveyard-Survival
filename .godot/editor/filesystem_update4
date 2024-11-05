@@ -1,6 +1,9 @@
-res://entities/player/player.tscn
-res://components/HitFlashComponent/hit_flash_component.gdshader
-res://UI/VignetteUI/vignette_ui.gdshader
-res://scenes/Dungeon Planner/example_layer_map.tres
-res://entities/player/player.gd
 res://scenes/Dungeon Planner/example_layer_map.tscn
+res://scenes/Dungeon Planner/example_layer_map.tres
+res://UI/VignetteUI/vignette_ui.gdshader
+res://components/HitFlashComponent/hit_flash_component.gdshader
+res://entities/player/player.tscn
+res://UI/HealthBarUI/health_bar_ui.tscn
+res://UI/HealthBarUI/health_bar_ui.gd
+res://entities/player/player.gd
+res://components/HealthComponent/health_component.gd

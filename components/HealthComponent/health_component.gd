@@ -2,6 +2,7 @@ extends Node
 class_name HealthComponent
 
 signal died
+signal modified
 signal damaged
 signal healed
 signal full_health
@@ -23,7 +24,8 @@ func modify(value: float, isDamage: bool = true):
 		current_health = min(current_health + value, max_health)
 		Callable(check_full_health).call_deferred()
 		healed.emit()
-
+	modified.emit()
+	
 func get_health_percent():
 	if max_health <= 0: return 0
 	return min(current_health / max_health, 1)
