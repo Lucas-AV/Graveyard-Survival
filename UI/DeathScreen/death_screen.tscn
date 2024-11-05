@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bo3cin4tsynim"]
+[gd_scene load_steps=3 format=3 uid="uid://bo3cin4tsynim"]
 
 [ext_resource type="Script" path="res://UI/DeathScreen/death_screen.gd" id="1_hrmnw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_awe3l"]
+bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
 
 [node name="DeathScreen" type="CanvasLayer"]
 process_mode = 3
@@ -20,6 +27,7 @@ custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_awe3l")
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer"]
 custom_minimum_size = Vector2(180, 0)
