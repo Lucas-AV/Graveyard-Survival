@@ -4,7 +4,7 @@ class_name BasicEnemy
 @export var max_speed = 50
 @onready var health_component: HealthComponent = $HealthComponent
 @onready var visuals = $Visuals
-@onready var velocity_component = $VelocityComponent
+@onready var velocity_component: VelocityComponent = $VelocityComponent
 
 
 func _process(_delta: float) -> void: 
@@ -13,4 +13,7 @@ func _process(_delta: float) -> void:
 	
 	var move_sign = sign(velocity.x)
 	if move_sign != 0:
-		visuals.scale = Vector2(-move_sign, 1)
+		$AnimationPlayer.play("walking")
+		visuals.scale = Vector2(move_sign, 1)
+	else:
+		$AnimationPlayer.play("idle")

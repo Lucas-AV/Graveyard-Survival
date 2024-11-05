@@ -52,7 +52,7 @@ Estrutura do jogo:
 		- Pedaços de armadura
 		- Power Ups
 Estilo da arte dos andares:
-	> 1° Verde, roxo, marrom, amarelos, focado em floresta sombria com fungos e arvores: Floresta Mística ou fúngica, Raças de goblins que mexem com cogumelos, 
+	> 1° Verde, marrom, amarelos, focado em floresta sombria com fungos e arvores: Floresta Mística ou fúngica, Raças de goblins que mexem com cogumelos, 
 	> Goblins (Meele Machado, Ranged coletor de fungos com uma cesta nas costas que arremessa cogumelos) e Hoboglobin com machadão cabuloso
 
 	> 2° Cinza, Marrom, ciano, laranja, vermelho, roxo, elementos de caverna rochosa, pedras, terra, minérios místicos brilhando na caverna: Profundezas das cavernas, 

@@ -15,6 +15,10 @@ func _ready():
 	collision_area_2d.body_entered.connect(on_enemy_body_entered)
 	collision_area_2d.body_exited.connect(on_enemy_body_exited)
 	damage_interval_timer.timeout.connect(on_damage_interval_timeout)
+	health_component.modified.connect(on_modified)
+	
+func on_modified():
+	pass
 
 # Damage
 func check_deal_damage():

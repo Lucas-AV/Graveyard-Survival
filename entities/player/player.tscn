@@ -63,9 +63,8 @@ _data = {
 "walking": SubResource("Animation_m78mg")
 }
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mol7y"]
-radius = 5.0
-height = 24.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ys26"]
+size = Vector2(10, 24)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehxpa"]
 size = Vector2(10.75, 24)
@@ -78,6 +77,10 @@ libraries = {
 "": SubResource("AnimationLibrary_osrhm")
 }
 
+[node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("4_rdx1t")]
+health_component = NodePath("../HealthComponent")
+sprite = NodePath("../Visuals/Sprite2D")
+
 [node name="HealthComponent" parent="." instance=ExtResource("2_h2fah")]
 
 [node name="DamageIntervalTimer" type="Timer" parent="."]
@@ -89,8 +92,8 @@ collision_layer = 0
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionArea2D"]
-position = Vector2(0, -12)
-shape = SubResource("CapsuleShape2D_mol7y")
+position = Vector2(-1, -12)
+shape = SubResource("RectangleShape2D_7ys26")
 
 [node name="Visuals" type="Node2D" parent="."]
 
@@ -104,7 +107,3 @@ vframes = 2
 visible = false
 position = Vector2(0, -12)
 shape = SubResource("RectangleShape2D_ehxpa")
-
-[node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("4_rdx1t")]
-health_component = NodePath("../HealthComponent")
-sprite = NodePath("../Visuals/Sprite2D")

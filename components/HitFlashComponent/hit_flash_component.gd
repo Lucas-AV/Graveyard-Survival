@@ -9,6 +9,7 @@ var tween: Tween
 func _ready():
 	health_component.damaged.connect(on_damaged)
 	sprite.material = material as ShaderMaterial
+	
 func on_damaged():
 	if tween != null && tween.is_valid() || tween.is_running():
 		tween.kill()

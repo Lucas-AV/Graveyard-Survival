@@ -1,3 +1,7 @@
+CollisionShape2D
+HurtboxComponent
+BasicEnemy
+TileMapLayer
 MarginContainer
 PanelContainer
 Panel
@@ -7,8 +11,5 @@ Control
 Sprite2D
 Node2D
 Node
-TileMapLayer
 SubViewport
 Camera2D
-AnimationPlayer
-ColorRect

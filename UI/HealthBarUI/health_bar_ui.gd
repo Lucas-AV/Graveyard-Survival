@@ -9,6 +9,6 @@ func _ready() -> void:
 	progress_bar.value = _health_component.current_health
 	_health_component.modified.connect(on_modify)
 
-func on_modify(current_health: float, target_health: float):
-	var percent = current_health / target_health
-	progress_bar.value = percent
+func on_modify():
+	#var percent = _health_component.current_health / progress_bar.max_value
+	progress_bar.value = _health_component.current_health
