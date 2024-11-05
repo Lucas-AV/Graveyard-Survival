@@ -11,8 +11,18 @@ config_version=5
 [application]
 
 config/name="Sword Of Many Shapes"
+run/main_scene="res://entities/player/player.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameEvents="*res://managers/GameEvents/game_events.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/scale=2.5
 
 [input]
 
@@ -74,6 +84,14 @@ map={
 "deadzone": 0.5,
 "events": []
 }
+
+[layer_names]
+
+2d_physics/layer_1="Terrain"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Enemy"
+2d_physics/layer_4="EnemyCollision"
+2d_physics/layer_5="ItemPickup"
 
 [rendering]
 

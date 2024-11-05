@@ -1,36 +1,84 @@
-[gd_scene load_steps=6 format=3 uid="uid://cl5a38owdxida"]
+[gd_scene load_steps=9 format=3 uid="uid://cl5a38owdxida"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_b0vgj"]
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_h2fah"]
+[ext_resource type="Texture2D" uid="uid://hodjtr72kqxw" path="res://walk.png" id="3_uvkkg"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_i6jej"]
+[sub_resource type="Animation" id="Animation_tdwyw"]
+resource_name = "idle"
+length = 0.9
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.55),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0)]
+}
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_3v3cu"]
+[sub_resource type="Animation" id="Animation_epxqt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(0, 0)]
+}
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_mysx7"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_osrhm"]
+_data = {
+"RESET": SubResource("Animation_epxqt"),
+"idle": SubResource("Animation_tdwyw")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mol7y"]
+radius = 5.0
+height = 24.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ehxpa"]
+size = Vector2(10.75, 24)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_b0vgj")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_osrhm")
+}
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_h2fah")]
 
 [node name="DamageIntervalTimer" type="Timer" parent="."]
-
-[node name="PickupArea2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PickupArea2D"]
-shape = SubResource("CircleShape2D_i6jej")
+wait_time = 0.5
+one_shot = true
 
 [node name="CollisionArea2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionArea2D"]
-shape = SubResource("CircleShape2D_3v3cu")
+position = Vector2(0, -12)
+shape = SubResource("CapsuleShape2D_mol7y")
 
 [node name="Visuals" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
+texture = ExtResource("3_uvkkg")
+offset = Vector2(0, -12)
+hframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_mysx7")
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_ehxpa")

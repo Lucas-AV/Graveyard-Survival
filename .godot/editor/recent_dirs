@@ -1,1 +1,6 @@
+res://scenes
+res://
+res://managers/GameEvents
+res://UI/VignetteUI
+res://components/HitFlashComponent
 res://components/HealthComponent
