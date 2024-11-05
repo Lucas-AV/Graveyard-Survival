@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://djrei1dsqu6tg"]
+[gd_scene load_steps=9 format=3 uid="uid://djrei1dsqu6tg"]
 
 [ext_resource type="Script" path="res://components/DeathComponent/death_component.gd" id="1_73lfk"]
-[ext_resource type="Texture2D" uid="uid://b0nvvbiq1e4ba" path="res://tilemap_packed.png" id="2_wxkaw"]
+[ext_resource type="Texture2D" uid="uid://b7lqidhi3puov" path="res://components/DeathComponent/SpriteTest.png" id="2_higuj"]
 
 [sub_resource type="Animation" id="Animation_xhrdw"]
 length = 0.001
@@ -20,6 +20,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_pt8cu"]
 resource_name = "default"
+loop_mode = 2
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -72,12 +73,9 @@ angular_velocity_max = 720.0
 gravity = Vector3(0, 400, 0)
 scale_curve = SubResource("CurveTexture_fa5tj")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_oxeop"]
-atlas = ExtResource("2_wxkaw")
-region = Rect2(48, 160, 16, 16)
-
-[node name="DeathComponent" type="Node2D"]
+[node name="DeathComponent" type="Node2D" node_paths=PackedStringArray("sprite")]
 script = ExtResource("1_73lfk")
+sprite = NodePath("")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -88,7 +86,7 @@ libraries = {
 emitting = false
 amount = 1
 process_material = SubResource("ParticleProcessMaterial_rud5k")
-texture = SubResource("AtlasTexture_oxeop")
+texture = ExtResource("2_higuj")
 lifetime = 0.66
 one_shot = true
 fixed_fps = 0

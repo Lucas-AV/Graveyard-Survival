@@ -6,7 +6,7 @@ extends CharacterBody2D
 @onready var animation_player = $AnimationPlayer
 @onready var visuals = $Visuals
 
-@export var speed = 600
+@export var speed = 200
 
 var number_of_enemies_colliding_bodies = 0
 
@@ -45,7 +45,7 @@ func _process(_delta):
 	move_and_slide()
 	
 	if movement_vector.x != 0 || movement_vector.y != 0:
-		animation_player.play("RESET")
+		animation_player.play("walking")
 	else:
 		animation_player.play("idle")
 	
