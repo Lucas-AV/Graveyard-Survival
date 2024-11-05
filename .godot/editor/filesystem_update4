@@ -1,33 +1,4 @@
-res://UI/DeathScreen/death_screen.tscn
-res://UI/StartMenuUI/start_menu_ui.tscn
-res://components/DeathComponent/death_component.tscn
-res://components/DeathComponent/death_component.gd
-res://entities/basic_enemy/basic_enemy.tscn
-res://components/DropComponent/drop_component.tscn
-res://components/DropComponent/drop_component.gd
-res://entities/player/player.tscn
-res://entities/basic_enemy/basic_enemy.gd
-res://components/HurtboxComponent/hurtbox_component.tscn
-res://components/HitboxComponent/hitbox_component.tscn
-res://components/HitboxComponent/hitbox_component.gd
-res://components/HurtboxComponent/hurtbox_component.gd
-res://components/VelocityComponent/velocity_component.tscn
-res://components/VelocityComponent/velocity_component.gd
-res://scripts/weight_table.gd
-res://components/HitFlashComponent/hit_flash_component.tscn
-res://components/HitFlashComponent/hit_flash_component.gd
-res://components/HitFlashComponent/hit_flash_component.gdshader
-res://components/HitFlashComponent/hit_flash_component_material.tres
-res://managers/GameEvents/game_events.tscn
-res://UI/VignetteUI/vignette_ui.gdshader
-res://managers/GameEvents/game_events.gd
-res://UI/VignetteUI/vignette_ui.tscn
-res://scenes/example_layer_map.tscn
-res://scenes/example_layer_map.tres
-res://entities/player/player.gd
-res://camera.tscn
-res://camera.gd
-res://components/HealthComponent/health_component.gd
-res://components/HealthComponent/health_component.tscn
 res://scenes/Dungeon Planner/example_layer_map.tscn
 res://scenes/Dungeon Planner/example_layer_map.tres
+res://UI/VignetteUI/vignette_ui.gdshader
+res://components/HitFlashComponent/hit_flash_component.gdshader
