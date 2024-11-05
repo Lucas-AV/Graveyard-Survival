@@ -1,3 +1,4 @@
+res://entities/player
 res://UI/HealthBarUI
 res://managers/EnemyManager
 res://scenes/Dungeon Planner

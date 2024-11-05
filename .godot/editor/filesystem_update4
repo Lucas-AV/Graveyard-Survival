@@ -1,12 +1,12 @@
-res://entities/basic_enemy/basic_enemy.tscn
+res://entities/player/player.tscn
 res://components/HitFlashComponent/hit_flash_component.gdshader
 res://components/HitFlashComponent/hit_flash_component_material.tres
-res://UI/VignetteUI/vignette_ui.gdshader
-res://entities/basic_enemy/basic_enemy.gd
-res://entities/player/player.tscn
-res://GDD/GDD Ver1.txt
-res://scenes/Dungeon Planner/example_layer_map.tscn
 res://scenes/Dungeon Planner/example_layer_map.tres
-res://entities/player/player.gd
+res://UI/VignetteUI/vignette_ui.gdshader
+res://entities/basic_enemy/basic_enemy.tscn
+res://scenes/Dungeon Planner/example_layer_map.tscn
 res://UI/HealthBarUI/health_bar_ui.tscn
-res://UI/HealthBarUI/health_bar_ui.gd
+res://components/HealthComponent/health_component.tscn
+res://components/DeathComponent/death_component.gd
+res://components/HealthComponent/health_component.gd
+res://components/DeathComponent/death_component.tscn
