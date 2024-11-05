@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GeneralUpgrade" load_steps=2 format=3 uid="uid://gywdq1qovk4w"]
+
+[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_2wacm"]
+
+[resource]
+script = ExtResource("1_2wacm")
+id = "critical_rate"
+name = "Critical Rate"
+description = ""
+max_quantity = 0

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GeneralUpgrade" load_steps=2 format=3 uid="uid://6r4eqmduy1lt"]
+
+[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_lpt2x"]
+
+[resource]
+script = ExtResource("1_lpt2x")
+id = "move_speed"
+name = "Move Speed"
+description = ""
+max_quantity = 0

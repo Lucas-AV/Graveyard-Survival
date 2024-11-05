@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GeneralUpgrade" load_steps=2 format=3 uid="uid://dntdnn8rbw04b"]
+
+[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_m2biv"]
+
+[resource]
+script = ExtResource("1_m2biv")
+id = "attack_power"
+name = "Attack Power"
+description = ""
+max_quantity = 0

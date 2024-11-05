@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://6osmjos15ael"]
+[gd_scene load_steps=25 format=3 uid="uid://6osmjos15ael"]
 
 [ext_resource type="Script" path="res://entities/basic_enemy/basic_enemy.gd" id="1_ihs6w"]
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_q2fs8"]
@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://djrei1dsqu6tg" path="res://components/DeathComponent/death_component.tscn" id="3_kogyt"]
 [ext_resource type="PackedScene" uid="uid://bf1idldpccv2q" path="res://components/VelocityComponent/velocity_component.tscn" id="4_66pxk"]
 [ext_resource type="PackedScene" uid="uid://db4dqbya1mmwa" path="res://components/HurtboxComponent/hurtbox_component.tscn" id="5_dq3hs"]
-[ext_resource type="Shader" path="res://components/HitFlashComponent/hit_flash_component.gdshader" id="6_oli7w"]
+[ext_resource type="Material" uid="uid://064avevw2j1h" path="res://components/HitFlashComponent/hit_flash_component_material.tres" id="6_bavsn"]
 [ext_resource type="PackedScene" uid="uid://cin30u6r06uxj" path="res://components/HitFlashComponent/hit_flash_component.tscn" id="7_35hwy"]
 [ext_resource type="Texture2D" uid="uid://caan6tn2rqnns" path="res://entities/basic_enemy/Spritesheet saprofita.png" id="9_msjyd"]
 
@@ -55,24 +55,6 @@ tracks/0/keys = {
 "values": [Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_m78mg"]
-resource_name = "walking"
-length = 0.8
-loop_mode = 1
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Visuals/Sprite2D:frame_coords")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(4, 1), Vector2i(5, 1), Vector2i(6, 1), Vector2i(7, 1)]
-}
-
 [sub_resource type="Animation" id="Animation_co6ab"]
 resource_name = "sap_jump"
 length = 0.9
@@ -91,6 +73,24 @@ tracks/0/keys = {
 "values": [0, 1, 2, 3, 4]
 }
 
+[sub_resource type="Animation" id="Animation_m78mg"]
+resource_name = "walking"
+length = 0.8
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(4, 1), Vector2i(5, 1), Vector2i(6, 1), Vector2i(7, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_osrhm"]
 _data = {
 "RESET": SubResource("Animation_epxqt"),
@@ -98,11 +98,6 @@ _data = {
 "sap_jump": SubResource("Animation_co6ab"),
 "walking": SubResource("Animation_m78mg")
 }
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_el5lm"]
-resource_local_to_scene = true
-shader = ExtResource("6_oli7w")
-shader_parameter/lerp_percent = 0.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1l7l0"]
 size = Vector2(10, 24)
@@ -192,8 +187,8 @@ animation_player = NodePath("../AnimationPlayer")
 
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_35hwy")]
 health_component = NodePath("../HealthComponent")
-sprite = NodePath("../Visuals/Sprite2D")
-material = SubResource("ShaderMaterial_el5lm")
+sprite = NodePath("../Visuals/AnimatedSprite2D")
+hit_material = ExtResource("6_bavsn")
 
 [node name="HurtboxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("5_dq3hs")]
 visible = false
@@ -201,6 +196,7 @@ collision_layer = 0
 health_component = NodePath("../HealthComponent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
+visible = false
 position = Vector2(0, -12)
 shape = SubResource("RectangleShape2D_1l7l0")
 
@@ -223,9 +219,10 @@ position = Vector2(0, -6)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_bbtya")
 animation = &"walking"
-frame_progress = 0.120097
+frame_progress = 0.950939
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, -6)
 shape = SubResource("RectangleShape2D_i0iib")
 

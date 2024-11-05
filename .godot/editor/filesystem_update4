@@ -1,12 +1,20 @@
-res://entities/player/player.tscn
+res://managers/UpgradeManager/upgrade_manager.tscn
 res://components/HitFlashComponent/hit_flash_component.gdshader
 res://UI/VignetteUI/vignette_ui.gdshader
+res://scenes/Dungeon Planner/example_layer_map.gd
 res://components/HitFlashComponent/hit_flash_component_material.tres
-res://entities/basic_enemy/basic_enemy.tscn
-res://entities/basic_enemy/basic_enemy.gd
 res://scenes/Dungeon Planner/example_layer_map.tres
 res://scenes/Dungeon Planner/example_layer_map.tscn
+res://UI/PauseUI/pause_ui.tscn
+res://UI/FloatingNumber/floating_text.tscn
+res://assets/Fonts/rockbond_font_theme.tres
+res://UI/FloatingNumber/floating_text.gd
+res://components/HurtboxComponent/hurtbox_component.tscn
+res://components/HurtboxComponent/hurtbox_component.gd
+res://entities/player/player.tscn
+res://components/VelocityComponent/velocity_component.gd
+res://weapons/Sword/sword.tscn
 res://entities/player/player.gd
-res://scenes/Dungeon Planner/example_layer_map.gd
-res://UI/DeathScreen/death_screen.tscn
-res://UI/DeathScreen/death_screen.gd
+res://components/HitFlashComponent/hit_flash_component.gd
+res://components/HitFlashComponent/hit_flash_component.tscn
+res://entities/basic_enemy/basic_enemy.tscn

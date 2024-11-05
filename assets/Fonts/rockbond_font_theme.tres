@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://0ok217jve1h7"]
+
+[ext_resource type="FontFile" uid="uid://brb0cij2oa6uv" path="res://assets/Fonts/NbPixelFonts/Rockboxcond12.ttf" id="1_5y5np"]
+
+[resource]
+default_font = ExtResource("1_5y5np")
+default_font_size = 16

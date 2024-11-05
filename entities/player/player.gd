@@ -4,9 +4,8 @@ class_name Player
 @onready var health_component: HealthComponent = $HealthComponent
 @onready var damage_interval_timer: Timer = $DamageIntervalTimer
 @onready var collision_area_2d: Area2D = $CollisionArea2D
-@onready var animation_player = $AnimationPlayer
 @onready var visuals = $Visuals
-
+@onready var animator = %AnimatedSprite2D
 @export var speed = 200
 
 var number_of_enemies_colliding_bodies = 0
@@ -42,19 +41,42 @@ func get_movement_vector():
 	var y_movement = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 	return Vector2(x_movement, y_movement)
 
+var y_facing: int = 0; # none, -1 down, 1 up
+
 func _process(_delta):
-	var movement_vector = get_movement_vector()
+	var movement_vector: Vector2 = get_movement_vector()
 	var direction = movement_vector.normalized()
 	velocity = direction * speed
 	
+	# Um sobreescreve o outro
+	if Input.is_action_just_pressed("move_up"):
+		y_facing = -1 
+	if Input.is_action_just_pressed("move_down"): 
+		y_facing = 1
+	if Input.is_action_just_pressed("move_right") || Input.is_action_just_pressed("move_left"):
+		y_facing = 0
 	move_and_slide()
 	
-	if movement_vector.x != 0 || movement_vector.y != 0:
-		$Visuals/AnimatedSprite2D.play("walking")
-	else:
-		$Visuals/AnimatedSprite2D.play("idle")
-	
+	# horizontal state machine for last x known position
 	var move_sign = sign(movement_vector.x)
-	if move_sign != 0:
+	if(move_sign != 0):
 		visuals.scale = Vector2(move_sign, 1)
+		
+	if movement_vector.x != 0 || movement_vector.y != 0:
+		if(movement_vector.y != 0): # Previnir sobreposição de animação de direção quando está se movimentando
+			if(y_facing == 1):
+				$Visuals/AnimatedSprite2D.play("walking_front")
+			elif(y_facing == -1):
+				$Visuals/AnimatedSprite2D.play("walking_back")
+		else:
+			$Visuals/AnimatedSprite2D.play("walking")
+
+	else:
+		if(y_facing == 1):
+			$Visuals/AnimatedSprite2D.play("idle_front")
+		elif(y_facing == -1):
+			$Visuals/AnimatedSprite2D.play("idle_back")
+		else:
+			$Visuals/AnimatedSprite2D.play("idle")
+	
 	position = position.round()

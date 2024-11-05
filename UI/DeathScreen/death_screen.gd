@@ -9,6 +9,7 @@ func on_quit_pressed():
 	get_tree().quit()
 
 func _ready():
+	self.process_mode = Node.PROCESS_MODE_ALWAYS
 	get_tree().paused = true
 	%RestartButton.pressed.connect(on_restart_pressed)
 	%QuitButton.pressed.connect(on_quit_pressed)

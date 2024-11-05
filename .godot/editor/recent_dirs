@@ -1,8 +1,10 @@
-res://entities/basic_enemy
 res://entities/player
+res://assets/Fonts
+res://upgrades
+res://scenes/Dungeon Planner
+res://entities/basic_enemy
 res://UI/HealthBarUI
 res://managers/EnemyManager
-res://scenes/Dungeon Planner
 res://scenes
 res://
 res://managers/GameEvents
