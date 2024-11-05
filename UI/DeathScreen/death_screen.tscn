@@ -1,6 +1,10 @@
-[gd_scene format=3 uid="uid://bo3cin4tsynim"]
+[gd_scene load_steps=2 format=3 uid="uid://bo3cin4tsynim"]
+
+[ext_resource type="Script" path="res://UI/DeathScreen/death_screen.gd" id="1_hrmnw"]
 
 [node name="DeathScreen" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_hrmnw")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 15

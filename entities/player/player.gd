@@ -50,9 +50,9 @@ func _process(_delta):
 	move_and_slide()
 	
 	if movement_vector.x != 0 || movement_vector.y != 0:
-		animation_player.play("walking")
+		$Visuals/AnimatedSprite2D.play("walking")
 	else:
-		animation_player.play("idle")
+		$Visuals/AnimatedSprite2D.play("idle")
 	
 	var move_sign = sign(movement_vector.x)
 	if move_sign != 0:

@@ -1,3 +1,4 @@
+res://entities/basic_enemy
 res://entities/player
 res://UI/HealthBarUI
 res://managers/EnemyManager

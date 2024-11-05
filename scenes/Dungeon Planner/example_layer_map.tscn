@@ -1,13 +1,17 @@
-[gd_scene load_steps=7 format=4 uid="uid://8l26mmpxrvg7"]
+[gd_scene load_steps=9 format=4 uid="uid://8l26mmpxrvg7"]
 
 [ext_resource type="PackedScene" uid="uid://byper67xtmy5q" path="res://camera.tscn" id="1_cotku"]
+[ext_resource type="Script" path="res://scenes/Dungeon Planner/example_layer_map.gd" id="1_cu0ef"]
 [ext_resource type="PackedScene" uid="uid://cl5a38owdxida" path="res://entities/player/player.tscn" id="2_4dpc4"]
+[ext_resource type="PackedScene" uid="uid://bo3cin4tsynim" path="res://UI/DeathScreen/death_screen.tscn" id="2_rsxg2"]
 [ext_resource type="PackedScene" uid="uid://6osmjos15ael" path="res://entities/basic_enemy/basic_enemy.tscn" id="4_0lyyp"]
 [ext_resource type="TileSet" uid="uid://c8d2d6jpnsp62" path="res://scenes/Dungeon Planner/example_layer_map.tres" id="4_3bhb1"]
 [ext_resource type="PackedScene" uid="uid://65qvhnlmn04m" path="res://UI/VignetteUI/vignette_ui.tscn" id="4_xfka8"]
 [ext_resource type="PackedScene" uid="uid://cip4et86wguk8" path="res://UI/HealthBarUI/health_bar_ui.tscn" id="5_0ogeg"]
 
 [node name="ExampleLayerMap" type="Node"]
+script = ExtResource("1_cu0ef")
+death_screen = ExtResource("2_rsxg2")
 
 [node name="Camera" parent="." instance=ExtResource("1_cotku")]
 target = NodePath("../entities/Player")

@@ -13,7 +13,7 @@ func _process(_delta: float) -> void:
 	
 	var move_sign = sign(velocity.x)
 	if move_sign != 0:
-		$AnimationPlayer.play("walking")
+		$Visuals/AnimatedSprite2D.play("walking")
 		visuals.scale = Vector2(move_sign, 1)
 	else:
-		$AnimationPlayer.play("idle")
+		$Visuals/AnimatedSprite2D.play("idle")
