@@ -6,6 +6,7 @@
 script = ExtResource("1_1v6hm")
 id = "meta_move_speed"
 max_quantity = 1
+porcentage = 0.0
 currency_cost = 100
 title = "Meta Move Speed"
-description = "Increases base move speed of the player by 5%"
+description = "Increases base move speed of the player by 5%."

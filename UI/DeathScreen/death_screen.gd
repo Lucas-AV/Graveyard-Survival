@@ -10,7 +10,7 @@ func on_quit_pressed():
 
 func on_continue_pressed():
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://UI/meta_menu.tscn")
+	get_tree().change_scene_to_file("res://UI/MetaMenu/meta_menu.tscn")
 	
 
 func _ready():

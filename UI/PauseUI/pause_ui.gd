@@ -2,8 +2,6 @@ extends CanvasLayer
 
 var is_closing: bool = false
 
-#%ResumeButton, %RestartButton, %SettingsButton, %QuitButton
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	self.process_mode = Node.PROCESS_MODE_ALWAYS
 	get_tree().paused = true
@@ -29,5 +27,15 @@ func close():
 
 func on_resume(): close()
 func on_restart(): get_tree().reload_current_scene()
-func on_settings(): pass
+
+var settings = preload("res://UI/SettingsUI/settings_ui.tscn")
+func on_settings():
+	self.visible = false
+	var settings_instance = settings.instantiate()
+	add_child(settings_instance)
+	settings_instance.back_pressed.connect(on_settings_closed.bind(settings_instance))
+
+func on_settings_closed(settings_instance: Node):
+	settings_instance.queue_free()
+
 func on_quit(): get_tree().quit()

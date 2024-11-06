@@ -10,6 +10,7 @@ func _unhandled_input(event):
 		get_tree().root.set_input_as_handled()
 
 func _ready():
+	get_window().content_scale_factor = 4
 	$entities/Player.health_component.died.connect(on_died)
 	
 func on_died():

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Sword Of Many Shapes"
-run/main_scene="res://scenes/Dungeon Planner/example_layer_map.tscn"
+run/main_scene="res://UI/StartMenuUI/start_menu_ui.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="SwordsOfManyShapes"
 config/features=PackedStringArray("4.3", "Forward Plus")

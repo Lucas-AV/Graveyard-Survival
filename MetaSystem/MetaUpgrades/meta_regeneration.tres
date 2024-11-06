@@ -4,9 +4,9 @@
 
 [resource]
 script = ExtResource("1_u0lb3")
-id = "meta_move_speed"
+id = "meta_regeneration"
 max_quantity = 1
 porcentage = 0.0
 currency_cost = 100
-title = "Meta Move Speed"
-description = "i"
+title = "Meta Regeneration"
+description = "Increases the player life regeneration by 1%."

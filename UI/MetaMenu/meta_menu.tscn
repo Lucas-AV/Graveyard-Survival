@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://b70bmqaxp1rlg"]
+[gd_scene load_steps=12 format=3 uid="uid://b70bmqaxp1rlg"]
 
-[ext_resource type="Script" path="res://UI/meta_menu.gd" id="1_0euc3"]
+[ext_resource type="Script" path="res://UI/MetaMenu/meta_menu.gd" id="1_0euc3"]
 [ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="2_flqcl"]
 [ext_resource type="PackedScene" uid="uid://65qvhnlmn04m" path="res://UI/VignetteUI/vignette_ui.tscn" id="2_p2ia7"]
 [ext_resource type="Resource" uid="uid://beemxn0w64vlc" path="res://MetaSystem/MetaUpgrades/meta_attack_damage.tres" id="3_ecook"]
@@ -10,6 +10,13 @@
 [ext_resource type="Resource" uid="uid://vckk4gnpnt00" path="res://MetaSystem/MetaUpgrades/meta_move_speed.tres" id="7_aceth"]
 [ext_resource type="Resource" uid="uid://dkghuc2oxoio1" path="res://MetaSystem/MetaUpgrades/meta_regeneration.tres" id="8_hs8wf"]
 [ext_resource type="Resource" uid="uid://bkxpjjsf2l1u" path="res://MetaSystem/MetaUpgrades/meta_experience_gain.tres" id="9_wp5jl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iv8no"]
+bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
 
 [node name="MetaMenu" type="CanvasLayer"]
 script = ExtResource("1_0euc3")
@@ -43,6 +50,7 @@ offset_right = -16.0
 offset_bottom = -16.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_iv8no")
 text = "Continue"
 
 [node name="VignetteUI" parent="." instance=ExtResource("2_p2ia7")]

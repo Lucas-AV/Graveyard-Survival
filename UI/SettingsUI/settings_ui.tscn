@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://dg8fkta4b54n"]
+[gd_scene load_steps=2 format=3 uid="uid://dg8fkta4b54n"]
+
+[ext_resource type="Script" path="res://UI/SettingsUI/settings_ui.gd" id="1_gcspj"]
 
 [node name="SettingsUI" type="CanvasLayer"]
+script = ExtResource("1_gcspj")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 15
@@ -32,6 +35,34 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
 text = "SETTINGS"
+
+[node name="Music" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Music"]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="MusicSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Music"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Effects" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Effects"]
+layout_mode = 2
+text = "Effecs Volume"
+
+[node name="EffectsSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Effects"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="FullscreenCheckbox" type="CheckBox" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+button_pressed = true
+text = "Fullscreen"
 
 [node name="BackButton" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true

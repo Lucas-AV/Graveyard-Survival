@@ -1,17 +1,30 @@
-res://UI/meta_menu.tscn
+res://scenes/Dungeon Planner/example_layer_map.tscn
 res://managers/GameEvents/game_events.gd
 res://components/HitFlashComponent/hit_flash_component.gdshader
 res://UI/VignetteUI/vignette_ui.gdshader
 res://scenes/Dungeon Planner/example_layer_map.gd
 res://components/HitFlashComponent/hit_flash_component.gd
 res://scenes/Dungeon Planner/example_layer_map.tres
+res://UI/meta_menu.tscn
 res://MetaSystem/MetaUpgrades/meta_attack_damage.tres
 res://MetaSystem/MetaUpgrades/meta_attack_speed.tres
 res://MetaSystem/MetaUpgrades/meta_defense.tres
 res://MetaSystem/MetaUpgrades/meta_max_health.tres
-res://scenes/Dungeon Planner/example_layer_map.tscn
+res://MetaSystem/MetaUpgrades/meta_move_speed.tres
 res://MetaSystem/MetaUpgrades/meta_regeneration.tres
 res://MetaSystem/MetaUpgrades/meta_experience_gain.tres
+res://UI/MetaMenuUI/meta_menu.tscn
+res://scenes/Dungeon Planner/Gate.tscn
+res://UI/MetaMenu/meta_menu.tscn
 res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.tscn
 res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd
-res://UI/meta_menu.gd
+res://UI/MetaMenu/meta_menu.gd
+res://UI/StartMenuUI/start_menu_ui.tscn
+res://UI/DeathScreen/death_screen.gd
+res://assets/Fonts/rockbond_font_theme.tres
+res://UI/StartMenuUI/start_menu_ui.gd
+res://UI/SettingsUI/settings_ui.tscn
+res://UI/SettingsUI/settings_ui.gd
+res://UI/TimerUI/timer_UI.tscn
+res://UI/PauseUI/pause_ui.tscn
+res://UI/PauseUI/pause_ui.gd

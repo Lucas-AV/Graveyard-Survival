@@ -5,3 +5,6 @@
 [resource]
 default_font = ExtResource("1_5y5np")
 default_font_size = 16
+Button/constants/outline_size = 8
+Label/constants/outline_size = 8
+ProgressBar/constants/outline_size = 8
