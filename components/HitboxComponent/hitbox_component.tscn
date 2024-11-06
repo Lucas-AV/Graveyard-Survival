@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" path="res://components/HitboxComponent/hitbox_component.gd" id="1_khem4"]
 
-[node name="HitboxComponent" type="Area2D"]
+[node name="HitboxComponent" type="Area2D" groups=["foreground_layer"]]
 script = ExtResource("1_khem4")

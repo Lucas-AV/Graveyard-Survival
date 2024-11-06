@@ -8,7 +8,12 @@ func on_restart_pressed():
 func on_quit_pressed():
 	get_tree().quit()
 
+func on_continue_pressed():
+	get_tree().paused = false
+	
+
 func _ready():
+	MetaProgression.save()
 	self.process_mode = Node.PROCESS_MODE_ALWAYS
 	get_tree().paused = true
 	%RestartButton.pressed.connect(on_restart_pressed)

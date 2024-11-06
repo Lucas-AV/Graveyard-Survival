@@ -22,3 +22,4 @@ func on_area_entered(other_area: Area2D):
 	# Instancia de text na poisção de spawn da hitbox
 	text_instance.global_position = global_position + (Vector2.UP * 16)
 	text_instance.start(str(hitbox_component.damage))
+	

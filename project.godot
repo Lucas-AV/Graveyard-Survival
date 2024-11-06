@@ -12,19 +12,22 @@ config_version=5
 
 config/name="Sword Of Many Shapes"
 run/main_scene="res://scenes/Dungeon Planner/example_layer_map.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="SwordsOfManyShapes"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameEvents="*res://managers/GameEvents/game_events.gd"
+MetaProgression="*res://MetaSystem/MetaProgression/MetaProgression.tscn"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=800
 window/stretch/mode="canvas_items"
-window/stretch/scale=2.5
+window/stretch/scale=3.0
 
 [gui]
 

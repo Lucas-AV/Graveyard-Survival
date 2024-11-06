@@ -3,7 +3,7 @@ class_name VelocityComponent
 
 @export var speed: float = 50
 @export var acceleration: float = 5
-@export var animation_player: AnimationPlayer
+@export var sprite: AnimatedSprite2D
 var velocity = Vector2.ZERO
 
 func accelerate(direction: Vector2) -> void:
@@ -20,9 +20,15 @@ func accel_to_player() -> void:
 	var direction = player.global_position - owner_2d.global_position
 	direction = direction.normalized()
 	accelerate(direction)
-	
+
+var last_pos: Vector2 = Vector2.ZERO
+
 func move(body: CharacterBody2D) -> void:
 	body.velocity = velocity
+	if(body.velocity != Vector2.ZERO):
+		sprite.play("walking")
+	else:
+		sprite.play("idle")
 	body.move_and_slide()
 	
 	velocity = body.velocity

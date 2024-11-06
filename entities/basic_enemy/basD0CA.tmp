@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://caan6tn2rqnns" path="res://entities/basic_enemy/Spritesheet saprofita.png" id="9_msjyd"]
 [ext_resource type="PackedScene" uid="uid://bmb058g7u5yrl" path="res://components/HitboxComponent/hitbox_component.tscn" id="10_ojvt3"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ttyqy"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4dnv8"]
 resource_local_to_scene = true
 shader = ExtResource("6_oli7w")
 shader_parameter/lerp_percent = 0.0
@@ -82,7 +82,7 @@ animations = [{
 size = Vector2(11, 10)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_64b2k"]
-radius = 5.0
+radius = 4.0
 
 [node name="BasicEnemy" type="CharacterBody2D" groups=["enemy"]]
 y_sort_enabled = true
@@ -101,7 +101,7 @@ sprite = NodePath("../Visuals/AnimatedSprite2D")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_35hwy")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_ttyqy")
+hit_material = SubResource("ShaderMaterial_4dnv8")
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("3_kogyt")]
 health_component = NodePath("../HealthComponent")
@@ -124,7 +124,6 @@ sprite_frames = SubResource("SpriteFrames_bbtya")
 animation = &"idle"
 
 [node name="HurtboxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("5_dq3hs")]
-visible = false
 collision_layer = 0
 health_component = NodePath("../HealthComponent")
 
@@ -133,9 +132,6 @@ position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_y17wa")
 
 [node name="HitboxComponent" parent="." instance=ExtResource("10_ojvt3")]
-visible = false
-collision_layer = 2
-collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
 position = Vector2(0, -5)
@@ -146,5 +142,6 @@ position = Vector2(0, -6)
 shape = SubResource("CircleShape2D_64b2k")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(0, -5)
-scale = Vector2(0.55, 0.55)
+visible = false
+position = Vector2(0, -12)
+scale = Vector2(0.5, 1.2)

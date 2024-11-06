@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://nwd8f4nd1exa"]
+
+[ext_resource type="Script" path="res://MetaSystem/MetaProgression/meta_progression.gd" id="1_rctex"]
+
+[node name="MetaProgression" type="Node"]
+script = ExtResource("1_rctex")
