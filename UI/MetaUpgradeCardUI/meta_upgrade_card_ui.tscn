@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6cifwgoq8phb"]
+
+[ext_resource type="Script" path="res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd" id="1_cf3g2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a827t"]
+bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="MetaUpgradeCardUI" type="PanelContainer"]
+custom_minimum_size = Vector2(150, 150)
+offset_right = 120.0
+offset_bottom = 150.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a827t")
+script = ExtResource("1_cf3g2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+process_mode = 3
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Title"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+text = "The description of the current ability upgrade that fills this card of meta upgrades and maybe some current upgrades too?"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Price" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+text = "99/1000"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Level" type="Label" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+text = "Lv. 0"
+autowrap_mode = 2
+
+[node name="PurchaseButton" type="Button" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Purchase"

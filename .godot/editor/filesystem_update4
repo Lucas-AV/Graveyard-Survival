@@ -13,3 +13,10 @@ res://UI/DeathScreen/death_screen.tscn
 res://scenes/Dungeon Planner/example_layer_map.gd
 res://scenes/Dungeon Planner/example_layer_map.tres
 res://UI/DeathScreen/death_screen.gd
+res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.tscn
+res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd
+res://UI/meta_menu.tscn
+res://UI/meta_menu.gd
+res://MetaSystem/MetaUpgrades/meta_attack_speed.tres
+res://MetaSystem/MetaUpgrades/meta_max_health.tres
+res://MetaSystem/MetaUpgrades/meta_defense.tres

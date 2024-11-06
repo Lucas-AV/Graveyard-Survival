@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MetaUpgrade" load_steps=2 format=3 uid="uid://n4eqsxv4feyo"]
+
+[ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="1_iwpjo"]
+
+[resource]
+script = ExtResource("1_iwpjo")
+id = "meta_max_health"
+max_quantity = 1
+currency_cost = 100
+title = "Meta Max Health"
+description = "Increases your max health in 5%."

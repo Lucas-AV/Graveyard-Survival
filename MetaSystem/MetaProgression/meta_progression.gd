@@ -8,7 +8,7 @@ var save_upgrades: Dictionary = {
 }
 
 func _ready():
-	GameEvents.on_meta_currency_upgrade_collected.connect(on_soul_collected)
+	GameEvents.meta_currency_upgrade_collected.connect(on_soul_collected)
 	
 func load_save_file():
 	if !FileAccess.file_exists(save_path):

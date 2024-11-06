@@ -1,10 +1,11 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://beemxn0w64vlc"]
+[gd_resource type="Resource" script_class="MetaUpgrade" load_steps=2 format=3 uid="uid://beemxn0w64vlc"]
 
 [ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="1_0v4s1"]
 
 [resource]
 script = ExtResource("1_0v4s1")
 id = "meta_attack_damage"
-max_quantity = 100
+max_quantity = 1
+currency_cost = 100
 title = "Meta Attack Damage"
-description = "Increases Base Attack Damage in 5%."
+description = "Increases base Attack Damage in 5%."

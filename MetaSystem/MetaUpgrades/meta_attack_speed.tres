@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MetaUpgrade" load_steps=2 format=3 uid="uid://nd47dkfu2g1a"]
+
+[ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="1_1gvyo"]
+
+[resource]
+script = ExtResource("1_1gvyo")
+id = "meta_attack_speed"
+max_quantity = 1
+currency_cost = 100
+title = "Meta Attack Speed"
+description = "Increases Attack Speed of all weapons in 1%."

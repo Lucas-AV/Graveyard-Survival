@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MetaUpgrade" load_steps=2 format=3 uid="uid://chwk15b6mhiav"]
+
+[ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="1_55wnb"]
+
+[resource]
+script = ExtResource("1_55wnb")
+id = "meta_defense"
+max_quantity = 1
+currency_cost = 100
+title = "Meta Defense"
+description = "Increases your defense by 1%."
