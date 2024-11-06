@@ -1,8 +1,21 @@
 extends Node
-class_name EnemyManager
 
 @export var spawn_radius = 330
+@export var base_spawn_time = 1.0
+@export var limit_time = 0.1
 @export var basic_enemy_scene: PackedScene
+@export var time_manager: TimeManager
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	$Timer.timeout.connect(on_timeout)
+	$Timer.wait_time = base_spawn_time
+	time_manager.arena_difficulty_increased.connect(on_arena_difficulty_increased)
+
+func on_arena_difficulty_increased(arena_difficulty: int):
+	var time_off = (.1 / 12) * arena_difficulty
+	time_off = min(time_off, 0.75)
+	$Timer.wait_time = base_spawn_time - time_off
 
 func get_spawn_position():
 	var player = get_tree().get_first_node_in_group("player")
@@ -28,6 +41,8 @@ func get_spawn_position():
 		
 	return spawn_position
 	
+
+
 func on_timeout():
 	$Timer.start()
 	var player = get_tree().get_first_node_in_group("player")

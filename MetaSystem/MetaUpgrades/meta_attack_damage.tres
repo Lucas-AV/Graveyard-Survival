@@ -6,6 +6,7 @@
 script = ExtResource("1_0v4s1")
 id = "meta_attack_damage"
 max_quantity = 1
+porcentage = 0.0
 currency_cost = 100
 title = "Meta Attack Damage"
 description = "Increases base Attack Damage in 5%."

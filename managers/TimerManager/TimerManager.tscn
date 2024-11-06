@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://08rix4aqk5gv"]
+
+[ext_resource type="Script" path="res://managers/TimerManager/timer_manager.gd" id="1_xnot7"]
+[ext_resource type="PackedScene" uid="uid://bo3cin4tsynim" path="res://UI/DeathScreen/death_screen.tscn" id="2_4w4j1"]
+
+[node name="TimerManager" type="Node"]
+script = ExtResource("1_xnot7")
+victory_screen_scene = ExtResource("2_4w4j1")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 120.0
+autostart = true

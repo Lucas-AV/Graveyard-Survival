@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MetaUpgrade" load_steps=2 format=3 uid="uid://vckk4gnpnt00"]
+
+[ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="1_1v6hm"]
+
+[resource]
+script = ExtResource("1_1v6hm")
+id = "meta_move_speed"
+max_quantity = 1
+currency_cost = 100
+title = "Meta Move Speed"
+description = "Increases base move speed of the player by 5%"

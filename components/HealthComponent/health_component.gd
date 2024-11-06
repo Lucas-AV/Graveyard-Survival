@@ -7,7 +7,9 @@ signal damaged
 signal healed
 signal full_health
 
-@export var max_health: float = 10
+
+@export var defense: float = 0
+@export var max_health: float = 25
 var current_health
 
 func _ready() -> void:
@@ -16,6 +18,7 @@ func _ready() -> void:
 func modify(value: float, isDamage: bool = true):
 	# damage
 	if(isDamage):
+		value = value * (1 - defense/100)
 		current_health = max(current_health - value, 0)
 		Callable(check_death).call_deferred()
 		damaged.emit()

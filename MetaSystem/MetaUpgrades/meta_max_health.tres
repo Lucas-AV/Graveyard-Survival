@@ -6,6 +6,7 @@
 script = ExtResource("1_iwpjo")
 id = "meta_max_health"
 max_quantity = 1
+porcentage = 0.0
 currency_cost = 100
 title = "Meta Max Health"
 description = "Increases your max health in 5%."

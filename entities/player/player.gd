@@ -10,12 +10,23 @@ class_name Player
 
 var number_of_enemies_colliding_bodies = 0
 
+var y_facing: int = 0; # none, -1 down, 1 up
+
+func load_meta_upgrades():
+	if MetaProgression.save_upgrades.has("meta_max_health"):
+		health_component.max_health = health_component.max_health * MetaProgression.get_math_pow_upgrade("meta_max_health")
+	elif MetaProgression.save_upgrades.has("meta_move_speed"):
+		speed = speed * MetaProgression.get_math_pow_upgrade("meta_move_speed")
+	elif MetaProgression.save_upgrades.has("meta_defense"):
+		health_component.defense += MetaProgression.get_quantity_from_meta_upgrade("meta_defense")
+
 func _ready():
 	collision_area_2d.body_entered.connect(on_enemy_body_entered)
 	collision_area_2d.body_exited.connect(on_enemy_body_exited)
 	damage_interval_timer.timeout.connect(on_damage_interval_timeout)
 	health_component.modified.connect(on_modified)
-	
+	load_meta_upgrades()
+
 func on_modified():
 	pass
 
@@ -41,7 +52,6 @@ func get_movement_vector():
 	var y_movement = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 	return Vector2(x_movement, y_movement)
 
-var y_facing: int = 0; # none, -1 down, 1 up
 
 func _process(_delta):
 	var movement_vector: Vector2 = get_movement_vector()

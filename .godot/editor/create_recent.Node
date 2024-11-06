@@ -1,3 +1,6 @@
+Timer
+TimeManager
+Node
 GridContainer
 MarginContainer
 TileMapLayer
@@ -9,7 +12,3 @@ Label
 VBoxContainer
 PanelContainer
 HurtboxComponent
-HitboxComponent
-CollisionShape2D
-HitFlashComponent
-Sprite2D

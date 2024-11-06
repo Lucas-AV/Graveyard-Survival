@@ -6,6 +6,7 @@
 script = ExtResource("1_1gvyo")
 id = "meta_attack_speed"
 max_quantity = 1
+porcentage = 0.0
 currency_cost = 100
 title = "Meta Attack Speed"
 description = "Increases Attack Speed of all weapons in 1%."
