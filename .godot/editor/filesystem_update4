@@ -29,3 +29,8 @@ res://UI/TimerUI/timer_ui.gd
 res://UI/DeathScreen/death_screen.tscn
 res://UI/DeathScreen/death_screen.gd
 res://UI/meta_menu.gd
+res://entities/basic_enemy/basic_enemy.tscn
+res://managers/ExperienceManager/experience_manager.tscn
+res://managers/ExperienceManager/experience_manager.gd
+res://UI/FloatingNumber/floating_text.tscn
+res://components/HealthComponent/health_component.tscn

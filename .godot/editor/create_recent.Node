@@ -1,14 +1,14 @@
 Timer
+ProgressBar
+MarginContainer
+VBoxContainer
 TimeManager
 Node
 GridContainer
-MarginContainer
 TileMapLayer
 CanvasLayer
 TextureRect
 HBoxContainer
 Button
 Label
-VBoxContainer
 PanelContainer
-HurtboxComponent

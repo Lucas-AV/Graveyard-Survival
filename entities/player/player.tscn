@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=3 uid="uid://cl5a38owdxida"]
+[gd_scene load_steps=66 format=3 uid="uid://cl5a38owdxida"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_b0vgj"]
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_h2fah"]
@@ -420,10 +420,21 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehxpa"]
 size = Vector2(9.25, 24)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ucuu4"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ghlwf"]
 resource_local_to_scene = true
 shader = ExtResource("8_by6yw")
 shader_parameter/lerp_percent = 0.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ev62r"]
+bg_color = Color(0.0383972, 0.0383972, 0.0383971, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_goiey"]
+bg_color = Color(0.839725, 0.126666, 0.227866, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 y_sort_enabled = true
@@ -471,4 +482,19 @@ shape = SubResource("RectangleShape2D_ehxpa")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_jci0w")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_ucuu4")
+hit_material = SubResource("ShaderMaterial_ghlwf")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+clip_contents = true
+custom_minimum_size = Vector2(20, 0)
+offset_left = -9.0
+offset_top = -29.0
+offset_right = 11.0
+offset_bottom = -26.0
+size_flags_horizontal = 4
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ev62r")
+theme_override_styles/fill = SubResource("StyleBoxFlat_goiey")
+value = 50.0
+show_percentage = false

@@ -46,12 +46,12 @@ func get_meta_upgrade(id: String):
 
 func get_quantity_from_meta_upgrade(id: String) -> int:
 	var meta_upgrade: Dictionary = get_meta_upgrade(id)
-	var quantity: int = meta_upgrade["porcentage"]
+	var quantity: int = meta_upgrade["quantity"]
 	return quantity
 
-func get_porcentage_from_meta_upgrade(id: String) -> int:
+func get_porcentage_from_meta_upgrade(id: String) -> float:
 	var meta_upgrade: Dictionary = get_meta_upgrade(id)
-	var porcentage: float = meta_upgrade["quantity"]
+	var porcentage: float = meta_upgrade["porcentage"]
 	return porcentage
 	
 func get_math_pow_upgrade(id: String):

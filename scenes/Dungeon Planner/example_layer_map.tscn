@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://8l26mmpxrvg7"]
+[gd_scene load_steps=10 format=4 uid="uid://8l26mmpxrvg7"]
 
 [ext_resource type="PackedScene" uid="uid://byper67xtmy5q" path="res://camera.tscn" id="1_cotku"]
 [ext_resource type="Script" path="res://scenes/Dungeon Planner/example_layer_map.gd" id="1_cu0ef"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://dcig6bn6db0gx" path="res://UI/TimerUI/timer_UI.tscn" id="3_oyn48"]
 [ext_resource type="TileSet" uid="uid://c8d2d6jpnsp62" path="res://scenes/Dungeon Planner/example_layer_map.tres" id="4_3bhb1"]
 [ext_resource type="PackedScene" uid="uid://65qvhnlmn04m" path="res://UI/VignetteUI/vignette_ui.tscn" id="4_xfka8"]
-[ext_resource type="PackedScene" uid="uid://cip4et86wguk8" path="res://UI/HealthBarUI/health_bar_ui.tscn" id="5_0ogeg"]
 [ext_resource type="PackedScene" uid="uid://c2ea46of3cu2a" path="res://managers/EnemyManager/enemy_manager.tscn" id="9_qfodl"]
 [ext_resource type="PackedScene" uid="uid://08rix4aqk5gv" path="res://managers/TimerManager/TimerManager.tscn" id="10_l6yrt"]
 
@@ -33,9 +32,6 @@ position = Vector2(192, 192)
 collision_layer = 0
 
 [node name="VignetteUI" parent="." instance=ExtResource("4_xfka8")]
-
-[node name="HealthBarUI" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_0ogeg")]
-player = NodePath("../entities/Player")
 
 [node name="Managers" type="Node" parent="."]
 

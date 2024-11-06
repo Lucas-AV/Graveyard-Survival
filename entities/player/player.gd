@@ -6,6 +6,7 @@ class_name Player
 @onready var collision_area_2d: Area2D = $CollisionArea2D
 @onready var visuals = $Visuals
 @onready var animator = %AnimatedSprite2D
+@onready var progress_bar: ProgressBar = %ProgressBar
 @export var speed = 200
 
 var number_of_enemies_colliding_bodies = 0
@@ -26,9 +27,12 @@ func _ready():
 	damage_interval_timer.timeout.connect(on_damage_interval_timeout)
 	health_component.modified.connect(on_modified)
 	load_meta_upgrades()
+	
+	progress_bar.max_value = health_component.max_health
+	progress_bar.value = health_component.current_health
 
 func on_modified():
-	pass
+	progress_bar.value = health_component.current_health
 
 # Damage
 func check_deal_damage():

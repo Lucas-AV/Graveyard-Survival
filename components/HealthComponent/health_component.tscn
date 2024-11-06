@@ -4,3 +4,9 @@
 
 [node name="HealthComponent" type="Node"]
 script = ExtResource("1_obbqs")
+
+[node name="RegenerationTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+
+[node name="DamageTimer" type="Timer" parent="."]
+unique_name_in_owner = true
