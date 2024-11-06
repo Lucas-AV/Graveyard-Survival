@@ -10,7 +10,7 @@ func _ready():
 	gui_input.connect(on_gui_input)
 
 func set_ability_upgrade(upgrade: MetaUpgrade):
-	name_label.text = upgrade.name
+	name_label.text = upgrade.title
 	description_label.text = upgrade.description
 
 func on_gui_input(event: InputEvent):

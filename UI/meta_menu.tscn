@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b70bmqaxp1rlg"]
+[gd_scene load_steps=11 format=3 uid="uid://b70bmqaxp1rlg"]
 
 [ext_resource type="Script" path="res://UI/meta_menu.gd" id="1_0euc3"]
 [ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="2_flqcl"]
@@ -7,10 +7,13 @@
 [ext_resource type="Resource" uid="uid://nd47dkfu2g1a" path="res://MetaSystem/MetaUpgrades/meta_attack_speed.tres" id="4_0dkgk"]
 [ext_resource type="Resource" uid="uid://chwk15b6mhiav" path="res://MetaSystem/MetaUpgrades/meta_defense.tres" id="5_w6k06"]
 [ext_resource type="Resource" uid="uid://n4eqsxv4feyo" path="res://MetaSystem/MetaUpgrades/meta_max_health.tres" id="6_8rfp2"]
+[ext_resource type="Resource" uid="uid://vckk4gnpnt00" path="res://MetaSystem/MetaUpgrades/meta_move_speed.tres" id="7_aceth"]
+[ext_resource type="Resource" uid="uid://dkghuc2oxoio1" path="res://MetaSystem/MetaUpgrades/meta_regeneration.tres" id="8_hs8wf"]
+[ext_resource type="Resource" uid="uid://bkxpjjsf2l1u" path="res://MetaSystem/MetaUpgrades/meta_experience_gain.tres" id="9_wp5jl"]
 
 [node name="MetaMenu" type="CanvasLayer"]
 script = ExtResource("1_0euc3")
-upgrades = Array[ExtResource("2_flqcl")]([ExtResource("3_ecook"), ExtResource("4_0dkgk"), ExtResource("5_w6k06"), ExtResource("6_8rfp2")])
+upgrades = Array[ExtResource("2_flqcl")]([ExtResource("3_ecook"), ExtResource("4_0dkgk"), ExtResource("5_w6k06"), ExtResource("6_8rfp2"), ExtResource("7_aceth"), ExtResource("8_hs8wf"), ExtResource("9_wp5jl")])
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 
@@ -18,13 +21,29 @@ upgrades = Array[ExtResource("2_flqcl")]([ExtResource("3_ecook"), ExtResource("4
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 16
+theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 16
-theme_override_constants/margin_bottom = 16
+theme_override_constants/margin_bottom = 12
 
 [node name="GridContainer" type="GridContainer" parent="MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 columns = 4
 
+[node name="ContinueButton" type="Button" parent="."]
+unique_name_in_owner = true
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -40.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Continue"
+
 [node name="VignetteUI" parent="." instance=ExtResource("2_p2ia7")]
+visible = false

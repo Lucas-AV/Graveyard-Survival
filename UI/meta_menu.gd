@@ -7,6 +7,7 @@ func _ready():
 	get_window().content_scale_factor = 2
 	for upgrade in upgrades:
 		var meta_upgrade = meta_upgrade_card_scene.instantiate()
+		meta_upgrade.set_ability_upgrade(upgrade)
 		%GridContainer.add_child(meta_upgrade)
 		
 func _process(_delta):
