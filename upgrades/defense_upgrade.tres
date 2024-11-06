@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="GeneralUpgrade" load_steps=2 format=3 uid="uid://dtkuno60evrga"]
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://dtkuno60evrga"]
 
 [ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_oq2gh"]
 
 [resource]
 script = ExtResource("1_oq2gh")
-id = "defense"
-name = "defense_upgrade"
-description = ""
-max_quantity = 0
+id = "defense_upgrade"
+name = "Defense"
+description = "Gain 1% of damage reduction"
+max_quantity = 10

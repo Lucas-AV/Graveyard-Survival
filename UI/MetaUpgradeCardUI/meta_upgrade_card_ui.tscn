@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b6cifwgoq8phb"]
+[gd_scene load_steps=5 format=3 uid="uid://b6cifwgoq8phb"]
 
 [ext_resource type="Script" path="res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd" id="1_cf3g2"]
+[ext_resource type="Texture2D" uid="uid://bi6abx47pptya" path="res://assets/Souls/souls.png" id="2_rq12r"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a827t"]
 bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
@@ -8,6 +9,10 @@ corner_radius_top_left = 2
 corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvd2g"]
+atlas = ExtResource("2_rq12r")
+region = Rect2(16, 0, 16, 16)
 
 [node name="MetaUpgradeCardUI" type="PanelContainer"]
 custom_minimum_size = Vector2(150, 150)
@@ -48,21 +53,6 @@ text = "The description of the current ability upgrade that fills this card of m
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-
-[node name="Price" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer"]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(120, 0)
-layout_mode = 2
-text = "99/1000"
-vertical_alignment = 1
-autowrap_mode = 2
-
 [node name="PurchaseContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 4
@@ -71,12 +61,34 @@ theme_override_constants/margin_right = 4
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PurchaseContainer"]
 layout_mode = 2
 
-[node name="Level" type="Label" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Level" type="Label" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(120, 0)
+custom_minimum_size = Vector2(32, 0)
 layout_mode = 2
 text = "Lv. 0"
 autowrap_mode = 2
+
+[node name="BlankSpace" type="MarginContainer" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Level2" type="Label" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Cost"
+horizontal_alignment = 2
+vertical_alignment = 2
+autowrap_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_qvd2g")
 
 [node name="PurchaseButton" type="Button" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer"]
 unique_name_in_owner = true

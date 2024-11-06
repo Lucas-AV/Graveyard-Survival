@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=3 uid="uid://cl5a38owdxida"]
+[gd_scene load_steps=67 format=3 uid="uid://cl5a38owdxida"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_b0vgj"]
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_h2fah"]
@@ -11,6 +11,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ys26"]
 size = Vector2(9, 24)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k6tdq"]
+radius = 19.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6fajf"]
 atlas = ExtResource("5_q0rqu")
@@ -420,7 +423,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehxpa"]
 size = Vector2(9.25, 24)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ghlwf"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1h005"]
 resource_local_to_scene = true
 shader = ExtResource("8_by6yw")
 shader_parameter/lerp_percent = 0.0
@@ -452,12 +455,21 @@ wait_time = 0.5
 one_shot = true
 
 [node name="CollisionArea2D" type="Area2D" parent="."]
+visible = false
 collision_layer = 0
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionArea2D"]
 position = Vector2(0, -12)
 shape = SubResource("RectangleShape2D_7ys26")
+
+[node name="PickupArea" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PickupArea"]
+position = Vector2(1, -12)
+shape = SubResource("CircleShape2D_k6tdq")
 
 [node name="Visuals" type="Node2D" parent="."]
 
@@ -476,13 +488,14 @@ animation = &"attack"
 frame_progress = 0.705713
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, -12)
 shape = SubResource("RectangleShape2D_ehxpa")
 
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_jci0w")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_ghlwf")
+hit_material = SubResource("ShaderMaterial_1h005")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 unique_name_in_owner = true

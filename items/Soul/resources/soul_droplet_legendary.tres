@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_u2ib0")
 name = "Soul Droplet"
-droplet_index = 5
-xp_value_index = 5
+droplet_index = 4
+xp_value_index = 4

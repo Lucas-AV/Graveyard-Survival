@@ -1,6 +1,6 @@
 [gd_scene load_steps=56 format=3 uid="uid://cf2ocf6y3jyf1"]
 
-[ext_resource type="Texture2D" uid="uid://b6o668w6upfuk" path="res://scenes/Dungeon Planner/Gate_forest-Sheet.png" id="1_0fcut"]
+[ext_resource type="Texture2D" uid="uid://b6o668w6upfuk" path="res://Objects/Gate/Gate_forest-Sheet.png" id="1_0fcut"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wx3m3"]
 atlas = ExtResource("1_0fcut")

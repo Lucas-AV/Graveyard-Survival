@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3p02fttl5jv"
-path="res://.godot/imported/tileset_floresta.png-fa69c3d314515031646c4e0305453feb.ctex"
+uid="uid://dfduuw22lapmb"
+path="res://.godot/imported/soul coin.png-eae89b63db19d170491aef8e6e7ee5a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Dungeon Planner/tileset_floresta.png"
-dest_files=["res://.godot/imported/tileset_floresta.png-fa69c3d314515031646c4e0305453feb.ctex"]
+source_file="res://assets/soul coin.png"
+dest_files=["res://.godot/imported/soul coin.png-eae89b63db19d170491aef8e6e7ee5a4.ctex"]
 
 [params]
 

@@ -1,9 +1,52 @@
-[gd_scene format=3 uid="uid://ji643x0yt8bp"]
+[gd_scene load_steps=3 format=3 uid="uid://bl86cm5i8ar4u"]
 
-[node name="UpgradeCardUI" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[ext_resource type="Script" path="res://UI/UpgradeCardUI/upgrade_card_ui.gd" id="1_b62ty"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i68u8"]
+bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="UpgradeCardUI" type="PanelContainer"]
+custom_minimum_size = Vector2(110, 150)
+offset_right = 110.0
+offset_bottom = 150.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_i68u8")
+script = ExtResource("1_b62ty")
+
+[node name="Content" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="Content"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Title"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(98, 0)
+layout_mode = 2
+size_flags_vertical = 3
+text = "Description of the current upgrade"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="CurrentLevel" type="Label" parent="Content"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+text = "Lv. 0/10"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -24,8 +24,8 @@ MetaProgression="*res://MetaSystem/MetaProgression/MetaProgression.tscn"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=960
+window/size/viewport_width=1600
+window/size/viewport_height=900
 window/stretch/mode="canvas_items"
 window/stretch/scale=4.0
 

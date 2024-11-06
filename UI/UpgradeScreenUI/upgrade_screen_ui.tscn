@@ -1,9 +1,22 @@
-[gd_scene format=3 uid="uid://bl86cm5i8ar4u"]
+[gd_scene load_steps=3 format=3 uid="uid://ji643x0yt8bp"]
 
-[node name="UpgradeScreenUI" type="Control"]
-layout_mode = 3
+[ext_resource type="Script" path="res://UI/UpgradeScreenUI/upgrade_screen_ui.gd" id="1_6vv8c"]
+[ext_resource type="PackedScene" uid="uid://bl86cm5i8ar4u" path="res://UI/UpgradeCardUI/upgrade_card_ui.tscn" id="2_nnifa"]
+
+[node name="UpgradeCardUI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_6vv8c")
+upgrade_card_scene = ExtResource("2_nnifa")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="UpgradeCardHBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4

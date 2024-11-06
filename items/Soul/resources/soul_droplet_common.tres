@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_tvtmk")
 name = "Soul Droplet"
-droplet_index = 1
-xp_value_index = 1
+droplet_index = 0
+xp_value_index = 0

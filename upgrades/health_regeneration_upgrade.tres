@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="GeneralUpgrade" load_steps=2 format=3 uid="uid://bcsd0awy8ox5w"]
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://bcsd0awy8ox5w"]
 
 [ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_d0b4e"]
 
@@ -6,5 +6,5 @@
 script = ExtResource("1_d0b4e")
 id = "health_regeneration"
 name = "Health Regeneration"
-description = ""
-max_quantity = 0
+description = "Gain 1% of health regeneration."
+max_quantity = 10

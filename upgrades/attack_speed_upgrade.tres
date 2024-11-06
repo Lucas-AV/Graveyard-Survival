@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="GeneralUpgrade" load_steps=2 format=3 uid="uid://jyth4r6s3ct"]
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://jyth4r6s3ct"]
 
 [ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_hqpxo"]
 
 [resource]
 script = ExtResource("1_hqpxo")
-id = ""
-name = ""
-description = ""
-max_quantity = 0
+id = "attack_speed"
+name = "Attack Speed"
+description = "Increases player attack speed by 10%."
+max_quantity = 10
