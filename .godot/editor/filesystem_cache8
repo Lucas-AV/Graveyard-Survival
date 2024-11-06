@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730917477
+::res://::1730919104
 camera.gd::GDScript::-1::1730822097::0::1::::<>Camera2D<>::
 camera.tscn::PackedScene::4102193502512725340::1730822097::0::1::::<><>::res://camera.gd
 icon.svg::CompressedTexture2D::1888965920973442060::1730743425::1730910104::1::::<><>::
 README.md::TextFile::-1::1730743425::0::1::::<><>::
-::res://assets/::1730917156
-::res://assets/Enemies/::1730917477
+::res://assets/::1730918985
+::res://assets/Enemies/::1730917478
 GJ24 Golem Walk.png::CompressedTexture2D::1401519758561394265::1730917477::1730917478::1::::<><>::
 ::res://assets/Fonts/::1730913585
 rockbond_font_theme.tres::Theme::1784279181348757766::1730913585::0::1::::<><>::uid://brb0cij2oa6uv::::res://assets/Fonts/NbPixelFonts/Rockboxcond12.ttf
@@ -45,6 +45,8 @@ TinyUnicode.ttf::FontFile::6797225205501539156::1730836191::1730910104::1::::<><
 TripleN.ttf::FontFile::3650418690564736554::1730836191::1730910104::1::::<><>::
 Unknown.ttf::FontFile::540082008277860406::1730836191::1730910104::1::::<><>::
 Zicons.ttf::FontFile::6099955281571424550::1730836191::1730910104::1::::<><>::
+::res://assets/Souls/::1730920485
+souls.png::CompressedTexture2D::3011930183278090404::1730920291::1730920485::1::::<><>::
 ::res://components/::1730822097
 ::res://components/DeathComponent/::1730910104
 death_component.gd::GDScript::-1::1730822097::0::1::::DeathComponent<>Node2D<>::
@@ -59,9 +61,9 @@ health_component.tscn::PackedScene::7987442895117373473::1730909846::0::1::::<><
 ::res://components/HitboxComponent/::1730850121
 hitbox_component.gd::GDScript::-1::1730822097::0::1::::HitboxComponent<>Area2D<>::
 hitbox_component.tscn::PackedScene::3232324427761106909::1730850121::0::1::::<><>::res://components/HitboxComponent/hitbox_component.gd
-::res://components/HitFlashComponent/::1730917191
-hit_flash_component.gd::GDScript::-1::1730909879::0::1::::HitFlashComponent<>Node<>::
-hit_flash_component.gdshader::Shader::-1::1730917191::0::1::::<><>::
+::res://components/HitFlashComponent/::1730920828
+hit_flash_component.gd::GDScript::-1::1730920828::0::1::::HitFlashComponent<>Node<>::
+hit_flash_component.gdshader::Shader::-1::1730920896::0::1::::<><>::
 hit_flash_component.tscn::PackedScene::5362934847101314383::1730850121::0::1::::<><>::res://components/HitFlashComponent/hit_flash_component.gd
 hit_flash_component_material.tres::ShaderMaterial::1820478704271076599::1730847311::0::1::::<><>::res://components/HitFlashComponent/hit_flash_component.gdshader
 ::res://components/HurtboxComponent/::1730850121
@@ -83,9 +85,9 @@ sprite sheet.png::CompressedTexture2D::4163877819449161128::1730844969::17309101
 SpriteTest.png::CompressedTexture2D::1238725643671044457::1730842112::1730910104::1::::<><>::
 ::res://GDD/::1730822097
 GDD Ver1.txt::TextFile::-1::1730822097::0::1::::<><>::
-::res://items/::1730910104
-UpgradeSpriteTemporary.png::CompressedTexture2D::7618200879205992020::1730835373::1730910104::1::::<><>::
-::res://items/power_upgrade/::1730835401
+::res://items/::1730920888
+::res://items/Soul/::1730920888
+soul_item.tscn::PackedScene::4928511501374951885::1730920896::0::1::::<><>::
 ::res://managers/::1730909846
 ::res://managers/EnemyManager/::1730909846
 enemy_manager.gd::GDScript::-1::1730909846::0::1::::<>Node<>::
@@ -93,8 +95,8 @@ enemy_manager.tscn::PackedScene::6676251094768371030::1730909846::0::1::::<><>::
 ::res://managers/ExperienceManager/::1730909846
 experience_manager.gd::GDScript::-1::1730909846::0::1::::ExperienceManager<>Node<>::
 experience_manager.tscn::PackedScene::3851287874503775624::1730909846::0::1::::<><>::res://managers/ExperienceManager/experience_manager.gd
-::res://managers/GameEvents/::1730909879
-game_events.gd::GDScript::-1::1730909879::0::1::::<>Node<>::
+::res://managers/GameEvents/::1730920828
+game_events.gd::GDScript::-1::1730920828::0::1::::<>Node<>::
 game_events.tscn::PackedScene::2967391105159222241::1730859396::0::1::::<><>::res://managers/GameEvents/game_events.gd
 ::res://managers/TimerManager/::1730909846
 TimerManager.tscn::PackedScene::1823893284921241961::1730909846::0::1::::<><>::res://managers/TimerManager/timer_manager.gd<>uid://bo3cin4tsynim::::res://UI/DeathScreen/death_screen.tscn
@@ -117,10 +119,10 @@ meta_move_speed.tres::Resource/MetaUpgrade::1478721032830733231::1730910860::0::
 meta_regeneration.tres::Resource/MetaUpgrade::7873997636235260022::1730910889::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
 ::res://resources/::1730749787
 ::res://scenes/::1730829865
-::res://scenes/Dungeon Planner/::1730917190
-example_layer_map.gd::GDScript::-1::1730917077::0::1::::<>Node<>::
-example_layer_map.tres::TileSet::7096912699716583157::1730909879::0::1::::<><>::uid://dxtxh5j1xpwo5::::res://scenes/Dungeon Planner/Planner Tilemap.png
-example_layer_map.tscn::PackedScene::2340635363296287000::1730917190::0::1::::<><>::uid://byper67xtmy5q::::res://camera.tscn<>res://scenes/Dungeon Planner/example_layer_map.gd<>uid://cl5a38owdxida::::res://entities/player/player.tscn<>uid://bo3cin4tsynim::::res://UI/DeathScreen/death_screen.tscn<>uid://dcig6bn6db0gx::::res://UI/TimerUI/timer_UI.tscn<>uid://c8d2d6jpnsp62::::res://scenes/Dungeon Planner/example_layer_map.tres<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn<>uid://c2ea46of3cu2a::::res://managers/EnemyManager/enemy_manager.tscn<>uid://08rix4aqk5gv::::res://managers/TimerManager/TimerManager.tscn
+::res://scenes/Dungeon Planner/::1730920828
+example_layer_map.gd::GDScript::-1::1730920828::0::1::::<>Node<>::
+example_layer_map.tres::TileSet::7096912699716583157::1730920828::0::1::::<><>::uid://dxtxh5j1xpwo5::::res://scenes/Dungeon Planner/Planner Tilemap.png
+example_layer_map.tscn::PackedScene::2340635363296287000::1730920828::0::1::::<><>::uid://byper67xtmy5q::::res://camera.tscn<>res://scenes/Dungeon Planner/example_layer_map.gd<>uid://cl5a38owdxida::::res://entities/player/player.tscn<>uid://bo3cin4tsynim::::res://UI/DeathScreen/death_screen.tscn<>uid://dcig6bn6db0gx::::res://UI/TimerUI/timer_UI.tscn<>uid://c8d2d6jpnsp62::::res://scenes/Dungeon Planner/example_layer_map.tres<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn<>uid://c2ea46of3cu2a::::res://managers/EnemyManager/enemy_manager.tscn<>uid://08rix4aqk5gv::::res://managers/TimerManager/TimerManager.tscn
 Gate.tscn::PackedScene::5180377706056455148::1730910676::0::1::::<><>::uid://b6o668w6upfuk::::res://scenes/Dungeon Planner/Gate_forest-Sheet.png
 Gate_forest-Sheet.png::CompressedTexture2D::4593115480107826782::1730826848::1730910104::1::::<><>::
 Planner Tilemap.png::CompressedTexture2D::8814239214288563002::1730822097::1730910104::1::::<><>::
@@ -146,20 +148,20 @@ meta_menu.tscn::PackedScene::4684156111920960992::1730916712::0::1::::<><>::res:
 ::res://UI/MetaUpgradeCardUI/::1730911996
 meta_upgrade_card_ui.gd::GDScript::-1::1730910860::0::1::::<>PanelContainer<>::
 meta_upgrade_card_ui.tscn::PackedScene::4566899422333202291::1730911996::0::1::::<><>::res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd
-::res://UI/PauseUI/::1730917191
-pause_ui.gd::GDScript::-1::1730917177::0::1::::<>CanvasLayer<>::
-pause_ui.tscn::PackedScene::116356651884513865::1730917191::0::1::::<><>::res://UI/PauseUI/pause_ui.gd
-::res://UI/SettingsUI/::1730916931
-settings_ui.gd::GDScript::-1::1730916931::0::1::::<>CanvasLayer<>::
-settings_ui.tscn::PackedScene::224965941792887671::1730916712::0::1::::<><>::res://UI/SettingsUI/settings_ui.gd
-::res://UI/StartMenuUI/::1730916844
+::res://UI/PauseUI/::1730920828
+pause_ui.gd::GDScript::-1::1730918810::0::1::::<>CanvasLayer<>::
+pause_ui.tscn::PackedScene::116356651884513865::1730920828::0::1::::<><>::res://UI/PauseUI/pause_ui.gd
+::res://UI/SettingsUI/::1730920828
+settings_ui.gd::GDScript::-1::1730918455::0::1::::<>CanvasLayer<>::
+settings_ui.tscn::PackedScene::224965941792887671::1730920828::0::1::::<><>::res://UI/SettingsUI/settings_ui.gd<>uid://c8d2d6jpnsp62::::res://scenes/Dungeon Planner/example_layer_map.tres
+::res://UI/StartMenuUI/::1730920828
 start_menu_ui.gd::GDScript::-1::1730916584::0::1::::<>CanvasLayer<>::
-start_menu_ui.tscn::PackedScene::9063417624702178217::1730916844::0::1::::<><>::res://UI/StartMenuUI/start_menu_ui.gd
+start_menu_ui.tscn::PackedScene::9063417624702178217::1730920828::0::1::::<><>::res://UI/StartMenuUI/start_menu_ui.gd<>uid://c8d2d6jpnsp62::::res://scenes/Dungeon Planner/example_layer_map.tres<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn
 ::res://UI/TimerUI/::1730915610
 timer_ui.gd::GDScript::-1::1730909846::0::1::::<>CanvasLayer<>::
 timer_UI.tscn::PackedScene::7316574495973879839::1730915610::0::1::::<><>::res://UI/TimerUI/timer_ui.gd
-::res://UI/VignetteUI/::1730917191
-vignette_ui.gdshader::Shader::-1::1730917191::0::1::::<><>::
+::res://UI/VignetteUI/::1730920828
+vignette_ui.gdshader::Shader::-1::1730920896::0::1::::<><>::
 vignette_ui.tscn::PackedScene::2238794847219338386::1730822097::0::1::::<><>::res://UI/VignetteUI/vignette_ui.gdshader
 ::res://upgrades/::1730835923
 attack_power_upgrade.tres::Resource/GeneralUpgrade::8111146296556653663::1730835923::0::1::::<><>::res://upgrades/general_upgrade.gd

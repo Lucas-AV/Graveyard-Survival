@@ -1,3 +1,8 @@
+CollisionShape2D
+Area2D
+VisibleOnScreenNotifier2D
+VisibleOnScreenEnabler2D
+Sprite2D
 TileMapLayer
 CheckBox
 HSlider
@@ -8,7 +13,3 @@ MarginContainer
 Container
 Button
 Timer
-ProgressBar
-TimeManager
-Node
-GridContainer

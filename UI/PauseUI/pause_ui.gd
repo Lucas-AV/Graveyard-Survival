@@ -14,12 +14,7 @@ func _ready():
 
 func _unhandled_input(event):
 	if event.is_action_pressed("pause") && !is_closing:
-		if(is_setting_pressed):
-			self.visible = true
-			is_setting_pressed = false
-			on_settings_closed(settings_instance)
-		else:
-			close()
+		close()
 		get_tree().root.set_input_as_handled()
 
 func close(): 
@@ -44,8 +39,8 @@ func on_settings():
 	add_child(settings_instance)
 	settings_instance.back_pressed.connect(on_settings_closed.bind(settings_instance))
 
-func on_settings_closed(settings_instance: Node):
-	settings_instance.queue_free()
+func on_settings_closed(_settings_instance: Node):
+	_settings_instance.queue_free()
 
 func on_quit():
 	get_tree().paused = false 
