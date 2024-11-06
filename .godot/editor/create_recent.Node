@@ -1,3 +1,4 @@
+TileMapLayer
 CheckBox
 HSlider
 Label
@@ -11,5 +12,3 @@ ProgressBar
 TimeManager
 Node
 GridContainer
-TileMapLayer
-CanvasLayer
