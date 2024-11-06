@@ -21,3 +21,14 @@ res://items/Soul/resources/soul_droplet_epic.tres
 res://items/Soul/resources/soul_droplet_legendary.tres
 res://items/Soul/resources/soul_droplet_rare.tres
 res://items/Soul/resources/soul_droplet_uncommon.tres
+res://UI/ExperienceBarUI/experience_bar_ui.tscn
+res://UI/ExperienceBarUI/experience_bar_ui.gd
+res://scenes/Dungeon Planner/Gate.tscn
+res://managers/ExperienceManager/experience_manager.tscn
+res://managers/ExperienceManager/experience_manager.gd
+res://UI/SettingsUI/settings_ui.gd
+res://managers/UpgradeManager/upgrade_manager.tscn
+res://managers/UpgradeManager/upgrade_manager.gd
+res://upgrades/general_upgrade.gd
+res://UI/UpgradeScreenUI/upgrade_screen_ui.tscn
+res://UI/UpgradeCardUI/upgrade_card_ui.tscn

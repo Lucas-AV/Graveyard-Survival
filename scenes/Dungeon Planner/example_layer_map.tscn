@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://8l26mmpxrvg7"]
+[gd_scene load_steps=12 format=4 uid="uid://8l26mmpxrvg7"]
 
 [ext_resource type="PackedScene" uid="uid://byper67xtmy5q" path="res://camera.tscn" id="1_cotku"]
 [ext_resource type="Script" path="res://scenes/Dungeon Planner/example_layer_map.gd" id="1_cu0ef"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://dcig6bn6db0gx" path="res://UI/TimerUI/timer_UI.tscn" id="3_oyn48"]
 [ext_resource type="TileSet" uid="uid://c8d2d6jpnsp62" path="res://scenes/Dungeon Planner/example_layer_map.tres" id="4_3bhb1"]
 [ext_resource type="PackedScene" uid="uid://65qvhnlmn04m" path="res://UI/VignetteUI/vignette_ui.tscn" id="4_xfka8"]
+[ext_resource type="PackedScene" uid="uid://b0ev6k1mqfb5j" path="res://UI/ExperienceBarUI/experience_bar_ui.tscn" id="5_wjtjf"]
+[ext_resource type="PackedScene" uid="uid://bu4ufb2c0ckyq" path="res://managers/ExperienceManager/experience_manager.tscn" id="9_mmdsv"]
 [ext_resource type="PackedScene" uid="uid://c2ea46of3cu2a" path="res://managers/EnemyManager/enemy_manager.tscn" id="9_qfodl"]
 [ext_resource type="PackedScene" uid="uid://08rix4aqk5gv" path="res://managers/TimerManager/TimerManager.tscn" id="10_l6yrt"]
 
@@ -14,8 +16,15 @@
 script = ExtResource("1_cu0ef")
 death_screen = ExtResource("2_rsxg2")
 
-[node name="TimerUI" parent="." node_paths=PackedStringArray("time_manager") instance=ExtResource("3_oyn48")]
-time_manager = NodePath("../Managers/TimerManager")
+[node name="UI" type="Node" parent="."]
+
+[node name="TimerUI" parent="UI" node_paths=PackedStringArray("time_manager") instance=ExtResource("3_oyn48")]
+time_manager = NodePath("../../Managers/TimerManager")
+
+[node name="VignetteUI" parent="UI" instance=ExtResource("4_xfka8")]
+
+[node name="ExperienceBarUI" parent="UI" node_paths=PackedStringArray("experience_manager") instance=ExtResource("5_wjtjf")]
+experience_manager = NodePath("../../Managers/ExperienceManager")
 
 [node name="Camera" parent="." instance=ExtResource("1_cotku")]
 target = NodePath("../entities/Player")
@@ -31,9 +40,9 @@ tile_set = ExtResource("4_3bhb1")
 position = Vector2(192, 192)
 collision_layer = 0
 
-[node name="VignetteUI" parent="." instance=ExtResource("4_xfka8")]
-
 [node name="Managers" type="Node" parent="."]
+
+[node name="ExperienceManager" parent="Managers" instance=ExtResource("9_mmdsv")]
 
 [node name="EnemyManager" parent="Managers" node_paths=PackedStringArray("time_manager") instance=ExtResource("9_qfodl")]
 time_manager = NodePath("../TimerManager")

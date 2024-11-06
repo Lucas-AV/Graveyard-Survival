@@ -1,5 +1,5 @@
 extends Resource
-class_name GeneralUpgrade
+class_name AbilityUpgrade
 
 @export var id: String
 @export var name: String
