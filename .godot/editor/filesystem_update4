@@ -1,0 +1,26 @@
+res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.tscn
+res://managers/GameEvents/game_events.gd
+res://scenes/Dungeon Planner/example_layer_map.gd
+res://UI/PauseUI/pause_ui.gd
+res://scenes/Dungeon Planner/example_layer_map.tres
+res://UI/VignetteUI/vignette_ui.gdshader
+res://components/HitFlashComponent/hit_flash_component.gd
+res://components/HitFlashComponent/hit_flash_component.gdshader
+res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd
+res://scenes/Dungeon Planner/example_layer_map.tscn
+res://UI/UpgradeCardUI/upgrade_card_ui.tscn
+res://MetaSystem/MetaUpgrades/meta_attack_damage.tres
+res://MetaSystem/MetaUpgrades/meta_attack_speed.tres
+res://MetaSystem/MetaUpgrades/meta_defense.tres
+res://MetaSystem/MetaUpgrades/meta_max_health.tres
+res://MetaSystem/MetaUpgrades/meta_move_speed.tres
+res://MetaSystem/MetaUpgrades/meta_regeneration.tres
+res://MetaSystem/MetaUpgrades/meta_experience_gain.tres
+res://UI/MetaMenu/meta_menu.tscn
+res://UI/MetaMenu/meta_menu.gd
+res://assets/Fonts/rockbond_font_theme.tres
+res://UI/StartMenuUI/start_menu_ui.tscn
+res://UI/StartMenuUI/start_menu_ui.gd
+res://UI/SettingsUI/settings_ui.tscn
+res://entities/golem_enemy/golem_enemy.tscn
+res://entities/golem_enemy/golem_enemy.gd

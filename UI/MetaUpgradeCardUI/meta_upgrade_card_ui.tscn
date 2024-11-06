@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6cifwgoq8phb"]
+[gd_scene load_steps=4 format=3 uid="uid://b6cifwgoq8phb"]
 
 [ext_resource type="Script" path="res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd" id="1_cf3g2"]
-[ext_resource type="Texture2D" uid="uid://bi6abx47pptya" path="res://assets/Souls/souls.png" id="2_rq12r"]
+[ext_resource type="Texture2D" uid="uid://dfduuw22lapmb" path="res://assets/soul coin.png" id="2_pl3d6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a827t"]
 bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
@@ -10,12 +10,8 @@ corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qvd2g"]
-atlas = ExtResource("2_rq12r")
-region = Rect2(16, 0, 16, 16)
-
 [node name="MetaUpgradeCardUI" type="PanelContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(130, 150)
 offset_right = 120.0
 offset_bottom = 150.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_a827t")
@@ -69,14 +65,16 @@ theme_override_constants/separation = 0
 unique_name_in_owner = true
 custom_minimum_size = Vector2(32, 0)
 layout_mode = 2
+size_flags_vertical = 1
 text = "Lv. 0"
+vertical_alignment = 2
 autowrap_mode = 2
 
 [node name="BlankSpace" type="MarginContainer" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Level2" type="Label" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer"]
+[node name="Cost" type="Label" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(32, 0)
 layout_mode = 2
@@ -86,9 +84,13 @@ horizontal_alignment = 2
 vertical_alignment = 2
 autowrap_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
-texture = SubResource("AtlasTexture_qvd2g")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/HBoxContainer/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_pl3d6")
 
 [node name="PurchaseButton" type="Button" parent="MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer"]
 unique_name_in_owner = true

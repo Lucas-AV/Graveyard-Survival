@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t753cpxyrl1r"
-path="res://.godot/imported/GJ24 Golem Walk.png-38aee8fa28fff3727dd8e51ee3d50b3b.ctex"
+path="res://.godot/imported/Spritesheet golem.png-f0bdd94e1a2d8031e7ecb87705a0b18d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Enemies/GJ24 Golem Walk.png"
-dest_files=["res://.godot/imported/GJ24 Golem Walk.png-38aee8fa28fff3727dd8e51ee3d50b3b.ctex"]
+source_file="res://entities/golem_enemy/Spritesheet golem.png"
+dest_files=["res://.godot/imported/Spritesheet golem.png-f0bdd94e1a2d8031e7ecb87705a0b18d.ctex"]
 
 [params]
 

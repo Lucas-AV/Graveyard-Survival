@@ -1,5 +1,6 @@
-TextureRect
 MarginContainer
+Panel
+TextureRect
 HBoxContainer
 CollisionShape2D
 Area2D
@@ -11,5 +12,3 @@ Node
 ProgressBar
 VisibleOnScreenNotifier2D
 VisibleOnScreenEnabler2D
-Sprite2D
-TileMapLayer

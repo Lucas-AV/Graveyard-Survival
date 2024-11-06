@@ -1,10 +1,21 @@
 extends CanvasLayer
 
+signal back_pressed
+
+func on_back_pressed():
+	back_pressed.emit()
+	get_parent().visible = true
+
+
 @export var upgrades: Array[MetaUpgrade] =[]
 var meta_upgrade_card_scene = preload("res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.tscn")
 
 func _ready():
-	get_window().content_scale_factor = 2
+	if(get_parent().get_class() != "StartMenuUI"):
+		%BackButton.visible = false
+	%BackButton.pressed.connect(on_back_pressed)
+		
+	get_window().content_scale_factor = 2.8
 	for upgrade in upgrades:
 		var meta_upgrade = meta_upgrade_card_scene.instantiate()
 		meta_upgrade.set_ability_upgrade(upgrade)
