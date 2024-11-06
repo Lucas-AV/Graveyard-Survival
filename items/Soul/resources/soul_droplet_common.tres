@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SoulDropletConfig" load_steps=2 format=3 uid="uid://bptmdkgixgmnd"]
+
+[ext_resource type="Script" path="res://items/Soul/soul_droplet_config.gd" id="1_tvtmk"]
+
+[resource]
+script = ExtResource("1_tvtmk")
+name = "Soul Droplet"
+droplet_index = 1
+xp_value_index = 1

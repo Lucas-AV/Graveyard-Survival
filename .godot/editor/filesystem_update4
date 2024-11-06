@@ -11,3 +11,13 @@ res://UI/SettingsUI/settings_ui.tscn
 res://items/Soul/soul_droplet.tscn
 res://items/Soul/soul_droplet.gd
 res://UI/PauseUI/pause_ui.gd
+res://components/DropComponent/drop_component.tscn
+res://components/DropComponent/drop_component.gd
+res://items/Soul/soul_droplet_config.gd
+res://entities/basic_enemy/basic_enemy.tscn
+res://items/Soul/resources/soul_droplet_basic.tres
+res://items/Soul/resources/soul_droplet_common.tres
+res://items/Soul/resources/soul_droplet_epic.tres
+res://items/Soul/resources/soul_droplet_legendary.tres
+res://items/Soul/resources/soul_droplet_rare.tres
+res://items/Soul/resources/soul_droplet_uncommon.tres
