@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MetaUpgrade" load_steps=2 format=3 uid="uid://da2miph4io40b"]
+
+[ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="1_y0giq"]
+
+[resource]
+script = ExtResource("1_y0giq")
+id = "meta_critical"
+max_quantity = 1
+porcentage = 0.0
+currency_cost = 100
+title = "Meta Critical"
+description = "Increases the player critical chance by 1%."

@@ -23,6 +23,7 @@ func _ready():
 	%Current.text = str(MetaProgression.get_upgrade_currency())
 	
 func on_continue_pressed():
+	get_window().content_scale_factor = 1
 	if current_scene == "start":
 		self.queue_free()
 		get_parent().visible = true

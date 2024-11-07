@@ -23,9 +23,10 @@
 [ext_resource type="PackedScene" uid="uid://ji643x0yt8bp" path="res://UI/UpgradeScreenUI/upgrade_screen_ui.tscn" id="21_kr0fi"]
 [ext_resource type="AudioStream" uid="uid://ce5ysphch6j1g" path="res://scenes/Forest/forest_background_music.mp3" id="22_jes2f"]
 
-[node name="ForestMap" type="Node"]
+[node name="ForestMap" type="Node" node_paths=PackedStringArray("player")]
 script = ExtResource("1_cu8fr")
 death_screen = ExtResource("2_g17ve")
+player = NodePath("entities/Player")
 
 [node name="UI" type="Node2D" parent="."]
 

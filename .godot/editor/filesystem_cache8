@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730978670
+::res://::1730985427
 camera.gd::GDScript::-1::1730806119::0::1::::<>Camera2D<>::
 camera.tscn::PackedScene::4102193502512725340::1730806119::0::1::::<><>::res://camera.gd
+default_bus_layout.tres::AudioBusLayout::259151600007746031::1730981514::0::1::::<><>::
 icon.svg::CompressedTexture2D::1888965920973442060::1730722115::1730977991::1::::<><>::
 Necessidades.txt::TextFile::-1::1730978478::0::1::::<><>::
 README.md::TextFile::-1::1730721081::0::1::::<><>::
-default_bus_layout.tres::AudioBusLayout::259151600007746031::1730978670::0::1::::<><>::
 ::res://ability/::1730977926
 ::res://ability/Sword/::1730978010
 sword_ability.gd::GDScript::-1::1730977926::0::1::::SwordAbility<>Node2D<>::
@@ -74,9 +74,9 @@ health_component.tscn::PackedScene::7987442895117373473::1730977926::0::1::::<><
 ::res://components/HitboxComponent/::1730978011
 hitbox_component.gd::GDScript::-1::1730806119::0::1::::HitboxComponent<>Area2D<>::
 hitbox_component.tscn::PackedScene::3232324427761106909::1730978011::0::1::::<><>::res://components/HitboxComponent/hitbox_component.gd
-::res://components/HitFlashComponent/::1730980666
+::res://components/HitFlashComponent/::1730988622
 hit_flash_component.gd::GDScript::-1::1730978009::0::1::::HitFlashComponent<>Node<>::
-hit_flash_component.gdshader::Shader::-1::1730980666::0::1::::<><>::
+hit_flash_component.gdshader::Shader::-1::1730988663::0::1::::<><>::
 hit_flash_component.tscn::PackedScene::5362934847101314383::1730892583::0::1::::<><>::res://components/HitFlashComponent/hit_flash_component.gd
 hit_flash_component_material.tres::ShaderMaterial::1820478704271076599::1730892583::0::1::::<><>::res://components/HitFlashComponent/hit_flash_component.gdshader
 ::res://components/HurtboxComponent/::1730978771
@@ -86,16 +86,16 @@ hurtbox_component.tscn::PackedScene::7289528662899733916::1730978012::0::1::::<>
 velocity_component.gd::GDScript::-1::1730892583::0::1::::VelocityComponent<>Node<>::
 velocity_component.tscn::PackedScene::2791530399888236234::1730813282::0::1::::<><>::res://components/VelocityComponent/velocity_component.gd
 ::res://entities/::1730977926
-::res://entities/basic_enemy/::1730980665
+::res://entities/basic_enemy/::1730982813
 basic_enemy.gd::GDScript::-1::1730978862::0::1::::BasicEnemy<>CharacterBody2D<>::
-basic_enemy.tscn::PackedScene::2205870271923670627::1730980665::0::1::::<><>::res://entities/basic_enemy/basic_enemy.gd<>uid://dl2gauh6k0ujx::::res://components/HealthComponent/health_component.tscn<>uid://r8hgk5glql61::::res://components/DropComponent/drop_component.tscn<>uid://djrei1dsqu6tg::::res://components/DeathComponent/death_component.tscn<>uid://cchn4ng6sdkpp::::res://items/Soul/soul_droplet.tscn<>uid://bf1idldpccv2q::::res://components/VelocityComponent/velocity_component.tscn<>uid://1la7i45sgmfc::::res://items/Soul/resources/soul_droplet_basic.tres<>uid://db4dqbya1mmwa::::res://components/HurtboxComponent/hurtbox_component.tscn<>res://components/HitFlashComponent/hit_flash_component.gdshader<>uid://cin30u6r06uxj::::res://components/HitFlashComponent/hit_flash_component.tscn<>uid://caan6tn2rqnns::::res://entities/Saproling Enemy/Spritesheet saprofita.png<>uid://bmb058g7u5yrl::::res://components/HitboxComponent/hitbox_component.tscn
+basic_enemy.tscn::PackedScene::2205870271923670627::1730982813::0::1::::<><>::res://entities/basic_enemy/basic_enemy.gd<>uid://dl2gauh6k0ujx::::res://components/HealthComponent/health_component.tscn<>uid://r8hgk5glql61::::res://components/DropComponent/drop_component.tscn<>uid://djrei1dsqu6tg::::res://components/DeathComponent/death_component.tscn<>uid://cchn4ng6sdkpp::::res://items/Soul/soul_droplet.tscn<>uid://bf1idldpccv2q::::res://components/VelocityComponent/velocity_component.tscn<>uid://1la7i45sgmfc::::res://items/Soul/resources/soul_droplet_basic.tres<>uid://db4dqbya1mmwa::::res://components/HurtboxComponent/hurtbox_component.tscn<>res://components/HitFlashComponent/hit_flash_component.gdshader<>uid://cin30u6r06uxj::::res://components/HitFlashComponent/hit_flash_component.tscn<>uid://caan6tn2rqnns::::res://entities/Saproling Enemy/Spritesheet saprofita.png<>uid://bmb058g7u5yrl::::res://components/HitboxComponent/hitbox_component.tscn
 ::res://entities/golem_enemy/::1730977991
 golem_enemy.gd::GDScript::-1::1730977926::0::1::::GolemEnemy<>CharacterBody2D<>::
 golem_enemy.tscn::PackedScene::8723755686969256054::1730977926::0::1::::<><>::res://entities/golem_enemy/golem_enemy.gd<>uid://dl2gauh6k0ujx::::res://components/HealthComponent/health_component.tscn<>uid://r8hgk5glql61::::res://components/DropComponent/drop_component.tscn<>uid://cchn4ng6sdkpp::::res://items/Soul/soul_droplet.tscn<>uid://1la7i45sgmfc::::res://items/Soul/resources/soul_droplet_basic.tres<>uid://bf1idldpccv2q::::res://components/VelocityComponent/velocity_component.tscn<>uid://cin30u6r06uxj::::res://components/HitFlashComponent/hit_flash_component.tscn<>res://components/HitFlashComponent/hit_flash_component.gdshader<>uid://djrei1dsqu6tg::::res://components/DeathComponent/death_component.tscn<>uid://t753cpxyrl1r::::res://entities/golem_enemy/Spritesheet golem.png<>uid://db4dqbya1mmwa::::res://components/HurtboxComponent/hurtbox_component.tscn<>uid://bmb058g7u5yrl::::res://components/HitboxComponent/hitbox_component.tscn
 Spritesheet golem.png::CompressedTexture2D::1401519758561394265::1730977926::1730977991::1::::<><>::
-::res://entities/player/::1730978010
-player.gd::GDScript::-1::1730977926::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::5606901738158006958::1730978010::0::1::::<><>::res://entities/player/player.gd<>uid://cfb8dl87upkcv::::res://ability/Sword/controller/sword_ability_controller.tscn<>uid://dl2gauh6k0ujx::::res://components/HealthComponent/health_component.tscn<>uid://rwbvoydx4rdh::::res://entities/player/SpriteTest.png<>uid://djrei1dsqu6tg::::res://components/DeathComponent/death_component.tscn<>uid://b0lapu80pn0lw::::res://entities/player/sprite sheet.png<>uid://viohhxf8th3u::::res://entities/player/sprite2.png<>uid://cin30u6r06uxj::::res://components/HitFlashComponent/hit_flash_component.tscn<>res://components/HitFlashComponent/hit_flash_component.gdshader
+::res://entities/player/::1730982832
+player.gd::GDScript::-1::1730982832::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::5606901738158006958::1730982832::0::1::::<><>::res://entities/player/player.gd<>uid://cfb8dl87upkcv::::res://ability/Sword/controller/sword_ability_controller.tscn<>uid://dl2gauh6k0ujx::::res://components/HealthComponent/health_component.tscn<>uid://rwbvoydx4rdh::::res://entities/player/SpriteTest.png<>uid://djrei1dsqu6tg::::res://components/DeathComponent/death_component.tscn<>uid://b0lapu80pn0lw::::res://entities/player/sprite sheet.png<>uid://viohhxf8th3u::::res://entities/player/sprite2.png<>uid://cin30u6r06uxj::::res://components/HitFlashComponent/hit_flash_component.tscn<>res://components/HitFlashComponent/hit_flash_component.gdshader
 sprite2.png::CompressedTexture2D::1491343680353207664::1730892583::1730977991::1::::<><>::
 sprite sheet.png::CompressedTexture2D::4163877819449161128::1730892583::1730977991::1::::<><>::
 SpriteTest.png::CompressedTexture2D::1238725643671044457::1730892583::1730977991::1::::<><>::
@@ -105,9 +105,9 @@ Spritesheet saprofita.png::CompressedTexture2D::4773687067179446576::1730977926:
 ::res://GDD/::1730814537
 GDD Ver1.txt::TextFile::-1::1730814537::0::1::::<><>::
 ::res://items/::1730977926
-::res://items/Soul/::1730978011
+::res://items/Soul/::1730986900
 soul_droplet.gd::GDScript::-1::1730977926::0::1::::SoulDroplet<>Node2D<>::
-soul_droplet.tscn::PackedScene::4928511501374951885::1730978011::0::1::::<><>::res://items/Soul/soul_droplet.gd<>uid://bi6abx47pptya::::res://assets/Souls/souls.png
+soul_droplet.tscn::PackedScene::4928511501374951885::1730986900::0::1::::<><>::res://items/Soul/soul_droplet.gd<>uid://bi6abx47pptya::::res://assets/Souls/souls.png
 soul_droplet_config.gd::GDScript::-1::1730977926::0::1::::SoulDropletConfig<>Resource<>::
 ::res://items/Soul/resources/::1730977926
 soul_droplet_basic.tres::Resource/SoulDropletConfig::1847675701661952044::1730977926::0::1::::<><>::res://items/Soul/soul_droplet_config.gd
@@ -117,12 +117,12 @@ soul_droplet_legendary.tres::Resource/SoulDropletConfig::2559887362153597424::17
 soul_droplet_rare.tres::Resource/SoulDropletConfig::802795036619967972::1730977926::0::1::::<><>::res://items/Soul/soul_droplet_config.gd
 soul_droplet_uncommon.tres::Resource/SoulDropletConfig::2920718422263498948::1730977926::0::1::::<><>::res://items/Soul/soul_droplet_config.gd
 ::res://managers/::1730898548
-::res://managers/EnemyManager/::1730897827
+::res://managers/EnemyManager/::1730982814
 enemy_manager.gd::GDScript::-1::1730896007::0::1::::<>Node<>::
-enemy_manager.tscn::PackedScene::6676251094768371030::1730897827::0::1::::<><>::res://managers/EnemyManager/enemy_manager.gd<>uid://6osmjos15ael::::res://entities/basic_enemy/basic_enemy.tscn
-::res://managers/ExperienceManager/::1730977926
-experience_manager.gd::GDScript::-1::1730977926::0::1::::ExperienceManager<>Node<>::
-experience_manager.tscn::PackedScene::3851287874503775624::1730900159::0::1::::<><>::res://managers/ExperienceManager/experience_manager.gd
+enemy_manager.tscn::PackedScene::6676251094768371030::1730982814::0::1::::<><>::res://managers/EnemyManager/enemy_manager.gd<>uid://6osmjos15ael::::res://entities/basic_enemy/basic_enemy.tscn
+::res://managers/ExperienceManager/::1730982241
+experience_manager.gd::GDScript::-1::1730982239::0::1::::ExperienceManager<>Node<>::
+experience_manager.tscn::PackedScene::3851287874503775624::1730982241::0::1::::<><>::res://managers/ExperienceManager/experience_manager.gd
 ::res://managers/GameEvents/::1730978008
 game_events.gd::GDScript::-1::1730978008::0::1::::<>Node<>::
 game_events.tscn::PackedScene::2967391105159222241::1730806119::0::1::::<><>::res://managers/GameEvents/game_events.gd
@@ -137,14 +137,17 @@ meta_upgrade.gd::GDScript::-1::1730894052::0::1::::MetaUpgrade<>Resource<>::
 ::res://MetaSystem/MetaProgression/::1730977926
 MetaProgression.tscn::PackedScene::958112668072672638::1730896546::0::1::::<><>::res://MetaSystem/MetaProgression/meta_progression.gd
 meta_progression.gd::GDScript::-1::1730977926::0::1::::<>Node<>::
-::res://MetaSystem/MetaUpgrades/::1730978009
+::res://MetaSystem/MetaUpgrades/::1730988630
 meta_attack_damage.tres::Resource/MetaUpgrade::2676203968900312356::1730978008::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
 meta_attack_speed.tres::Resource/MetaUpgrade::920466212024851908::1730978008::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
+meta_critical.tres::Resource/MetaUpgrade::7215743940696139543::1730988622::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
 meta_defense.tres::Resource/MetaUpgrade::5310234762681063117::1730978008::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
 meta_experience_gain.tres::Resource/MetaUpgrade::92256386359817436::1730978009::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
 meta_max_health.tres::Resource/MetaUpgrade::972594344779602470::1730978008::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
 meta_move_speed.tres::Resource/MetaUpgrade::1478721032830733231::1730978009::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
 meta_regeneration.tres::Resource/MetaUpgrade::7873997636235260022::1730978009::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
+meta_second_chance.tres::Resource/MetaUpgrade::2752960743684942833::1730988663::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
+meta_insta_kill.tres::Resource/MetaUpgrade::2101551867583161582::1730988683::0::1::::<><>::res://MetaSystem/meta_upgrade.gd
 ::res://Objects/::1730977926
 ::res://Objects/Gate/::1730977991
 Gate.tscn::PackedScene::5180377706056455148::1730977926::0::1::::<><>::uid://b6o668w6upfuk::::res://Objects/Gate/Gate_forest-Sheet.png
@@ -157,20 +160,20 @@ example_layer_map.gd::GDScript::-1::1730977927::0::1::::<>Node<>::
 example_layer_map.tres::TileSet::7096912699716583157::1730978008::0::1::::<><>::uid://dxtxh5j1xpwo5::::res://scenes/Dungeon Planner/Planner Tilemap.png
 example_layer_map.tscn::PackedScene::2340635363296287000::1730977927::0::1::::<><>::uid://byper67xtmy5q::::res://camera.tscn<>res://scenes/Dungeon Planner/example_layer_map.gd<>uid://cl5a38owdxida::::res://entities/player/player.tscn<>uid://bo3cin4tsynim::::res://UI/DeathScreen/death_screen.tscn<>uid://dcig6bn6db0gx::::res://UI/TimerUI/timer_UI.tscn<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn<>uid://b0ev6k1mqfb5j::::res://UI/ExperienceBarUI/experience_bar_ui.tscn<>uid://bu4ufb2c0ckyq::::res://managers/ExperienceManager/experience_manager.tscn<>uid://c2ea46of3cu2a::::res://managers/EnemyManager/enemy_manager.tscn<>uid://08rix4aqk5gv::::res://managers/TimerManager/TimerManager.tscn<>uid://dviqjf1s3o1he::::res://managers/UpgradeManager/upgrade_manager.tscn<>res://upgrades/general_upgrade.gd<>uid://dntdnn8rbw04b::::res://upgrades/attack_power_upgrade.tres<>uid://jyth4r6s3ct::::res://upgrades/attack_speed_upgrade.tres<>uid://gywdq1qovk4w::::res://upgrades/critical_rate_upgrade.tres<>uid://dtkuno60evrga::::res://upgrades/defense_upgrade.tres<>uid://bcsd0awy8ox5w::::res://upgrades/health_regeneration_upgrade.tres<>uid://u01wt6j18os5::::res://upgrades/max_health_upgrade.tres<>uid://6r4eqmduy1lt::::res://upgrades/move_speed_upgrade.tres<>uid://ji643x0yt8bp::::res://UI/UpgradeScreenUI/upgrade_screen_ui.tscn
 Planner Tilemap.png::CompressedTexture2D::8814239214288563002::1730806119::1730977991::1::::<><>::
-::res://scenes/Forest/::1730980245
+::res://scenes/Forest/::1730988622
 forest tilemap.png::CompressedTexture2D::4506227723002224014::1730977927::1730977991::1::::<><>::
 forest_background_music.mp3::AudioStreamMP3::5117018225442146182::1730979706::1730979706::1::::<><>::
-forest_map.gd::GDScript::-1::1730977927::0::1::::<>Node<>::
-forest_map.tscn::PackedScene::7812447269485357701::1730980245::0::1::::<><>::res://scenes/Forest/forest_map.gd<>uid://bo3cin4tsynim::::res://UI/DeathScreen/death_screen.tscn<>uid://dcig6bn6db0gx::::res://UI/TimerUI/timer_UI.tscn<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn<>uid://b0ev6k1mqfb5j::::res://UI/ExperienceBarUI/experience_bar_ui.tscn<>uid://byper67xtmy5q::::res://camera.tscn<>uid://dphb8xrsjbi2e::::res://scenes/Forest/forest_tileset.tres<>uid://cl5a38owdxida::::res://entities/player/player.tscn<>uid://bu4ufb2c0ckyq::::res://managers/ExperienceManager/experience_manager.tscn<>uid://c2ea46of3cu2a::::res://managers/EnemyManager/enemy_manager.tscn<>uid://08rix4aqk5gv::::res://managers/TimerManager/TimerManager.tscn<>uid://dviqjf1s3o1he::::res://managers/UpgradeManager/upgrade_manager.tscn<>res://upgrades/general_upgrade.gd<>uid://dntdnn8rbw04b::::res://upgrades/attack_power_upgrade.tres<>uid://jyth4r6s3ct::::res://upgrades/attack_speed_upgrade.tres<>uid://gywdq1qovk4w::::res://upgrades/critical_rate_upgrade.tres<>uid://dtkuno60evrga::::res://upgrades/defense_upgrade.tres<>uid://bcsd0awy8ox5w::::res://upgrades/health_regeneration_upgrade.tres<>uid://u01wt6j18os5::::res://upgrades/max_health_upgrade.tres<>uid://6r4eqmduy1lt::::res://upgrades/move_speed_upgrade.tres<>uid://ji643x0yt8bp::::res://UI/UpgradeScreenUI/upgrade_screen_ui.tscn<>uid://ce5ysphch6j1g::::res://scenes/Forest/forest_background_music.mp3
-forest_tileset.tres::TileSet::8226666233248477906::1730979776::0::1::::<><>::uid://b5g36asjo43yg::::res://scenes/Forest/forest tilemap.png
+forest_map.gd::GDScript::-1::1730988322::0::1::::<>Node<>::
+forest_map.tscn::PackedScene::7812447269485357701::1730988663::0::1::::<><>::res://scenes/Forest/forest_map.gd<>uid://bo3cin4tsynim::::res://UI/DeathScreen/death_screen.tscn<>uid://dcig6bn6db0gx::::res://UI/TimerUI/timer_UI.tscn<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn<>uid://b0ev6k1mqfb5j::::res://UI/ExperienceBarUI/experience_bar_ui.tscn<>uid://byper67xtmy5q::::res://camera.tscn<>uid://dphb8xrsjbi2e::::res://scenes/Forest/forest_tileset.tres<>uid://cl5a38owdxida::::res://entities/player/player.tscn<>uid://bu4ufb2c0ckyq::::res://managers/ExperienceManager/experience_manager.tscn<>uid://c2ea46of3cu2a::::res://managers/EnemyManager/enemy_manager.tscn<>uid://08rix4aqk5gv::::res://managers/TimerManager/TimerManager.tscn<>uid://dviqjf1s3o1he::::res://managers/UpgradeManager/upgrade_manager.tscn<>res://upgrades/general_upgrade.gd<>uid://dntdnn8rbw04b::::res://upgrades/attack_power_upgrade.tres<>uid://jyth4r6s3ct::::res://upgrades/attack_speed_upgrade.tres<>uid://gywdq1qovk4w::::res://upgrades/critical_rate_upgrade.tres<>uid://dtkuno60evrga::::res://upgrades/defense_upgrade.tres<>uid://bcsd0awy8ox5w::::res://upgrades/health_regeneration_upgrade.tres<>uid://u01wt6j18os5::::res://upgrades/max_health_upgrade.tres<>uid://6r4eqmduy1lt::::res://upgrades/move_speed_upgrade.tres<>uid://ji643x0yt8bp::::res://UI/UpgradeScreenUI/upgrade_screen_ui.tscn<>uid://ce5ysphch6j1g::::res://scenes/Forest/forest_background_music.mp3
+forest_tileset.tres::TileSet::8226666233248477906::1730983470::0::1::::<><>::uid://b5g36asjo43yg::::res://scenes/Forest/forest tilemap.png
 ::res://scripts/::1730806119
 weight_table.gd::GDScript::-1::1730806119::0::1::::WeightTable<>RefCounted<>::
-::res://UI/::1730977926
+::res://UI/::1730980690
 ::res://UI/CharacterPortraitUI/::1730892697
 character_portrait.tscn::PackedScene::1657840435512988060::1730892697::0::1::::<><>::
-::res://UI/DeathScreen/::1730977926
-death_screen.gd::GDScript::-1::1730977926::0::1::::DeathScreen<>CanvasLayer<>::
-death_screen.tscn::PackedScene::3427003520567165904::1730897827::0::1::::<><>::res://UI/DeathScreen/death_screen.gd
+::res://UI/DeathScreen/::1730988499
+death_screen.gd::GDScript::-1::1730987148::0::1::::DeathScreen<>CanvasLayer<>::
+death_screen.tscn::PackedScene::3427003520567165904::1730988499::0::1::::<><>::res://UI/DeathScreen/death_screen.gd
 ::res://UI/ExperienceBarUI/::1730977926
 experience_bar_ui.gd::GDScript::-1::1730977926::0::1::::<>CanvasLayer<>::
 experience_bar_ui.tscn::PackedScene::4150730268084518705::1730977926::0::1::::<><>::res://UI/ExperienceBarUI/experience_bar_ui.gd
@@ -180,22 +183,25 @@ floating_text.tscn::PackedScene::2139360280007886816::1730978012::0::1::::<><>::
 ::res://UI/HealthBarUI/::1730892697
 health_bar_ui.gd::GDScript::-1::1730815479::0::1::::<>CanvasLayer<>::
 health_bar_ui.tscn::PackedScene::5367086769127560181::1730892696::0::1::::<><>::res://UI/HealthBarUI/health_bar_ui.gd
-::res://UI/MetaMenu/::1730980666
-meta_menu.gd::GDScript::-1::1730980664::0::1::::<>CanvasLayer<>::
-meta_menu.tscn::PackedScene::4684156111920960992::1730980666::0::1::::<><>::res://UI/MetaMenu/meta_menu.gd<>res://MetaSystem/meta_upgrade.gd<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn<>uid://beemxn0w64vlc::::res://MetaSystem/MetaUpgrades/meta_attack_damage.tres<>uid://nd47dkfu2g1a::::res://MetaSystem/MetaUpgrades/meta_attack_speed.tres<>uid://chwk15b6mhiav::::res://MetaSystem/MetaUpgrades/meta_defense.tres<>uid://n4eqsxv4feyo::::res://MetaSystem/MetaUpgrades/meta_max_health.tres<>uid://vckk4gnpnt00::::res://MetaSystem/MetaUpgrades/meta_move_speed.tres<>uid://dkghuc2oxoio1::::res://MetaSystem/MetaUpgrades/meta_regeneration.tres<>uid://bkxpjjsf2l1u::::res://MetaSystem/MetaUpgrades/meta_experience_gain.tres<>uid://bi6abx47pptya::::res://assets/Souls/souls.png
+::res://UI/MainMenu/::1730988499
+main_menu.gd::GDScript::-1::1730985418::0::1::::<>Node<>::
+main_menu.tscn::PackedScene::2034130635739722964::1730988499::0::1::::<><>::uid://d2enftxww4agv::::res://UI/StartMenuUI/start_menu_ui.tscn<>res://UI/MainMenu/main_menu.gd<>uid://dphb8xrsjbi2e::::res://scenes/Forest/forest_tileset.tres<>uid://ctje7nbvlgc0a::::res://UI/StartMenuUI/game theme.wav
+::res://UI/MetaMenu/::1730988499
+meta_menu.gd::GDScript::-1::1730986829::0::1::::<>CanvasLayer<>::
+meta_menu.tscn::PackedScene::4684156111920960992::1730988499::0::1::::<><>::res://UI/MetaMenu/meta_menu.gd<>res://MetaSystem/meta_upgrade.gd<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn<>uid://beemxn0w64vlc::::res://MetaSystem/MetaUpgrades/meta_attack_damage.tres<>uid://nd47dkfu2g1a::::res://MetaSystem/MetaUpgrades/meta_attack_speed.tres<>uid://chwk15b6mhiav::::res://MetaSystem/MetaUpgrades/meta_defense.tres<>uid://n4eqsxv4feyo::::res://MetaSystem/MetaUpgrades/meta_max_health.tres<>uid://vckk4gnpnt00::::res://MetaSystem/MetaUpgrades/meta_move_speed.tres<>uid://dkghuc2oxoio1::::res://MetaSystem/MetaUpgrades/meta_regeneration.tres<>uid://bkxpjjsf2l1u::::res://MetaSystem/MetaUpgrades/meta_experience_gain.tres<>uid://dphb8xrsjbi2e::::res://scenes/Forest/forest_tileset.tres<>uid://bi6abx47pptya::::res://assets/Souls/souls.png
 ::res://UI/MetaUpgradeCardUI/::1730978008
 meta_upgrade_card_ui.gd::GDScript::-1::1730977926::0::1::::<>PanelContainer<>::
 meta_upgrade_card_ui.tscn::PackedScene::4566899422333202291::1730978008::0::1::::<><>::res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd<>uid://dfduuw22lapmb::::res://assets/soul coin.png
-::res://UI/PauseUI/::1730978008
-pause_ui.gd::GDScript::-1::1730978008::0::1::::<>CanvasLayer<>::
-pause_ui.tscn::PackedScene::116356651884513865::1730892583::0::1::::<><>::res://UI/PauseUI/pause_ui.gd
-::res://UI/SettingsUI/::1730980666
-settings_ui.gd::GDScript::-1::1730977926::0::1::::<>CanvasLayer<>::
-settings_ui.tscn::PackedScene::224965941792887671::1730980666::0::1::::<><>::res://UI/SettingsUI/settings_ui.gd<>uid://c8d2d6jpnsp62::::res://scenes/Dungeon Planner/example_layer_map.tres<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn
-::res://UI/StartMenuUI/::1730980665
+::res://UI/PauseUI/::1730988499
+pause_ui.gd::GDScript::-1::1730987773::0::1::::<>CanvasLayer<>::
+pause_ui.tscn::PackedScene::116356651884513865::1730988499::0::1::::<><>::res://UI/PauseUI/pause_ui.gd
+::res://UI/SettingsUI/::1730988499
+settings_ui.gd::GDScript::-1::1730981348::0::1::::<>CanvasLayer<>::
+settings_ui.tscn::PackedScene::224965941792887671::1730988499::0::1::::<><>::res://UI/SettingsUI/settings_ui.gd<>uid://c8d2d6jpnsp62::::res://scenes/Dungeon Planner/example_layer_map.tres<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn
+::res://UI/StartMenuUI/::1730988499
 game theme.wav::AudioStreamWAV::6125309494988816794::1730980113::1730980114::1::::<><>::
-start_menu_ui.gd::GDScript::-1::1730980614::0::1::::StartMenuUI<>CanvasLayer<>::
-start_menu_ui.tscn::PackedScene::9063417624702178217::1730980665::0::1::::<><>::res://UI/StartMenuUI/start_menu_ui.gd<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn<>uid://ctje7nbvlgc0a::::res://UI/StartMenuUI/game theme.wav
+start_menu_ui.gd::GDScript::-1::1730984087::0::1::::StartMenuUI<>CanvasLayer<>::
+start_menu_ui.tscn::PackedScene::9063417624702178217::1730988499::0::1::::<><>::res://UI/StartMenuUI/start_menu_ui.gd<>uid://65qvhnlmn04m::::res://UI/VignetteUI/vignette_ui.tscn
 ::res://UI/TimerUI/::1730977926
 timer_ui.gd::GDScript::-1::1730896295::0::1::::<>CanvasLayer<>::
 timer_UI.tscn::PackedScene::7316574495973879839::1730977926::0::1::::<><>::res://UI/TimerUI/timer_ui.gd
@@ -205,8 +211,8 @@ upgrade_card_ui.tscn::PackedScene::3228508904990937410::1730977926::0::1::::<><>
 ::res://UI/UpgradeScreenUI/::1730977926
 upgrade_screen_ui.gd::GDScript::-1::1730977926::0::1::::UpgradeScreen<>CanvasLayer<>::
 upgrade_screen_ui.tscn::PackedScene::650150136926820269::1730977926::0::1::::<><>::res://UI/UpgradeScreenUI/upgrade_screen_ui.gd<>uid://bl86cm5i8ar4u::::res://UI/UpgradeCardUI/upgrade_card_ui.tscn
-::res://UI/VignetteUI/::1730980666
-vignette_ui.gdshader::Shader::-1::1730980666::0::1::::<><>::
+::res://UI/VignetteUI/::1730988622
+vignette_ui.gdshader::Shader::-1::1730988663::0::1::::<><>::
 vignette_ui.tscn::PackedScene::2238794847219338386::1730806119::0::1::::<><>::res://UI/VignetteUI/vignette_ui.gdshader
 ::res://upgrades/::1730977927
 attack_power_upgrade.tres::Resource/AbilityUpgrade::8111146296556653663::1730977927::0::1::::<><>::res://upgrades/general_upgrade.gd

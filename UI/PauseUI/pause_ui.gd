@@ -42,6 +42,7 @@ func on_settings():
 func on_settings_closed(_settings_instance: Node):
 	_settings_instance.queue_free()
 
+# Todo: Modularizar função e botão
 func on_quit():
 	get_tree().paused = false 
-	get_tree().change_scene_to_file("res://UI/StartMenuUI/start_menu_ui.tscn")
+	get_tree().change_scene_to_file("res://UI/MainMenu/main_menu.tscn")

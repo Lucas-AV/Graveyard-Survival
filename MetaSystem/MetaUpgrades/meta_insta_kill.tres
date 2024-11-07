@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MetaUpgrade" load_steps=2 format=3 uid="uid://47aittgxt8r7"]
+
+[ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="1_0lrld"]
+
+[resource]
+script = ExtResource("1_0lrld")
+id = "meta_insta_kill"
+max_quantity = 1
+porcentage = 0.0
+currency_cost = 100
+title = "Meta Insta Kill"
+description = "Add 0.5% of chance to insta kill enemies in one hit"
