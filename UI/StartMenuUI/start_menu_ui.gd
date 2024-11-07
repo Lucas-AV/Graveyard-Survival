@@ -19,7 +19,7 @@ func on_meta_upgrades_menu_closed(meta_upgrades_instance: Node):
 	meta_upgrades_instance.queue_free()
 
 func on_start_pressed():
-	get_tree().change_scene_to_file("res://scenes/Dungeon Planner/example_layer_map.tscn")
+	get_tree().change_scene_to_file("res://scenes/Forest/forest_map.tscn")
 
 func on_settings_pressed():
 	self.visible = false

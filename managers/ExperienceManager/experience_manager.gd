@@ -25,7 +25,9 @@ func increase(value: float, _positive: bool = true):
 		experience_to_next_level += experience_growth_rate
 		experience_updated.emit(current_experience, experience_to_next_level)
 		level_up.emit(current_level)
-
+		MetaProgression.save_upgrades["upgrade_currency"] += value
+		MetaProgression.save()
+	
 func on_collected(value: float):
 	increase(value)
 

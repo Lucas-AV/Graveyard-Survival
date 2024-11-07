@@ -20,6 +20,8 @@ func load_meta_upgrades():
 		speed = speed * MetaProgression.get_math_pow_upgrade("meta_move_speed")
 	elif MetaProgression.save_upgrades.has("meta_defense"):
 		health_component.defense += MetaProgression.get_quantity_from_meta_upgrade("meta_defense")
+	elif MetaProgression.save_upgrades.has("meta_regeneration"):
+		health_component.regeneration_clock_delay *= 1 - float(MetaProgression.get_quantity_from_meta_upgrade("meta_regeneration"))/100
 
 func _ready():
 	collision_area_2d.body_entered.connect(on_enemy_body_entered)

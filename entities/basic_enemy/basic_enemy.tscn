@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://6osmjos15ael"]
+[gd_scene load_steps=25 format=3 uid="uid://6osmjos15ael"]
 
 [ext_resource type="Script" path="res://entities/basic_enemy/basic_enemy.gd" id="1_ihs6w"]
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_q2fs8"]
@@ -10,13 +10,25 @@
 [ext_resource type="PackedScene" uid="uid://db4dqbya1mmwa" path="res://components/HurtboxComponent/hurtbox_component.tscn" id="5_dq3hs"]
 [ext_resource type="Shader" path="res://components/HitFlashComponent/hit_flash_component.gdshader" id="6_oli7w"]
 [ext_resource type="PackedScene" uid="uid://cin30u6r06uxj" path="res://components/HitFlashComponent/hit_flash_component.tscn" id="7_35hwy"]
-[ext_resource type="Texture2D" uid="uid://caan6tn2rqnns" path="res://entities/basic_enemy/Spritesheet saprofita.png" id="9_msjyd"]
+[ext_resource type="Texture2D" uid="uid://caan6tn2rqnns" path="res://entities/Saproling Enemy/Spritesheet saprofita.png" id="9_msjyd"]
 [ext_resource type="PackedScene" uid="uid://bmb058g7u5yrl" path="res://components/HitboxComponent/hitbox_component.tscn" id="10_ojvt3"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_qvves"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oi0hg"]
 resource_local_to_scene = true
 shader = ExtResource("6_oli7w")
 shader_parameter/lerp_percent = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urulb"]
+atlas = ExtResource("9_msjyd")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnmb1"]
+atlas = ExtResource("9_msjyd")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhv08"]
+atlas = ExtResource("9_msjyd")
+region = Rect2(24, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pl0rd"]
 atlas = ExtResource("9_msjyd")
@@ -38,16 +50,19 @@ region = Rect2(0, 24, 24, 24)
 atlas = ExtResource("9_msjyd")
 region = Rect2(24, 24, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cnmb1"]
-atlas = ExtResource("9_msjyd")
-region = Rect2(0, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hhv08"]
-atlas = ExtResource("9_msjyd")
-region = Rect2(24, 0, 24, 24)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_bbtya"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnmb1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hhv08")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_pl0rd")
@@ -65,19 +80,8 @@ animations = [{
 "texture": SubResource("AtlasTexture_g5pik")
 }],
 "loop": true,
-"name": &"idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cnmb1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hhv08")
-}],
-"loop": true,
 "name": &"walking",
-"speed": 2.0
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y17wa"]
@@ -93,6 +97,7 @@ collision_mask = 9
 script = ExtResource("1_ihs6w")
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_q2fs8")]
+max_health = 10.0
 
 [node name="DropComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("3_3oieb")]
 drop_rate = 0.75
@@ -106,7 +111,7 @@ sprite = NodePath("../Visuals/AnimatedSprite2D")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_35hwy")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_qvves")
+hit_material = SubResource("ShaderMaterial_oi0hg")
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("3_kogyt")]
 health_component = NodePath("../HealthComponent")
@@ -117,7 +122,7 @@ sprite = NodePath("../Visuals/Sprite2D")
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
 visible = false
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("9_msjyd")
+texture = SubResource("AtlasTexture_urulb")
 offset = Vector2(0, -12)
 hframes = 3
 vframes = 2
@@ -126,7 +131,7 @@ vframes = 2
 position = Vector2(0, -6)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_bbtya")
-animation = &"idle"
+animation = &"walking"
 
 [node name="HurtboxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("5_dq3hs")]
 visible = false

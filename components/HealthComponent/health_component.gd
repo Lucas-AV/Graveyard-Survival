@@ -22,12 +22,13 @@ func _ready() -> void:
 	# Regeneration
 	regen_timer.timeout.connect(regeneration)
 	regen_timer.wait_time = regeneration_clock_delay
+	
 	# Damage
 	damage_timer.timeout.connect(damage)
 	damage_timer.wait_time = damage_clock_delay
 
 
-func regeneration(value: float):
+func regeneration(value: float = 1):
 	current_health = min(current_health + value, max_health)
 	Callable(check_full_health).call_deferred()
 	healed.emit()

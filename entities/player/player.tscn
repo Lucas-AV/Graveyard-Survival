@@ -1,6 +1,7 @@
-[gd_scene load_steps=67 format=3 uid="uid://cl5a38owdxida"]
+[gd_scene load_steps=68 format=3 uid="uid://cl5a38owdxida"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_b0vgj"]
+[ext_resource type="PackedScene" uid="uid://cfb8dl87upkcv" path="res://ability/Sword/controller/sword_ability_controller.tscn" id="2_4fsy3"]
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_h2fah"]
 [ext_resource type="Texture2D" uid="uid://rwbvoydx4rdh" path="res://entities/player/SpriteTest.png" id="4_m2ljg"]
 [ext_resource type="PackedScene" uid="uid://djrei1dsqu6tg" path="res://components/DeathComponent/death_component.tscn" id="4_rdx1t"]
@@ -423,7 +424,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehxpa"]
 size = Vector2(9.25, 24)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_1h005"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n2nji"]
 resource_local_to_scene = true
 shader = ExtResource("8_by6yw")
 shader_parameter/lerp_percent = 0.0
@@ -442,6 +443,10 @@ border_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 y_sort_enabled = true
 script = ExtResource("1_b0vgj")
+
+[node name="Abilities" type="Node" parent="."]
+
+[node name="SwordAbilityController" parent="Abilities" instance=ExtResource("2_4fsy3")]
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("4_rdx1t")]
 health_component = NodePath("../HealthComponent")
@@ -495,7 +500,7 @@ shape = SubResource("RectangleShape2D_ehxpa")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_jci0w")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_1h005")
+hit_material = SubResource("ShaderMaterial_n2nji")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 unique_name_in_owner = true

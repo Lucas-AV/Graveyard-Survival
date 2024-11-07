@@ -11,7 +11,7 @@ corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
 
 [node name="MetaUpgradeCardUI" type="PanelContainer"]
-custom_minimum_size = Vector2(130, 150)
+custom_minimum_size = Vector2(130, 160)
 offset_right = 120.0
 offset_bottom = 150.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_a827t")

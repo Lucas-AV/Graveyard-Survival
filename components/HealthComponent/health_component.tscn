@@ -7,6 +7,8 @@ script = ExtResource("1_obbqs")
 
 [node name="RegenerationTimer" type="Timer" parent="."]
 unique_name_in_owner = true
+wait_time = 30.0
+autostart = true
 
 [node name="DamageTimer" type="Timer" parent="."]
 unique_name_in_owner = true

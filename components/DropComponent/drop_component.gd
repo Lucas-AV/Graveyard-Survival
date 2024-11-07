@@ -7,9 +7,8 @@ extends Node
 
 var item_instance
 func _ready() -> void:
-	if(item_scene.get_class() == "SoulDroplet"):
-		item_instance = item_scene.instantiate() as Node2D
-		(item_instance as SoulDroplet).soul_droplet_config = item_config
+	item_instance = item_scene.instantiate() as Node2D
+	(item_instance as SoulDroplet).soul_droplet_config = item_config
 	(health_component as HealthComponent).died.connect(on_died)
 
 func on_died():

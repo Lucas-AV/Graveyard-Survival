@@ -7,6 +7,9 @@ var save_upgrades: Dictionary = {
 	"upgrades":{}
 }
 
+func get_upgrade_currency():
+	return save_upgrades["upgrade_currency"]
+
 func _ready():
 	GameEvents.meta_currency_upgrade_collected.connect(on_soul_collected)
 	
@@ -33,7 +36,7 @@ func meta_upgrade_added(upgrade: MetaUpgrade):
 				"quantity": 0,
 			}
 	save_upgrades["upgrades"][upgrade.id]["quantity"] += 1
-	print(save_upgrades)
+	save()
 	
 func on_soul_collected(number: float = 1):
 	save_upgrades["upgrade_currency"] += number

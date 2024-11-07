@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b70bmqaxp1rlg"]
+[gd_scene load_steps=14 format=3 uid="uid://b70bmqaxp1rlg"]
 
 [ext_resource type="Script" path="res://UI/MetaMenu/meta_menu.gd" id="1_0euc3"]
 [ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="2_flqcl"]
@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://vckk4gnpnt00" path="res://MetaSystem/MetaUpgrades/meta_move_speed.tres" id="7_aceth"]
 [ext_resource type="Resource" uid="uid://dkghuc2oxoio1" path="res://MetaSystem/MetaUpgrades/meta_regeneration.tres" id="8_hs8wf"]
 [ext_resource type="Resource" uid="uid://bkxpjjsf2l1u" path="res://MetaSystem/MetaUpgrades/meta_experience_gain.tres" id="9_wp5jl"]
+[ext_resource type="Texture2D" uid="uid://bi6abx47pptya" path="res://assets/Souls/souls.png" id="10_3gimp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iv8no"]
 bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
@@ -17,6 +18,10 @@ corner_radius_top_left = 2
 corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f7s4d"]
+atlas = ExtResource("10_3gimp")
+region = Rect2(32, 0, 16, 16)
 
 [node name="MetaMenu" type="CanvasLayer"]
 script = ExtResource("1_0euc3")
@@ -35,7 +40,7 @@ theme_override_constants/margin_bottom = 12
 [node name="GridContainer" type="GridContainer" parent="MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-columns = 4
+columns = 5
 
 [node name="ContinueButton" type="Button" parent="."]
 unique_name_in_owner = true
@@ -53,18 +58,50 @@ grow_vertical = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_iv8no")
 text = "Continue"
 
-[node name="BackButton" type="Button" parent="."]
-unique_name_in_owner = true
+[node name="VignetteUI" parent="." instance=ExtResource("2_p2ia7")]
+visible = false
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 16.0
-offset_top = -36.0
-offset_right = 96.0
-offset_bottom = -12.0
+offset_top = -40.0
+offset_right = 45.0
+offset_bottom = -8.0
 grow_vertical = 0
-theme_override_styles/normal = SubResource("StyleBoxFlat_iv8no")
-text = "Back"
 
-[node name="VignetteUI" parent="." instance=ExtResource("2_p2ia7")]
-visible = false
+[node name="Control" type="Control" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2/Control"]
+layout_mode = 2
+offset_left = -17.0
+offset_top = -24.0
+offset_right = 77.0
+offset_bottom = 40.0
+theme_override_constants/separation = -4
+alignment = 1
+
+[node name="CurrentControl" type="Control" parent="MarginContainer2/Control/HBoxContainer"]
+layout_mode = 2
+
+[node name="Current" type="Label" parent="MarginContainer2/Control/HBoxContainer/CurrentControl"]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 15.0
+offset_top = 24.0
+offset_right = 53.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 36
+text = "100"
+
+[node name="SoulDropletControl" type="Control" parent="MarginContainer2/Control/HBoxContainer"]
+layout_mode = 2
+
+[node name="SoulDroplet" type="TextureRect" parent="MarginContainer2/Control/HBoxContainer/SoulDropletControl"]
+layout_mode = 2
+offset_left = -32.0
+offset_top = 8.0
+offset_right = 26.0
+offset_bottom = 68.0
+texture = SubResource("AtlasTexture_f7s4d")
