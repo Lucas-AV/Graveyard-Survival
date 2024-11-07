@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name BasicEnemy
+class_name SkeletonEnemy
 
 @export var max_speed = 50
 @onready var health_component: HealthComponent = $HealthComponent

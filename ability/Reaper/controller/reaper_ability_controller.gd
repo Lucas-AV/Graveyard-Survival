@@ -1,7 +1,7 @@
 extends Node
 
 @export var max_range: float = 100
-@export var axe_ability: PackedScene
+@export var ability_scene: PackedScene
 @export var damage: float = 5
 
 var valid_axe_upgrades: Array[String] = ["reaper_rate","reaper_damage","reaper_critical_damage","reaper_critical_rate"]
@@ -48,13 +48,13 @@ func on_timer_timeout():
 			return a_distance < b_distance
 	)
 	
-	var axe_ability_instance = axe_ability.instantiate() as AxeAbility
+	var ability_scene_instance = ability_scene.instantiate() as ReaperAbility
 	var foreground_layer = get_tree().get_first_node_in_group("foreground_layer")
-	foreground_layer.add_child(axe_ability_instance)
-	axe_ability_instance.hitbox_component.damage = damage
+	foreground_layer.add_child(ability_scene_instance)
+	ability_scene_instance.hitbox_component.damage = damage
 	
-	axe_ability_instance.global_position = enemies[0].global_position
-	axe_ability_instance.global_position += Vector2.RIGHT.rotated(randf_range(0, TAU)) * 4
+	ability_scene_instance.global_position = enemies[0].global_position
+	ability_scene_instance.global_position += Vector2.RIGHT.rotated(randf_range(0, TAU)) * 4
 	
-	var enemy_direction = enemies[0].global_position - axe_ability_instance.global_position
-	axe_ability_instance.rotation = enemy_direction.angle()
+	var enemy_direction = enemies[0].global_position - ability_scene_instance.global_position
+	ability_scene_instance.rotation = enemy_direction.angle()

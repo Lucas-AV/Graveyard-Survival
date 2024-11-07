@@ -72,3 +72,11 @@ res://managers/EnemyManager/enemy_manager.tscn
 res://entities/saproling_enemy/basic_enemy.tscn
 res://scenes/Graveyard/forest_tileset.tres
 res://scenes/Graveyard/forest_map.tscn
+res://scripts/weight_table.gd
+res://entities/Graveyard Enemies/skeleton_enemy/basic_enemy.gd
+res://managers/EnemyManager/enemy_manager.gd
+res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.tscn
+res://ability/ability.gd
+res://entities/player/player.gd
+res://ability/Reaper/controller/reaper_ability_controller.tscn
+res://ability/Reaper/controller/reaper_ability_controller.gd

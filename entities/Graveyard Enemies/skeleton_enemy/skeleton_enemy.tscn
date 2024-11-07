@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://db4dqbya1mmwa" path="res://components/HurtboxComponent/hurtbox_component.tscn" id="12_hnyxh"]
 [ext_resource type="PackedScene" uid="uid://bmb058g7u5yrl" path="res://components/HitboxComponent/hitbox_component.tscn" id="13_83wxm"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_huhs4"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m0q2m"]
 resource_local_to_scene = true
 shader = ExtResource("8_rgp4p")
 shader_parameter/lerp_percent = 0.0
@@ -336,7 +336,7 @@ sprite = NodePath("../Visuals/AnimatedSprite2D")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_dsk6t")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_huhs4")
+hit_material = SubResource("ShaderMaterial_m0q2m")
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("9_ywdp1")]
 health_component = NodePath("../HealthComponent")
@@ -346,19 +346,19 @@ sprite = NodePath("../Visuals/Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
 visible = false
-scale = Vector2(0.75, 0.75)
 texture = SubResource("AtlasTexture_wntkq")
 offset = Vector2(0, -12)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Visuals"]
-scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_bbtya")
 animation = &"walking_front"
 frame_progress = 0.39965
 offset = Vector2(0, -12)
+flip_h = true
 
 [node name="HurtboxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("12_hnyxh")]
 visible = false
+collision_layer = 0
 health_component = NodePath("../HealthComponent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
@@ -368,6 +368,8 @@ shape = SubResource("RectangleShape2D_3ffcc")
 
 [node name="HitboxComponent" parent="." instance=ExtResource("13_83wxm")]
 visible = false
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
 visible = false

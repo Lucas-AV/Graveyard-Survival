@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=3 format=3 uid="uid://bi2tfbgmojm2r"]
+[gd_resource type="Resource" script_class="Ability" load_steps=4 format=3 uid="uid://bi2tfbgmojm2r"]
 
-[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_4naid"]
 [ext_resource type="Resource" uid="uid://dp3jie811cfq6" path="res://assets/weapons/WeaponsMinisResources/reaper_scythe.tres" id="1_fwsda"]
+[ext_resource type="PackedScene" uid="uid://dtwvs7iol58h0" path="res://ability/Reaper/controller/reaper_ability_controller.tscn" id="1_j0i2g"]
+[ext_resource type="Script" path="res://ability/ability.gd" id="2_y02i2"]
 
 [resource]
-script = ExtResource("1_4naid")
+script = ExtResource("2_y02i2")
+ability_controller_scene = ExtResource("1_j0i2g")
 id = "scythe_ability"
 name = "Scythe Weapon"
 description = "Add a Scythe Weapon that have a chance to instakill enemies and higher valueble souls"
-max_quantity = 0
+max_quantity = 1
 mini_source = ExtResource("1_fwsda")

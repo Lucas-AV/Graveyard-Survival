@@ -5,8 +5,8 @@
 
 [resource]
 script = ExtResource("1_co8ly")
-id = ""
-name = ""
-description = ""
-max_quantity = 0
+id = "reaper_critical"
+name = "Reaper Critical"
+description = "i"
+max_quantity = 10
 mini_source = ExtResource("1_5w4hc")
