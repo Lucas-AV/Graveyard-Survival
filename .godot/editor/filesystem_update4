@@ -1,8 +1,5 @@
-res://scenes/Graveyard/forest_map.tscn
+res://forest_tilemap.tscn
 res://managers/GameEvents/game_events.gd
-res://ability/Axe/controller/axe_ability_controller.gd
-res://components/HitFlashComponent/hit_flash_component.gd
-res://scenes/Dungeon Planner/example_layer_map.gd
 res://UI/PauseUI/pause_ui.gd
 res://scenes/Dungeon Planner/example_layer_map.tres
 res://UI/VignetteUI/vignette_ui.gdshader
@@ -17,7 +14,7 @@ res://scenes/Graveyard/forest_tileset.tres
 res://MetaSystem/MetaUpgrades/meta_critical.tres
 res://MetaSystem/MetaUpgrades/meta_insta_kill.tres
 res://MetaSystem/MetaUpgrades/meta_second_chance.tres
+res://ability/Axe/controller/axe_ability_controller.gd
+res://components/HitFlashComponent/hit_flash_component.gd
 res://components/HitFlashComponent/hit_flash_component.gdshader
 res://upgrades/axe_upgrades/axe_critical_damage.tres
-res://entities/Graveyard Enemies/skeleton_enemy/basic_enemy.gd
-res://forest_tilemap.tscn
