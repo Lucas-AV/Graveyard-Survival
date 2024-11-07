@@ -6,7 +6,6 @@ func _ready():
 	pass # Replace with function body.
 
 func start(text: String):
-	print(text)
 	$Label.text = "%.1f" % float(text)
 
 	var tween = create_tween()

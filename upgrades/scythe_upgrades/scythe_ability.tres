@@ -1,14 +1,20 @@
-[gd_resource type="Resource" script_class="Ability" load_steps=4 format=3 uid="uid://bi2tfbgmojm2r"]
+[gd_resource type="Resource" script_class="Ability" load_steps=6 format=3 uid="uid://bi2tfbgmojm2r"]
 
 [ext_resource type="Resource" uid="uid://dp3jie811cfq6" path="res://assets/weapons/WeaponsMinisResources/reaper_scythe.tres" id="1_fwsda"]
 [ext_resource type="PackedScene" uid="uid://dtwvs7iol58h0" path="res://ability/Reaper/controller/reaper_ability_controller.tscn" id="1_j0i2g"]
 [ext_resource type="Script" path="res://ability/ability.gd" id="2_y02i2"]
+[ext_resource type="Texture2D" uid="uid://bh8q7wsd0ptck" path="res://assets/weapons/weapons big.png" id="4_mb0e7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kun4h"]
+atlas = ExtResource("4_mb0e7")
+region = Rect2(64, 0, 32, 32)
 
 [resource]
 script = ExtResource("2_y02i2")
 ability_controller_scene = ExtResource("1_j0i2g")
 id = "scythe_ability"
 name = "Scythe Weapon"
-description = "Add a Scythe Weapon that have a chance to instakill enemies and higher valueble souls"
+description = "Add a Scythe Weapon that have a chance to instakill"
 max_quantity = 1
+texture_icon = SubResource("AtlasTexture_kun4h")
 mini_source = ExtResource("1_fwsda")

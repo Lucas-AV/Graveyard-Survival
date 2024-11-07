@@ -1,12 +1,18 @@
-[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=3 format=3 uid="uid://dsycukxr672v5"]
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=5 format=3 uid="uid://dsycukxr672v5"]
 
 [ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_4as2m"]
 [ext_resource type="Resource" uid="uid://dp3jie811cfq6" path="res://assets/weapons/WeaponsMinisResources/reaper_scythe.tres" id="1_wld2p"]
+[ext_resource type="Texture2D" uid="uid://bh8q7wsd0ptck" path="res://assets/weapons/weapons big.png" id="3_6y020"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynd4n"]
+atlas = ExtResource("3_6y020")
+region = Rect2(64, 0, 32, 32)
 
 [resource]
 script = ExtResource("1_4as2m")
-id = "reaper_damage"
+id = "reaper_critical_damage"
 name = "Reaper Damage"
 description = "i"
 max_quantity = 10
+texture_icon = SubResource("AtlasTexture_ynd4n")
 mini_source = ExtResource("1_wld2p")

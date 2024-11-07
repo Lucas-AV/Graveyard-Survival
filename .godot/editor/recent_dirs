@@ -1,3 +1,4 @@
+res://entities/player
 res://ability
 res://
 res://entities/Graveyard Enemies/skeleton_enemy
@@ -11,7 +12,6 @@ res://items/Soul
 res://UI/StartMenuUI
 res://MetaSystem/MetaProgression
 res://MetaSystem/MetaUpgrades
-res://entities/player
 res://assets/Fonts
 res://upgrades
 res://scenes/Dungeon Planner

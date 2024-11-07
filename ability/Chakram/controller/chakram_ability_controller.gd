@@ -4,7 +4,7 @@ extends Node
 @export var ability_scene: PackedScene
 @export var damage: float = 5
 
-var valid_reaper_upgrades: Array[String] = ["reaper_rate","reaper_damage","reaper_critical_damage","reaper_critical_rate"]
+var valid_chakram_upgrades: Array[String] = ["chakram_rate","chakram_damage","chakram_critical_damage","chakram_critical_rate"]
 
 var base_wait_time: float
 
@@ -16,16 +16,16 @@ func _ready() -> void:
 	self.damage = ceil(damage)
 	
 func on_ability_upgrade_added(upgrade: AbilityUpgrade, current_upgrades: Dictionary):
-	if upgrade.id not in valid_reaper_upgrades: return
+	if upgrade.id not in valid_chakram_upgrades: return
 	var upgrade_quantity = current_upgrades[upgrade.id]["quantity"]
 
-	# reaper_rate
-	if(upgrade.id == "reaper_rate"):
+	# chakram_rate
+	if(upgrade.id == "chakram_rate"):
 		var percent_reudction = pow(0.9,upgrade_quantity)
 		$Timer.wait_time = base_wait_time * percent_reudction
 		$Timer.start()
 	
-	elif(upgrade.id == "reaper_damage"):
+	elif(upgrade.id == "chakram_damage"):
 		damage = damage * pow(1.1, upgrade_quantity)
 	
 
@@ -48,7 +48,7 @@ func on_timer_timeout():
 			return a_distance < b_distance
 	)
 	
-	var ability_scene_instance = ability_scene.instantiate() as ReaperAbility
+	var ability_scene_instance = ability_scene.instantiate() as ChakramAbility
 	var foreground_layer = get_tree().get_first_node_in_group("foreground_layer")
 	foreground_layer.add_child(ability_scene_instance)
 	ability_scene_instance.hitbox_component.damage = damage

@@ -7,7 +7,7 @@
 script = ExtResource("1_feyxw")
 max_range = 75.0
 ability_scene = ExtResource("2_iual7")
-damage = 10.0
+damage = 15.0
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0

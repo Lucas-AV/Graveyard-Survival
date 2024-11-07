@@ -19,7 +19,6 @@ func set_ability_upgrade(_upgrade: MetaUpgrade):
 	%Title.text = _upgrade.title
 	%Description.text = _upgrade.description
 	%Cost.text = str(_upgrade.currency_cost)
-	print(_upgrade.title)
 
 func validate_price():
 	if self.upgrade == null: return
@@ -27,7 +26,6 @@ func validate_price():
 	percent = min(percent, 1)
 	%PurchaseButton.disabled = percent < 1
 	if(%PurchaseButton.disabled == false):
-		print("insufficient currency")
 		return false
 	return true
 	

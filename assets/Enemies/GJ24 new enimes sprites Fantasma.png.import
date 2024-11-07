@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0lapu80pn0lw"
-path="res://.godot/imported/sprite sheet.png-5b7ea8efd351648d452f82cefc686b84.ctex"
+uid="uid://bn14blh2eyrg8"
+path="res://.godot/imported/GJ24 new enimes sprites Fantasma.png-1868381cdebd7da368d57ce5b57506f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/player/sprite sheet.png"
-dest_files=["res://.godot/imported/sprite sheet.png-5b7ea8efd351648d452f82cefc686b84.ctex"]
+source_file="res://assets/Enemies/GJ24 new enimes sprites Fantasma.png"
+dest_files=["res://.godot/imported/GJ24 new enimes sprites Fantasma.png-1868381cdebd7da368d57ce5b57506f5.ctex"]
 
 [params]
 

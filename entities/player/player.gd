@@ -36,7 +36,7 @@ func _ready():
 	progress_bar.max_value = health_component.max_health
 	progress_bar.value = health_component.current_health
 
-func on_ability_upgrade_added(upgrade: AbilityUpgrade, current_upgrades: Dictionary):
+func on_ability_upgrade_added(upgrade: AbilityUpgrade, _current_upgrades: Dictionary):
 	if not upgrade is Ability: return
 	var ability = upgrade as Ability
 	ability_manager.add_child(ability.ability_controller_scene.instantiate())
