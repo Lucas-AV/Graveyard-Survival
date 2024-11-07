@@ -10,7 +10,7 @@
 [ext_resource type="Resource" uid="uid://vckk4gnpnt00" path="res://MetaSystem/MetaUpgrades/meta_move_speed.tres" id="7_aceth"]
 [ext_resource type="Resource" uid="uid://dkghuc2oxoio1" path="res://MetaSystem/MetaUpgrades/meta_regeneration.tres" id="8_hs8wf"]
 [ext_resource type="Resource" uid="uid://bkxpjjsf2l1u" path="res://MetaSystem/MetaUpgrades/meta_experience_gain.tres" id="9_wp5jl"]
-[ext_resource type="TileSet" uid="uid://dphb8xrsjbi2e" path="res://scenes/Forest/forest_tileset.tres" id="10_1brlp"]
+[ext_resource type="TileSet" uid="uid://dphb8xrsjbi2e" path="res://scenes/Graveyard/forest_tileset.tres" id="10_1brlp"]
 [ext_resource type="Texture2D" uid="uid://bi6abx47pptya" path="res://assets/Souls/souls.png" id="10_3gimp"]
 [ext_resource type="Resource" uid="uid://da2miph4io40b" path="res://MetaSystem/MetaUpgrades/meta_critical.tres" id="10_8phf3"]
 [ext_resource type="Resource" uid="uid://47aittgxt8r7" path="res://MetaSystem/MetaUpgrades/meta_insta_kill.tres" id="11_ihjrp"]

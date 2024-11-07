@@ -70,3 +70,5 @@ res://upgrades/scythe_upgrades/scythe_critical_rate.tres
 res://entities/basic_enemy/basic_enemy.tscn
 res://managers/EnemyManager/enemy_manager.tscn
 res://entities/saproling_enemy/basic_enemy.tscn
+res://scenes/Graveyard/forest_tileset.tres
+res://scenes/Graveyard/forest_map.tscn

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d2enftxww4agv" path="res://UI/StartMenuUI/start_menu_ui.tscn" id="1_5kbxi"]
 [ext_resource type="Script" path="res://UI/MainMenu/main_menu.gd" id="1_fcjnj"]
-[ext_resource type="TileSet" uid="uid://dphb8xrsjbi2e" path="res://scenes/Forest/forest_tileset.tres" id="2_yf74t"]
+[ext_resource type="TileSet" uid="uid://dphb8xrsjbi2e" path="res://scenes/Graveyard/forest_tileset.tres" id="2_yf74t"]
 [ext_resource type="AudioStream" uid="uid://ctje7nbvlgc0a" path="res://UI/StartMenuUI/game theme.wav" id="3_52sla"]
 
 [node name="MainMenu" type="Node"]
