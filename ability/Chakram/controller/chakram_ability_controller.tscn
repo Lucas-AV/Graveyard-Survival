@@ -1,14 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://dtwvs7iol58h0"]
 
 [ext_resource type="Script" path="res://ability/Chakram/controller/chakram_ability_controller.gd" id="1_feyxw"]
-[ext_resource type="PackedScene" uid="uid://d10ukcjdjuvyh" path="res://ability/Chakram/chakram_ability.tscn" id="2_iual7"]
+[ext_resource type="PackedScene" uid="uid://d10ukcjdjuvyh" path="res://ability/Reaper/reaper_ability.tscn" id="3_pevgl"]
 
 [node name="ChakramAbilityController" type="Node"]
 script = ExtResource("1_feyxw")
 max_range = 75.0
-ability_scene = ExtResource("2_iual7")
-damage = 15.0
+ability_scene = ExtResource("3_pevgl")
+damage = 25.0
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
 autostart = true

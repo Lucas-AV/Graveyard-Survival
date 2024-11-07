@@ -41,6 +41,13 @@ var reaper_upgrades: Array[String] = [
 	"reaper_critical"
 ]
 
+var chakram_upgrades: Array[String] = [
+	"chakram_rate",
+	"chakram_damage",
+	"chakram_critical_damage",
+	"chakram_critical"
+]
+
 func pick_upgrades():
 	print(weapons)
 	var chosen_upgrades: Array[AbilityUpgrade] = []
@@ -48,6 +55,8 @@ func pick_upgrades():
 	# TRABALHANDO AQUI #########################################
 	if(!weapons.has("reaper_scythe")):
 		filtered_upgrades = filtered_upgrades.filter(func (upgrade): return !reaper_upgrades.has(upgrade.id))
+	if(!weapons.has("chakram")):
+		filtered_upgrades = filtered_upgrades.filter(func (upgrade): return !chakram_upgrades.has(upgrade.id))
 	
 	# TRABALHANDO AQUI #########################################
 	if !filtered_upgrades.is_empty():

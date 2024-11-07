@@ -1,10 +1,18 @@
-[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://qh36i6gyqcc3"]
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=5 format=3 uid="uid://qh36i6gyqcc3"]
 
 [ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_d7xq0"]
+[ext_resource type="Resource" uid="uid://cg1dinsoir1qm" path="res://assets/weapons/WeaponsMinisResources/chakram.tres" id="1_p5dj0"]
+[ext_resource type="Texture2D" uid="uid://bh8q7wsd0ptck" path="res://assets/weapons/weapons big.png" id="3_oh2ja"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4qdr"]
+atlas = ExtResource("3_oh2ja")
+region = Rect2(0, 0, 32, 32)
 
 [resource]
 script = ExtResource("1_d7xq0")
-id = ""
-name = ""
-description = ""
+id = "chakram_rate"
+name = "Chakram Rate"
+description = "Increases chakram rate attack by 5%"
 max_quantity = 0
+texture_icon = SubResource("AtlasTexture_d4qdr")
+mini_source = ExtResource("1_p5dj0")

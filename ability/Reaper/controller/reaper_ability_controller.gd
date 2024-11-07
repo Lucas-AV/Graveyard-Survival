@@ -21,12 +21,12 @@ func on_ability_upgrade_added(upgrade: AbilityUpgrade, current_upgrades: Diction
 
 	# reaper_rate
 	if(upgrade.id == "reaper_rate"):
-		var percent_reudction = pow(0.9,upgrade_quantity)
+		var percent_reudction = pow(0.95,upgrade_quantity)
 		$Timer.wait_time = base_wait_time * percent_reudction
 		$Timer.start()
 	
 	elif(upgrade.id == "reaper_damage"):
-		damage = damage * pow(1.1, upgrade_quantity)
+		damage = damage * pow(1.05, upgrade_quantity)
 	
 
 func on_timer_timeout():

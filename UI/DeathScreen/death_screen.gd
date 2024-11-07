@@ -10,7 +10,9 @@ func on_quit_pressed():
 
 func on_continue_pressed():
 	get_tree().paused = false
-	get_parent().get_node("./UI").visible = false
+	self.visible = false
+	if(get_parent().get_node("./UI") != null):
+		get_parent().get_node("./UI").visible = false
 	var meta_menu = preload("res://UI/MetaMenu/meta_menu.tscn")
 	var meta_menu_instance = meta_menu.instantiate()
 	add_child(meta_menu_instance)

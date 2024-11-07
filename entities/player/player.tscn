@@ -424,7 +424,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehxpa"]
 size = Vector2(9.25, 24)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_32wvx"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o5r25"]
 resource_local_to_scene = true
 shader = ExtResource("8_by6yw")
 shader_parameter/lerp_percent = 0.0
@@ -500,7 +500,7 @@ shape = SubResource("RectangleShape2D_ehxpa")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_jci0w")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_32wvx")
+hit_material = SubResource("ShaderMaterial_o5r25")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 unique_name_in_owner = true

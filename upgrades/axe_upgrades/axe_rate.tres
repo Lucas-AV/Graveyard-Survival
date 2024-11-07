@@ -7,6 +7,6 @@
 script = ExtResource("1_adugl")
 id = "axe_rate"
 name = "Axe Rate"
-description = "Increases Axe attack rate by 10%"
+description = "Increases Axe attack rate by 5%"
 max_quantity = 10
 mini_source = ExtResource("1_7arfl")

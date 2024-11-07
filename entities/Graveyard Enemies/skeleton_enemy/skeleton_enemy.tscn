@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://db4dqbya1mmwa" path="res://components/HurtboxComponent/hurtbox_component.tscn" id="12_hnyxh"]
 [ext_resource type="PackedScene" uid="uid://bmb058g7u5yrl" path="res://components/HitboxComponent/hitbox_component.tscn" id="13_83wxm"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_6js1a"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mwtv2"]
 resource_local_to_scene = true
 shader = ExtResource("8_rgp4p")
 shader_parameter/lerp_percent = 0.0
@@ -336,7 +336,7 @@ sprite = NodePath("../Visuals/AnimatedSprite2D")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_dsk6t")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_6js1a")
+hit_material = SubResource("ShaderMaterial_mwtv2")
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("9_ywdp1")]
 health_component = NodePath("../HealthComponent")

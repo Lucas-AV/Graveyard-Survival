@@ -7,6 +7,6 @@
 script = ExtResource("1_ecmla")
 id = "axe_damage"
 name = "Axe Damage"
-description = "Increases Axe damage by 10%"
+description = "Increases Axe damage by 5%"
 max_quantity = 10
 mini_source = ExtResource("1_fx8ul")
