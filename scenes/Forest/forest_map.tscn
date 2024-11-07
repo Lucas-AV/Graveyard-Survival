@@ -34,7 +34,6 @@ player = NodePath("entities/Player")
 time_manager = NodePath("../../Managers/TimerManager")
 
 [node name="VignetteUI" parent="UI" instance=ExtResource("4_2765d")]
-visible = false
 
 [node name="ExperienceBarUI" parent="UI" node_paths=PackedStringArray("experience_manager") instance=ExtResource("5_032ak")]
 experience_manager = NodePath("../../Managers/ExperienceManager")

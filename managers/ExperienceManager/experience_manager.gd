@@ -6,6 +6,7 @@ signal experience_updated(current_experience: float, experience_to_next_level: f
 @export var experience_to_next_level: float = 5
 @export var experience_growth_rate: float = 5
 
+var total_experience: float = 0
 var current_experience: float = 0
 var current_level = 1
 
@@ -17,6 +18,7 @@ func get_percent_to_next_level() -> float:
 
 func increase(value: float, _positive: bool = true):
 	# Basicamente o menor valor entre a soma do xp atual com o valor adicionado e o valor alvo ou seja, uma forma de fazer um limite no sistema de XP
+	total_experience += value
 	current_experience = min(current_experience + value, experience_to_next_level)
 	experience_updated.emit(current_experience, experience_to_next_level)
 	if (current_experience >= experience_to_next_level):

@@ -1,5 +1,6 @@
-res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.tscn
+res://scenes/Forest/forest_map.tscn
 res://managers/GameEvents/game_events.gd
+res://scenes/Dungeon Planner/example_layer_map.gd
 res://UI/PauseUI/pause_ui.gd
 res://scenes/Dungeon Planner/example_layer_map.tres
 res://UI/VignetteUI/vignette_ui.gdshader
@@ -11,40 +12,13 @@ res://MetaSystem/MetaUpgrades/meta_move_speed.tres
 res://MetaSystem/MetaUpgrades/meta_regeneration.tres
 res://MetaSystem/MetaUpgrades/meta_experience_gain.tres
 res://scenes/Forest/forest_tileset.tres
-res://components/HitFlashComponent/hit_flash_component.gd
-res://components/HitFlashComponent/hit_flash_component.gdshader
-res://UI/MetaMenu/meta_menu.tscn
-res://scenes/Forest/forest_map.tscn
-res://ability/Sword/controller/sword_ability_controller.tscn
-res://ability/Sword/sword_ability.tscn
-res://entities/player/player.tscn
-res://entities/basic_enemy/basic_enemy.tscn
-res://items/Soul/soul_droplet.tscn
-res://components/HitboxComponent/hitbox_component.tscn
-res://UI/StartMenuUI/start_menu_ui.tscn
-res://UI/FloatingNumber/floating_text.tscn
-res://components/HurtboxComponent/hurtbox_component.tscn
-res://entities/Saproling Enemy/saproling.tscn
-res://ability/Sword/controller/sword_ability_controller.gd
-res://default_bus_layout.tres
-res://components/AudioBasicComponent/audio_basic_component.tscn
-res://components/HurtboxComponent/hurtbox_component.gd
-res://entities/basic_enemy/basic_enemy.gd
-res://UI/StartMenuUI/start_menu_ui.gd
-res://UI/MetaMenu/meta_menu.gd
-res://UI/SettingsUI/settings_ui.tscn
-res://UI/MainMenu/main_menu.tscn
-res://UI/MainMenu/main_menu.gd
-res://UI/SettingsUI/settings_ui.gd
-res://managers/ExperienceManager/experience_manager.tscn
-res://managers/ExperienceManager/experience_manager.gd
-res://UI/DeathScreen/death_screen.tscn
-res://UI/DeathScreen/death_screen.gd
-res://managers/EnemyManager/enemy_manager.tscn
-res://entities/player/player.gd
-res://scenes/Forest/forest_map.gd
-res://UI/PauseUI/pause_ui.tscn
 res://MetaSystem/MetaUpgrades/meta_critical.tres
-res://MetaSystem/MetaUpgrades/meta_second_chance.tres
 res://MetaSystem/MetaUpgrades/meta_insta_kill.tres
-res://MetaSystem/MetaProgression/MetaProgression.tscn
+res://MetaSystem/MetaUpgrades/meta_second_chance.tres
+res://components/HitFlashComponent/hit_flash_component.gdshader
+res://components/HitFlashComponent/hit_flash_component.gd
+res://UI/ExperienceBarUI/experience_bar_ui.tscn
+res://UI/MetaMenu/meta_menu.tscn
+res://UI/ExperienceBarUI/experience_bar_ui.gd
+res://managers/ExperienceManager/experience_manager.gd
+res://scenes/Dungeon Planner/example_layer_map.tscn

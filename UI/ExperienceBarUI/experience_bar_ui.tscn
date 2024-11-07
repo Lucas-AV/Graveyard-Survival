@@ -1,16 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0ev6k1mqfb5j"]
+[gd_scene load_steps=6 format=3 uid="uid://b0ev6k1mqfb5j"]
 
 [ext_resource type="Script" path="res://UI/ExperienceBarUI/experience_bar_ui.gd" id="1_prolp"]
+[ext_resource type="Texture2D" uid="uid://bi6abx47pptya" path="res://assets/Souls/souls.png" id="2_ejgnc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hidi4"]
 bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlf3y"]
+bg_color = Color(0.423529, 0.513726, 0.580392, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
 border_width_bottom = 3
 border_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rtk6"]
+atlas = ExtResource("2_ejgnc")
+region = Rect2(16, 0, 16, 16)
 
 [node name="ExperienceBarUI" type="CanvasLayer"]
 script = ExtResource("1_prolp")
@@ -28,3 +34,43 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_wlf3y")
 max_value = 1.0
 value = 0.5
 show_percentage = false
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.005
+anchor_top = 0.978
+anchor_right = 0.005
+anchor_bottom = 0.978
+offset_top = -24.288
+offset_right = 40.0
+offset_bottom = 1.71198
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.39
+anchor_bottom = -0.39
+offset_left = -4.0
+offset_top = 3.75
+offset_right = 23.0
+offset_bottom = 28.75
+texture = SubResource("AtlasTexture_8rtk6")
+
+[node name="CurrentControl" type="Control" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Current" type="Label" parent="MarginContainer/HBoxContainer/CurrentControl"]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 15.0
+offset_right = 49.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 16
+text = "100"
