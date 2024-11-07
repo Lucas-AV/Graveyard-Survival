@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponIconCardResource" load_steps=3 format=3 uid="uid://cmxix33mru0ko"]
+
+[ext_resource type="Script" path="res://assets/weapons/weapon_icon_card.gd" id="1_vn46a"]
+[ext_resource type="Texture2D" uid="uid://di3i4uveue8a6" path="res://assets/weapons/WeaponsMinis/scythe_gem.png" id="2_xi10c"]
+
+[resource]
+script = ExtResource("1_vn46a")
+weapon_name = "scythe_gem"
+texture = ExtResource("2_xi10c")

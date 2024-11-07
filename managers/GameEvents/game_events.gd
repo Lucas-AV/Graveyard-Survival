@@ -5,6 +5,7 @@ signal meta_currency_upgrade_collected
 signal experience_item_collected(value: float)
 signal ability_upgrade_added(upgrade: AbilityUpgrade, current_upgrades: Dictionary)
 signal meta_ability_upgrade_added(upgrade: MetaUpgrade, saved_upgrades: Dictionary)
+
 func emit_player_damaged():
 	player_damaged.emit()
 

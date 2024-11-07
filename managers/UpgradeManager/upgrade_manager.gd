@@ -3,11 +3,13 @@ class_name UpgradeManager
 @export var upgrade_pool: Array[AbilityUpgrade]
 @export var experience_manager: ExperienceManager
 @export var upgrade_screen_scene: PackedScene
+@export var upgrades_grid_ui: UpgradesGridUI
 var current_upgrades = {}
+@export var weapons: Array[String] = ["axe"]
 
 func _ready() -> void:
 	experience_manager.level_up.connect(on_level_up)
-
+	
 func apply_upgrade(upgrade: AbilityUpgrade):
 	var has_upgrade = current_upgrades.has(upgrade.id)
 
@@ -25,6 +27,11 @@ func apply_upgrade(upgrade: AbilityUpgrade):
 		if current_quantity == upgrade.max_quantity:
 			upgrade_pool = upgrade_pool.filter(func (pool_upgrade): return pool_upgrade.id != upgrade.id)
 	GameEvents.emit_ability_upgrade_added(upgrade, current_upgrades)
+	if(upgrade.mini_source != null):
+		var weapon_name = upgrade.mini_source.weapon_name
+		if(!weapons.has(weapon_name)):
+			weapons.append(weapon_name)
+			upgrades_grid_ui.add_card(upgrade)
 	
 func pick_upgrades():
 	var chosen_upgrades: Array[AbilityUpgrade] = []
@@ -44,5 +51,6 @@ func on_level_up(_current_level: int):
 	var upgrade_screen_instance = upgrade_screen_scene.instantiate()
 	add_child(upgrade_screen_instance)
 	var chosen_upgrades: Array[AbilityUpgrade] = pick_upgrades()
+	upgrade_screen_instance.current_upgrades = current_upgrades
 	upgrade_screen_instance.set_ability_upgrades(chosen_upgrades)
 	upgrade_screen_instance.upgrade_selected.connect(on_upgrade_selected)

@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://b123sm4d36qgk"]
+
+[ext_resource type="Script" path="res://UI/UpgradeGridUI/upgrades_grid_ui.gd" id="1_70nv6"]
+[ext_resource type="PackedScene" uid="uid://crtpnj62k2313" path="res://UI/UpgradeIconCardGridUI/upgrade_icon.tscn" id="2_dao3j"]
+
+[node name="UpgradesGridUI" type="CanvasLayer"]
+script = ExtResource("1_70nv6")
+upgrade_card_scene = ExtResource("2_dao3j")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+
+[node name="UpgradeIconGridContainer" type="GridContainer" parent="MarginContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 8
+
+[node name="UpgradeIconCardGridUI" parent="MarginContainer/MarginContainer/UpgradeIconGridContainer" instance=ExtResource("2_dao3j")]
+layout_mode = 2

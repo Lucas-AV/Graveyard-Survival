@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://lyjqe0d74dti"]
+
+[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_fkk1w"]
+
+[resource]
+script = ExtResource("1_fkk1w")
+id = ""
+name = ""
+description = ""
+max_quantity = 0

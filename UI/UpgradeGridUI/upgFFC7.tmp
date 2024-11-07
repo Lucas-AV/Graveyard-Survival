@@ -1,0 +1,456 @@
+[gd_scene load_steps=36 format=3 uid="uid://b123sm4d36qgk"]
+
+[ext_resource type="Script" path="res://UI/UpgradeGridUI/upgrades_grid_ui.gd" id="1_70nv6"]
+[ext_resource type="PackedScene" uid="uid://crtpnj62k2313" path="res://UI/UpgradeIconCardGridUI/upgrade_icon_card_grid_ui.tscn" id="2_1q0c8"]
+[ext_resource type="Texture2D" uid="uid://bdurtsjpvueve" path="res://assets/weapons/WeaponsMinis/axe.png" id="3_lus5r"]
+
+[sub_resource type="GDScript" id="GDScript_ut702"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_sebre"]
+resource_local_to_scene = true
+script = SubResource("GDScript_ut702")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_5hvfg"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_g3mnb"]
+resource_local_to_scene = true
+script = SubResource("GDScript_5hvfg")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_3ggfv"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_x0h4r"]
+resource_local_to_scene = true
+script = SubResource("GDScript_3ggfv")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_tpk3b"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_youdm"]
+resource_local_to_scene = true
+script = SubResource("GDScript_tpk3b")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_qatjj"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_eb4n6"]
+resource_local_to_scene = true
+script = SubResource("GDScript_qatjj")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_7cmxt"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_qmtr6"]
+resource_local_to_scene = true
+script = SubResource("GDScript_7cmxt")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_35x3w"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_ek1g6"]
+resource_local_to_scene = true
+script = SubResource("GDScript_35x3w")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_jcdxc"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_rq1rv"]
+resource_local_to_scene = true
+script = SubResource("GDScript_jcdxc")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_ux1xi"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_i283n"]
+resource_local_to_scene = true
+script = SubResource("GDScript_ux1xi")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_ia7nc"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_rr36f"]
+resource_local_to_scene = true
+script = SubResource("GDScript_ia7nc")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_r1loy"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_qowrg"]
+resource_local_to_scene = true
+script = SubResource("GDScript_r1loy")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_dsek4"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_geqno"]
+resource_local_to_scene = true
+script = SubResource("GDScript_dsek4")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_tf5v0"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_mup7m"]
+resource_local_to_scene = true
+script = SubResource("GDScript_tf5v0")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_d764e"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_sfgit"]
+resource_local_to_scene = true
+script = SubResource("GDScript_d764e")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_7il0g"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_c7qof"]
+resource_local_to_scene = true
+script = SubResource("GDScript_7il0g")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[sub_resource type="GDScript" id="GDScript_4dlr5"]
+resource_local_to_scene = true
+script/source = "extends Resource
+class_name WeaponIconCardResource
+
+@export_enum(
+	\"axe\", \"axe_gem\",
+	\"sword\", \"sword_gem\",
+	\"scythe\", \"scythe_gem\", 
+	\"chakram\", \"chakram_gem\",
+	\"hammer\", \"hammer_gem\",
+	\"reaper_scythe\", \"reaper_scythe_gem\"
+) var weapon_name: String
+
+@export var texture: Texture
+"
+
+[sub_resource type="Resource" id="Resource_0jche"]
+resource_local_to_scene = true
+script = SubResource("GDScript_4dlr5")
+weapon_name = "axe"
+texture = ExtResource("3_lus5r")
+
+[node name="UpgradesGridUI" type="CanvasLayer"]
+script = ExtResource("1_70nv6")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+columns = 8
+
+[node name="UpgradeIconCardGridUI" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_sebre")
+
+[node name="UpgradeIconCardGridUI2" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_g3mnb")
+
+[node name="UpgradeIconCardGridUI3" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_x0h4r")
+
+[node name="UpgradeIconCardGridUI4" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_youdm")
+
+[node name="UpgradeIconCardGridUI5" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_eb4n6")
+
+[node name="UpgradeIconCardGridUI6" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_qmtr6")
+
+[node name="UpgradeIconCardGridUI7" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_ek1g6")
+
+[node name="UpgradeIconCardGridUI8" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_rq1rv")
+
+[node name="UpgradeIconCardGridUI9" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_i283n")
+
+[node name="UpgradeIconCardGridUI10" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_rr36f")
+
+[node name="UpgradeIconCardGridUI11" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_qowrg")
+
+[node name="UpgradeIconCardGridUI12" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_geqno")
+
+[node name="UpgradeIconCardGridUI13" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_mup7m")
+
+[node name="UpgradeIconCardGridUI14" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_sfgit")
+
+[node name="UpgradeIconCardGridUI15" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_c7qof")
+
+[node name="UpgradeIconCardGridUI16" parent="MarginContainer/MarginContainer/GridContainer" instance=ExtResource("2_1q0c8")]
+layout_mode = 2
+weapon = SubResource("Resource_0jche")

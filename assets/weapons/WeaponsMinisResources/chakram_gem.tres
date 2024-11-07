@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="WeaponSource" load_steps=3 format=3 uid="uid://dl536sgt6h070"]
+
+[ext_resource type="Script" path="res://assets/weapons/weapon_icon_card.gd" id="1_xslqc"]
+[ext_resource type="Texture2D" uid="uid://qpfydwspqhdr" path="res://assets/weapons/WeaponsMinis/chakram_gem.png" id="2_k5h2x"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_xslqc")
+weapon_name = "chakram_gem"
+texture = ExtResource("2_k5h2x")

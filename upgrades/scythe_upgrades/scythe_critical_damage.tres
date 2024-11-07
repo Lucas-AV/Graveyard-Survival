@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=3 format=3 uid="uid://dsycukxr672v5"]
+
+[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_4as2m"]
+[ext_resource type="Resource" uid="uid://dp3jie811cfq6" path="res://assets/weapons/WeaponsMinisResources/reaper_scythe.tres" id="1_wld2p"]
+
+[resource]
+script = ExtResource("1_4as2m")
+id = ""
+name = ""
+description = ""
+max_quantity = 0
+mini_source = ExtResource("1_wld2p")

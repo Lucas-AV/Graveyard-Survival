@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponIconCardResource" load_steps=3 format=3 uid="uid://bjtv2mg1nhye3"]
+
+[ext_resource type="Script" path="res://assets/weapons/weapon_icon_card.gd" id="1_3v1p4"]
+[ext_resource type="Texture2D" uid="uid://bnsrj3xdq0by7" path="res://assets/weapons/WeaponsMinis/reaper_gem.png" id="2_ia48y"]
+
+[resource]
+script = ExtResource("1_3v1p4")
+weapon_name = "reaper_scythe_gem"
+texture = ExtResource("2_ia48y")

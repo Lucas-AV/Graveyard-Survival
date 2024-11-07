@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://b646vtdcdjvg2"]
+
+[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_wpgrj"]
+
+[resource]
+script = ExtResource("1_wpgrj")
+id = ""
+name = ""
+description = ""
+max_quantity = 0

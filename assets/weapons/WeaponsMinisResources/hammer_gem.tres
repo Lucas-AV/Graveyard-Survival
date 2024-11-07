@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponIconCardResource" load_steps=3 format=3 uid="uid://bslfwgvidq6wj"]
+
+[ext_resource type="Script" path="res://assets/weapons/weapon_icon_card.gd" id="1_gf8dp"]
+[ext_resource type="Texture2D" uid="uid://dlr74swm5p05y" path="res://assets/weapons/WeaponsMinis/hammer_gem.png" id="2_jmqky"]
+
+[resource]
+script = ExtResource("1_gf8dp")
+weapon_name = "hammer_gem"
+texture = ExtResource("2_jmqky")

@@ -40,10 +40,9 @@ theme_override_constants/margin_right = 8
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 24
-text = "Sword Of Many Shapes
-"
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 32
+text = "Graveyard Dungeon"
 
 [node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -76,6 +75,7 @@ text = "Start Game"
 
 [node name="ChooseMap" type="Button" parent="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 text = "Choose Map"
 

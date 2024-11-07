@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=3 format=3 uid="uid://dpmix338yobqw"]
+
+[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_ecmla"]
+[ext_resource type="Resource" uid="uid://dl8qhum05kny" path="res://assets/weapons/WeaponsMinisResources/axe.tres" id="1_fx8ul"]
+
+[resource]
+script = ExtResource("1_ecmla")
+id = "axe_damage"
+name = "Axe Damage"
+description = "Increases Axe damage by 10%"
+max_quantity = 10
+mini_source = ExtResource("1_fx8ul")

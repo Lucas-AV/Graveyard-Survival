@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bl86cm5i8ar4u"]
+[gd_scene load_steps=5 format=3 uid="uid://bl86cm5i8ar4u"]
 
 [ext_resource type="Script" path="res://UI/UpgradeCardUI/upgrade_card_ui.gd" id="1_b62ty"]
+[ext_resource type="Texture2D" uid="uid://bh8q7wsd0ptck" path="res://assets/weapons/weapons big.png" id="2_r16ii"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i68u8"]
 bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
@@ -14,6 +15,10 @@ corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgsc1"]
+atlas = ExtResource("2_r16ii")
+region = Rect2(0, 32, 32, 32)
+
 [node name="UpgradeCardUI" type="PanelContainer"]
 custom_minimum_size = Vector2(110, 150)
 offset_right = 110.0
@@ -25,12 +30,11 @@ script = ExtResource("1_b62ty")
 
 [node name="Content" type="VBoxContainer" parent="."]
 layout_mode = 2
-alignment = 1
 
 [node name="Title" type="Label" parent="Content"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Title"
+text = "Axe Damage"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -38,14 +42,37 @@ vertical_alignment = 1
 unique_name_in_owner = true
 custom_minimum_size = Vector2(98, 0)
 layout_mode = 2
-size_flags_vertical = 3
-text = "Description of the current upgrade"
+size_flags_vertical = 1
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 16
+text = "Increases the axe damage by 10%."
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="CurrentLevel" type="Label" parent="Content"]
+[node name="MarginContainer" type="MarginContainer" parent="Content"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureIcon" type="TextureRect" parent="Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_bgsc1")
+
+[node name="TextureIconEvolution" type="TextureRect" parent="Content"]
 unique_name_in_owner = true
 visible = false
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_bgsc1")
+
+[node name="CurrentLevel" type="Label" parent="Content"]
+unique_name_in_owner = true
 layout_mode = 2
 text = "Lv. 0/10"
 horizontal_alignment = 1

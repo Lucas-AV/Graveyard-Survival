@@ -1,3 +1,4 @@
-TileSet
 Resource
+AtlasTexture
+TileSet
 Theme

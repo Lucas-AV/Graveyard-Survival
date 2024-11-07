@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponIconCardResource" load_steps=3 format=3 uid="uid://cty48ra55vua5"]
+
+[ext_resource type="Script" path="res://assets/weapons/weapon_icon_card.gd" id="1_fa4sp"]
+[ext_resource type="Texture2D" uid="uid://coymtqy5h4iwq" path="res://assets/weapons/WeaponsMinis/sword.png" id="2_udu0t"]
+
+[resource]
+script = ExtResource("1_fa4sp")
+weapon_name = "sword"
+texture = ExtResource("2_udu0t")

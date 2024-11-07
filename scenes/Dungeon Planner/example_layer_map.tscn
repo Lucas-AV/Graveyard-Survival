@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://8l26mmpxrvg7"]
+[gd_scene load_steps=22 format=4 uid="uid://8l26mmpxrvg7"]
 
 [ext_resource type="PackedScene" uid="uid://byper67xtmy5q" path="res://camera.tscn" id="1_cotku"]
 [ext_resource type="Script" path="res://scenes/Dungeon Planner/example_layer_map.gd" id="1_cu0ef"]
@@ -13,13 +13,13 @@
 [ext_resource type="PackedScene" uid="uid://08rix4aqk5gv" path="res://managers/TimerManager/TimerManager.tscn" id="10_l6yrt"]
 [ext_resource type="PackedScene" uid="uid://dviqjf1s3o1he" path="res://managers/UpgradeManager/upgrade_manager.tscn" id="12_v74hq"]
 [ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="13_vaf4i"]
-[ext_resource type="Resource" uid="uid://dntdnn8rbw04b" path="res://upgrades/attack_power_upgrade.tres" id="14_7pm3q"]
-[ext_resource type="Resource" uid="uid://jyth4r6s3ct" path="res://upgrades/attack_speed_upgrade.tres" id="15_n4a8i"]
-[ext_resource type="Resource" uid="uid://gywdq1qovk4w" path="res://upgrades/critical_rate_upgrade.tres" id="16_mjugr"]
-[ext_resource type="Resource" uid="uid://dtkuno60evrga" path="res://upgrades/defense_upgrade.tres" id="17_gmuvo"]
-[ext_resource type="Resource" uid="uid://bcsd0awy8ox5w" path="res://upgrades/health_regeneration_upgrade.tres" id="18_8cwfd"]
-[ext_resource type="Resource" uid="uid://u01wt6j18os5" path="res://upgrades/max_health_upgrade.tres" id="19_1oohk"]
-[ext_resource type="Resource" uid="uid://6r4eqmduy1lt" path="res://upgrades/move_speed_upgrade.tres" id="20_36dkk"]
+[ext_resource type="Resource" path="res://upgrades/player/attack_power_upgrade.tres" id="14_7pm3q"]
+[ext_resource type="Resource" path="res://upgrades/player/attack_speed_upgrade.tres" id="15_n4a8i"]
+[ext_resource type="Resource" path="res://upgrades/player/critical_rate_upgrade.tres" id="16_mjugr"]
+[ext_resource type="Resource" uid="uid://dtkuno60evrga" path="res://upgrades/xplayer/defense_upgrade.tres" id="17_gmuvo"]
+[ext_resource type="Resource" uid="uid://bcsd0awy8ox5w" path="res://upgrades/xplayer/health_regeneration_upgrade.tres" id="18_8cwfd"]
+[ext_resource type="Resource" uid="uid://u01wt6j18os5" path="res://upgrades/xplayer/max_health_upgrade.tres" id="19_1oohk"]
+[ext_resource type="Resource" uid="uid://6r4eqmduy1lt" path="res://upgrades/xplayer/move_speed_upgrade.tres" id="20_36dkk"]
 [ext_resource type="PackedScene" uid="uid://ji643x0yt8bp" path="res://UI/UpgradeScreenUI/upgrade_screen_ui.tscn" id="21_pnfdw"]
 
 [node name="ExampleLayerMap" type="Node"]
@@ -41,6 +41,7 @@ target = NodePath("../entities/Player")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-8, 0)
+tile_map_data = PackedByteArray("AABpAPH/AAABAAQAAABqAPH/AAAAAAEAAABqAPL/AAACAAUAAABpAPL/AAABAAAAAABoAPL/AAAAAAUAAABoAPH/AAACAAEAAABoAPD/AAAAAAMAAABpAPD/AAABAAIAAABqAPD/AAACAAMAAAA=")
 tile_set = ExtResource("7_ytpio")
 
 [node name="entities" type="Node2D" parent="." groups=["entities_layer"]]

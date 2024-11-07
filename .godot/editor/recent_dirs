@@ -1,3 +1,7 @@
+res://entities/Graveyard Enemies/skeleton_enemy
+res://assets/weapons
+res://UI/UpgradeIconCardGridUI
+res://UI/UpgradeGridUI
 res://UI/MainMenu
 res://scenes/Forest
 res://entities/golem_enemy
@@ -15,7 +19,3 @@ res://UI/HealthBarUI
 res://managers/EnemyManager
 res://scenes
 res://
-res://managers/GameEvents
-res://UI/VignetteUI
-res://components/HitFlashComponent
-res://components/HealthComponent

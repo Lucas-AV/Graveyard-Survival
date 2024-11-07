@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="WeaponIconCardResource" load_steps=3 format=3 uid="uid://dl8qhum05kny"]
+
+[ext_resource type="Script" path="res://assets/weapons/weapon_icon_card.gd" id="1_o4gqe"]
+[ext_resource type="Texture2D" uid="uid://bdurtsjpvueve" path="res://assets/weapons/WeaponsMinis/axe.png" id="2_h6g4n"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_o4gqe")
+weapon_name = "axe"
+texture = ExtResource("2_h6g4n")

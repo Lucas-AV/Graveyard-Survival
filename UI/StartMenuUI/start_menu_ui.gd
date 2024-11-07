@@ -24,12 +24,14 @@ func on_start_pressed():
 
 func on_settings_pressed():
 	self.visible = false
+	get_window().content_scale_factor = 2.5
 	
 	var settings_instance = settings.instantiate()
 	add_child(settings_instance)
 	settings_instance.back_pressed.connect(on_settings_closed.bind(settings_instance))
 
 func on_settings_closed(settings_instance: Node):
+	get_window().content_scale_factor = 1
 	settings_instance.queue_free()
 
 func on_quit_pressed():

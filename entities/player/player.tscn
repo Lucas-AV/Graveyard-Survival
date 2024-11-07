@@ -1,8 +1,9 @@
-[gd_scene load_steps=68 format=3 uid="uid://cl5a38owdxida"]
+[gd_scene load_steps=69 format=3 uid="uid://cl5a38owdxida"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_b0vgj"]
-[ext_resource type="PackedScene" uid="uid://cfb8dl87upkcv" path="res://ability/Sword/controller/sword_ability_controller.tscn" id="2_4fsy3"]
+[ext_resource type="PackedScene" uid="uid://cfb8dl87upkcv" path="res://ability/Axe/controller/axe_ability_controller.tscn" id="2_4fsy3"]
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_h2fah"]
+[ext_resource type="PackedScene" uid="uid://d2mra1td3lits" path="res://ability/Axe/axe_ability.tscn" id="3_ev0h7"]
 [ext_resource type="Texture2D" uid="uid://rwbvoydx4rdh" path="res://entities/player/SpriteTest.png" id="4_m2ljg"]
 [ext_resource type="PackedScene" uid="uid://djrei1dsqu6tg" path="res://components/DeathComponent/death_component.tscn" id="4_rdx1t"]
 [ext_resource type="Texture2D" uid="uid://b0lapu80pn0lw" path="res://entities/player/sprite sheet.png" id="5_q0rqu"]
@@ -424,7 +425,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehxpa"]
 size = Vector2(9.25, 24)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_i8dlc"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2xrx0"]
 resource_local_to_scene = true
 shader = ExtResource("8_by6yw")
 shader_parameter/lerp_percent = 0.0
@@ -446,7 +447,8 @@ script = ExtResource("1_b0vgj")
 
 [node name="Abilities" type="Node" parent="."]
 
-[node name="SwordAbilityController" parent="Abilities" instance=ExtResource("2_4fsy3")]
+[node name="AxeAbilityController" parent="Abilities" instance=ExtResource("2_4fsy3")]
+axe_ability = ExtResource("3_ev0h7")
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("4_rdx1t")]
 health_component = NodePath("../HealthComponent")
@@ -500,7 +502,7 @@ shape = SubResource("RectangleShape2D_ehxpa")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_jci0w")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_i8dlc")
+hit_material = SubResource("ShaderMaterial_2xrx0")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 unique_name_in_owner = true
