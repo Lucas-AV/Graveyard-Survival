@@ -1,0 +1,30 @@
+Necessidades:
+> Estilização da UI	
+	- Os botões estão muito escuros e se misturam com o fundo
+	- Arte de fundo da UI da tela principal
+	- Adicionar o ícone da arma em algum lugar
+	- Animação de hover por cima dos botões de upgrade
+	- Possibilidade de selecionar upgrades com direcionais
+	- forma de mudar a resolução do jogo
+> SFX:
+	- Aplicação de audio ao passar em cima dos botões
+	- Tema principal
+	- Audio de dano no jogador
+	- Audio de dano em inimigo
+
+> Dungeon Level:
+	- Aplicação do tilemap para fazer o mapa e criar o sistema de camadas físicas
+
+> Combate:
+	- Novas habilidades baseadas nas sprites de dano (Por enquanto usar as do Kenney)
+	- Combate ativo
+	- Mudar o nível das layers de ataque
+
+> Upgrades:
+	- Remodelar upgrades (Forma como são aplicados)
+	- Adicionar upgrades para armas
+
+> Scripting:
+	- Adicionar weighted table pra controlar drops de itens souls
+	- Weight table para controlar spawn de inimigos balanceadamente
+	- 

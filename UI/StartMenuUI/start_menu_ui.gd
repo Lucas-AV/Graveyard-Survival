@@ -1,22 +1,23 @@
 extends CanvasLayer
 class_name StartMenuUI
+
+
 func _ready():
-	get_window().content_scale_factor = 2
+	get_window().content_scale_factor = 1
 	%StartButton.pressed.connect(on_start_pressed)
 	%SettingsButton.pressed.connect(on_settings_pressed)
 	%QuitButton.pressed.connect(on_quit_pressed)
 	%MetaUpgradesButton.pressed.connect(on_meta_upgrades_pressed)
 
 var settings = preload("res://UI/SettingsUI/settings_ui.tscn")
+var meta_upgrades = preload("res://UI/MetaMenu/meta_menu.tscn")
 
 func on_meta_upgrades_pressed():
 	self.visible = false
-	var meta_upgrades_instance = preload("res://UI/MetaMenu/meta_menu.tscn").instantiate()
+	var meta_upgrades_instance = meta_upgrades.instantiate()
+	meta_upgrades_instance.current_scene = "start"
 	add_child(meta_upgrades_instance)
-	meta_upgrades_instance.back_pressed.connect(on_meta_upgrades_menu_closed.bind(meta_upgrades_instance))
-
-func on_meta_upgrades_menu_closed(meta_upgrades_instance: Node):
-	meta_upgrades_instance.queue_free()
+	#get_tree().change_scene_to_file("res://UI/MetaMenu/meta_menu.tscn")
 
 func on_start_pressed():
 	get_tree().change_scene_to_file("res://scenes/Forest/forest_map.tscn")

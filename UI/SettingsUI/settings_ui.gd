@@ -21,13 +21,12 @@ func on_audio_slider_changed(value: float, _name: String):
 	set_audio_data(_name, value)
 
 func setup_sliders():
-	pass
-	#%MusicSlider.value = get_audio_data("music")
+	%MusicSlider.value = get_audio_data("music")
 	#%EffectsSlider.value = get_audio_data("effects")
 # Setup
 func setup_fullscreen_button_checkbox_pressed():
 	var mode = DisplayServer.window_get_mode()
-	%FullscreenCheckbox.button_pressed = mode == DisplayServer.WINDOW_MODE_FULLSCREEN
+	%FullscreenCheckbox.button_pressed = mode == DisplayServer.WINDOW_MODE_FULLSCREEN  
 
 # Sliders
 func get_audio_data(_name: String):

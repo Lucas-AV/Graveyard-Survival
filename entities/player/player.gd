@@ -8,7 +8,7 @@ class_name Player
 @onready var animator = %AnimatedSprite2D
 @onready var progress_bar: ProgressBar = %ProgressBar
 @export var speed = 200
-
+@export var max_health = 1
 var number_of_enemies_colliding_bodies = 0
 
 var y_facing: int = 0; # none, -1 down, 1 up
@@ -29,7 +29,6 @@ func _ready():
 	damage_interval_timer.timeout.connect(on_damage_interval_timeout)
 	health_component.modified.connect(on_modified)
 	load_meta_upgrades()
-	
 	progress_bar.max_value = health_component.max_health
 	progress_bar.value = health_component.current_health
 

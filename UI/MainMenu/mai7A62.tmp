@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://38l3msqur3eu"]
+
+[ext_resource type="PackedScene" uid="uid://d2enftxww4agv" path="res://UI/StartMenuUI/start_menu_ui.tscn" id="1_5kbxi"]
+[ext_resource type="Script" path="res://UI/MainMenu/main_menu.gd" id="1_fcjnj"]
+[ext_resource type="AudioStream" uid="uid://ctje7nbvlgc0a" path="res://UI/StartMenuUI/game theme.wav" id="3_52sla"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_fcjnj")
+
+[node name="StartMenuUI" parent="." instance=ExtResource("1_5kbxi")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+process_mode = 3
+stream = ExtResource("3_52sla")
+autoplay = true
+bus = &"music"

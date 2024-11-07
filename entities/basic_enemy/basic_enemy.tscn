@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://caan6tn2rqnns" path="res://entities/Saproling Enemy/Spritesheet saprofita.png" id="9_msjyd"]
 [ext_resource type="PackedScene" uid="uid://bmb058g7u5yrl" path="res://components/HitboxComponent/hitbox_component.tscn" id="10_ojvt3"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_oi0hg"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lm51i"]
 resource_local_to_scene = true
 shader = ExtResource("6_oli7w")
 shader_parameter/lerp_percent = 0.0
@@ -96,6 +96,9 @@ collision_layer = 8
 collision_mask = 9
 script = ExtResource("1_ihs6w")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+bus = &"effects"
+
 [node name="HealthComponent" parent="." instance=ExtResource("2_q2fs8")]
 max_health = 10.0
 
@@ -111,7 +114,7 @@ sprite = NodePath("../Visuals/AnimatedSprite2D")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_35hwy")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_oi0hg")
+hit_material = SubResource("ShaderMaterial_lm51i")
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("3_kogyt")]
 health_component = NodePath("../HealthComponent")

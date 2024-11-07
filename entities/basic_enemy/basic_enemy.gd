@@ -7,6 +7,12 @@ class_name BasicEnemy
 @onready var velocity_component: VelocityComponent = $VelocityComponent
 
 
+func _ready() -> void:
+	$HurtboxComponent.hit.connect(on_hit)
+
+func on_hit():
+	pass
+
 func _process(_delta: float) -> void: 
 	velocity_component.accel_to_player()
 	velocity_component.move(self)

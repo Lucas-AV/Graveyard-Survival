@@ -6,7 +6,7 @@ signal experience_updated(current_experience: float, experience_to_next_level: f
 @export var experience_to_next_level: float = 5
 @export var experience_growth_rate: float = 5
 
-var current_experience: float = 4.0
+var current_experience: float = 0
 var current_level = 1
 
 signal level_up(new_level: int)

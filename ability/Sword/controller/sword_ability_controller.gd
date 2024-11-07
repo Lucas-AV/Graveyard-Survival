@@ -2,7 +2,7 @@ extends Node
 
 @export var max_range: float = 150
 @export var sword_ability: PackedScene
-@export var damage: float = 1
+@export var damage: float = 5
 
 var valid_sword_upgrades: Array[String] = ["sword_rate","sword_damage"]
 
