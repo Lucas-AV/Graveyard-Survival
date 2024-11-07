@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm6ny1f4mvgng"]
+
+[ext_resource type="TileSet" uid="uid://dphb8xrsjbi2e" path="res://scenes/Graveyard/forest_tileset.tres" id="1_q7kj4"]
+
+[node name="TileMapLayer" type="TileMapLayer"]
+position = Vector2(-16, 0)
+tile_set = ExtResource("1_q7kj4")
