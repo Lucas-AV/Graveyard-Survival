@@ -21,6 +21,7 @@ var xy_index: Vector2
 
 func on_area_entered(_other_area: Area2D):
 	GameEvents.emit_experience_item_collected(xp_value_table[soul_droplet_config.xp_value_index])
+	$AudioStreamPlayer.play()
 	queue_free()
 
 
