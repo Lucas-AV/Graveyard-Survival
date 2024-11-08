@@ -34,3 +34,4 @@ res://scenes/Graveyard/forest_map.tscn
 res://ability/Reaper/controller/reaper_ability_controller.tscn
 res://ability/Reaper/controller/reaper_ability_controller.gd
 res://ability/Reaper/reaper_ability.tscn
+res://components/DropComponent/drop_component.tscn

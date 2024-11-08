@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cchn4ng6sdkpp"]
+[gd_scene load_steps=6 format=3 uid="uid://cchn4ng6sdkpp"]
 
 [ext_resource type="Script" path="res://items/Soul/soul_droplet.gd" id="1_5xh5u"]
 [ext_resource type="Texture2D" uid="uid://bi6abx47pptya" path="res://assets/Souls/souls.png" id="2_oh0kc"]
+[ext_resource type="AudioStream" uid="uid://2r0qqqtgv22b" path="res://items/Soul/on_soul.wav" id="3_7labj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_q7gw5"]
 
@@ -25,3 +26,7 @@ texture = SubResource("AtlasTexture_gjuqb")
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 visible = false
 scale = Vector2(0.8, 0.8)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7labj")
+volume_db = 5.0
