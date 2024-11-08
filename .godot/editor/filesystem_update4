@@ -1,31 +1,26 @@
-res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.tscn
+res://entities/Graveyard Enemies/skeleton_enemy/skeleton_enemy.tscn
 res://managers/GameEvents/game_events.gd
 res://components/HitFlashComponent/hit_flash_component.gd
 res://components/HitFlashComponent/hit_flash_component.gdshader
+res://UI/PauseUI/pause_ui.gd
+res://scenes/Dungeon Planner/example_layer_map.tres
 res://UI/VignetteUI/vignette_ui.gdshader
-res://upgrades/axe_upgrades/axe_critical_damage.tres
-res://upgrades/axe_upgrades/axe_critical_rate.tres
-res://upgrades/axe_upgrades/axe_damage.tres
-res://upgrades/axe_upgrades/axe_rate.tres
-res://upgrades/chakram_upgrades/chakram_ability.tres
-res://upgrades/chakram_upgrades/chakram_critical_damage.tres
-res://upgrades/chakram_upgrades/chakram_critical_rate.tres
-res://upgrades/chakram_upgrades/chakram_damage.tres
-res://upgrades/chakram_upgrades/chakram_rate.tres
-res://upgrades/hammer_upgrades/hammer_critical_damage.tres
-res://upgrades/hammer_upgrades/hammer_critical_rate.tres
-res://upgrades/hammer_upgrades/hammer_rate.tres
-res://upgrades/hammer_upgrades/hammer_damage.tres
-res://upgrades/reaper_upgrades/lunar_critical_damage.tres
-res://upgrades/reaper_upgrades/lunar_critical_rate.tres
-res://upgrades/reaper_upgrades/lunar_damage.tres
-res://upgrades/reaper_upgrades/lunar_rate.tres
+res://MetaSystem/MetaUpgrades/meta_attack_damage.tres
+res://MetaSystem/MetaUpgrades/meta_attack_speed.tres
+res://MetaSystem/MetaUpgrades/meta_defense.tres
+res://MetaSystem/MetaUpgrades/meta_max_health.tres
+res://MetaSystem/MetaUpgrades/meta_move_speed.tres
+res://MetaSystem/MetaUpgrades/meta_regeneration.tres
+res://MetaSystem/MetaUpgrades/meta_experience_gain.tres
+res://scenes/Graveyard/forest_tileset.tres
+res://MetaSystem/MetaUpgrades/meta_critical.tres
+res://MetaSystem/MetaUpgrades/meta_insta_kill.tres
+res://MetaSystem/MetaUpgrades/meta_second_chance.tres
+res://ability/Axe/controller/axe_ability_controller.gd
 res://upgrades/scythe_upgrades/scythe_ability.tres
-res://upgrades/scythe_upgrades/scythe_critical_damage.tres
-res://upgrades/scythe_upgrades/scythe_critical_rate.tres
 res://upgrades/scythe_upgrades/scythe_damage.tres
 res://upgrades/scythe_upgrades/scythe_rate.tres
-res://upgrades/sword_upgrades/sword_critical_rate.tres
-res://upgrades/sword_upgrades/sword_damage.tres
-res://upgrades/sword_upgrades/sword_rate.tres
-res://upgrades/sword_upgrades/sword_critical_damage.tres
+res://entities/Graveyard Enemies/zombie_enemy/zombie_enemy.tscn
+res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.tscn
+res://scenes/Graveyard/forest_map.tscn
+res://forest_tilemap.tscn
