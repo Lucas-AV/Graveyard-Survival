@@ -1,5 +1,6 @@
 res://forest_tilemap.tscn
 res://managers/GameEvents/game_events.gd
+res://scenes/Dungeon Planner/example_layer_map.gd
 res://UI/PauseUI/pause_ui.gd
 res://scenes/Dungeon Planner/example_layer_map.tres
 res://UI/VignetteUI/vignette_ui.gdshader
