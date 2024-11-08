@@ -1,20 +1,14 @@
-[gd_scene load_steps=18 format=4 uid="uid://b70bmqaxp1rlg"]
+[gd_scene load_steps=12 format=4 uid="uid://b70bmqaxp1rlg"]
 
 [ext_resource type="Script" path="res://UI/MetaMenu/meta_menu.gd" id="1_0euc3"]
 [ext_resource type="Script" path="res://MetaSystem/meta_upgrade.gd" id="2_flqcl"]
 [ext_resource type="PackedScene" uid="uid://65qvhnlmn04m" path="res://UI/VignetteUI/vignette_ui.tscn" id="2_p2ia7"]
-[ext_resource type="Resource" uid="uid://beemxn0w64vlc" path="res://MetaSystem/MetaUpgrades/meta_attack_damage.tres" id="3_ecook"]
-[ext_resource type="Resource" uid="uid://nd47dkfu2g1a" path="res://MetaSystem/MetaUpgrades/meta_attack_speed.tres" id="4_0dkgk"]
 [ext_resource type="Resource" uid="uid://chwk15b6mhiav" path="res://MetaSystem/MetaUpgrades/meta_defense.tres" id="5_w6k06"]
 [ext_resource type="Resource" uid="uid://n4eqsxv4feyo" path="res://MetaSystem/MetaUpgrades/meta_max_health.tres" id="6_8rfp2"]
 [ext_resource type="Resource" uid="uid://vckk4gnpnt00" path="res://MetaSystem/MetaUpgrades/meta_move_speed.tres" id="7_aceth"]
-[ext_resource type="Resource" uid="uid://dkghuc2oxoio1" path="res://MetaSystem/MetaUpgrades/meta_regeneration.tres" id="8_hs8wf"]
 [ext_resource type="Resource" uid="uid://bkxpjjsf2l1u" path="res://MetaSystem/MetaUpgrades/meta_experience_gain.tres" id="9_wp5jl"]
 [ext_resource type="TileSet" uid="uid://dphb8xrsjbi2e" path="res://scenes/Graveyard/forest_tileset.tres" id="10_1brlp"]
 [ext_resource type="Texture2D" uid="uid://bi6abx47pptya" path="res://assets/Souls/souls.png" id="10_3gimp"]
-[ext_resource type="Resource" uid="uid://da2miph4io40b" path="res://MetaSystem/MetaUpgrades/meta_critical.tres" id="10_8phf3"]
-[ext_resource type="Resource" uid="uid://47aittgxt8r7" path="res://MetaSystem/MetaUpgrades/meta_insta_kill.tres" id="11_ihjrp"]
-[ext_resource type="Resource" uid="uid://bfhs4juar7g7j" path="res://MetaSystem/MetaUpgrades/meta_second_chance.tres" id="12_gg74d"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iv8no"]
 bg_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
@@ -29,7 +23,7 @@ region = Rect2(32, 0, 16, 16)
 
 [node name="MetaMenu" type="CanvasLayer"]
 script = ExtResource("1_0euc3")
-upgrades = Array[ExtResource("2_flqcl")]([ExtResource("3_ecook"), ExtResource("4_0dkgk"), ExtResource("5_w6k06"), ExtResource("6_8rfp2"), ExtResource("7_aceth"), ExtResource("8_hs8wf"), ExtResource("9_wp5jl"), ExtResource("10_8phf3"), ExtResource("11_ihjrp"), ExtResource("12_gg74d")])
+upgrades = Array[ExtResource("2_flqcl")]([ExtResource("5_w6k06"), ExtResource("6_8rfp2"), ExtResource("7_aceth"), ExtResource("9_wp5jl")])
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 visible = false

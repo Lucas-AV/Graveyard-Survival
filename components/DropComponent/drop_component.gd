@@ -10,6 +10,8 @@ func _ready() -> void:
 	item_instance = item_scene.instantiate() as Node2D
 	(item_instance as SoulDroplet).soul_droplet_config = item_config
 	(health_component as HealthComponent).died.connect(on_died)
+	if MetaProgression.save_upgrades.has("meta_experience_gain"):
+		drop_rate = drop_rate * MetaProgression.get_math_pow_upgrade("meta_experience_gain")
 
 func on_died():
 	if randf() > drop_rate: return
