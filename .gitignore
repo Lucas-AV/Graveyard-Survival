@@ -1,0 +1,14 @@
+# Ignore the .godot folder
+.godot/
+
+# Ignore other Godot temporary files (optional)
+.import/
+*.import
+
+# Ignore typical OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and backups (optional)
+*.log
+*.bak
