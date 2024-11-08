@@ -7,6 +7,9 @@ class_name Player
 @onready var visuals = $Visuals
 @onready var animator = %AnimatedSprite2D
 @onready var progress_bar: ProgressBar = %ProgressBar
+
+@onready var ability_manager = $Abilities
+
 @export var speed = 200
 @export var max_health = 1
 var number_of_enemies_colliding_bodies = 0
@@ -29,8 +32,15 @@ func _ready():
 	damage_interval_timer.timeout.connect(on_damage_interval_timeout)
 	health_component.modified.connect(on_modified)
 	load_meta_upgrades()
+	GameEvents.ability_upgrade_added.connect(on_ability_upgrade_added)
 	progress_bar.max_value = health_component.max_health
 	progress_bar.value = health_component.current_health
+
+func on_ability_upgrade_added(upgrade: AbilityUpgrade, _current_upgrades: Dictionary):
+	if not upgrade is Ability: return
+	var ability = upgrade as Ability
+	ability_manager.add_child(ability.ability_controller_scene.instantiate())
+
 
 func on_modified():
 	progress_bar.value = health_component.current_health

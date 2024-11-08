@@ -1,12 +1,21 @@
-[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=3 format=3 uid="uid://cav4fgrfrvyav"]
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=6 format=3 uid="uid://cav4fgrfrvyav"]
 
 [ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_sfrcj"]
 [ext_resource type="Resource" uid="uid://dp3jie811cfq6" path="res://assets/weapons/WeaponsMinisResources/reaper_scythe.tres" id="1_uea7e"]
+[ext_resource type="Texture2D" uid="uid://bh8q7wsd0ptck" path="res://assets/weapons/weapons big.png" id="3_tm5vr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_esgf2"]
+atlas = ExtResource("3_tm5vr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1180y"]
+atlas = SubResource("AtlasTexture_esgf2")
 
 [resource]
 script = ExtResource("1_sfrcj")
-id = ""
-name = ""
-description = ""
-max_quantity = 0
+id = "reaper_rate"
+name = "Reaper Rate"
+description = "velocidade de recarga +5%"
+max_quantity = 25
+texture_icon = SubResource("AtlasTexture_1180y")
 mini_source = ExtResource("1_uea7e")

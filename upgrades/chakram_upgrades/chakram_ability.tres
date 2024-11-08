@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Ability" load_steps=6 format=3 uid="uid://btpl3wafedg83"]
+
+[ext_resource type="PackedScene" uid="uid://dtwvs7iol58h0" path="res://ability/Reaper/controller/reaper_ability_controller.tscn" id="1_or4qf"]
+[ext_resource type="Resource" uid="uid://cg1dinsoir1qm" path="res://assets/weapons/WeaponsMinisResources/chakram.tres" id="2_xktjv"]
+[ext_resource type="Script" path="res://ability/ability.gd" id="3_cc8ab"]
+[ext_resource type="Texture2D" uid="uid://bh8q7wsd0ptck" path="res://assets/weapons/weapons big.png" id="4_ni6j2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kun4h"]
+atlas = ExtResource("4_ni6j2")
+region = Rect2(0, 0, 32, 32)
+
+[resource]
+script = ExtResource("3_cc8ab")
+ability_controller_scene = ExtResource("1_or4qf")
+id = "chakram_ability"
+name = "Chakram Weapon"
+description = "Adiciona um chakram"
+max_quantity = 1
+texture_icon = SubResource("AtlasTexture_kun4h")
+mini_source = ExtResource("2_xktjv")

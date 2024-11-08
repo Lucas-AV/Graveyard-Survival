@@ -20,7 +20,7 @@ func on_meta_upgrades_pressed():
 	#get_tree().change_scene_to_file("res://UI/MetaMenu/meta_menu.tscn")
 
 func on_start_pressed():
-	get_tree().change_scene_to_file("res://scenes/Forest/forest_map.tscn")
+	get_tree().change_scene_to_file("res://scenes/Graveyard/forest_map.tscn")
 
 func on_settings_pressed():
 	self.visible = false

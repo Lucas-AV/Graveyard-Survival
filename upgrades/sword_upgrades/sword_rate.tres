@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_qdu47")
-id = ""
-name = ""
-description = ""
-max_quantity = 0
+id = "sword_rate"
+name = "Sword Rate"
+description = "velocidade de recarga +5%"
+max_quantity = 25

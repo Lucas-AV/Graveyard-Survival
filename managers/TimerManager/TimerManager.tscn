@@ -8,5 +8,5 @@ script = ExtResource("1_xnot7")
 victory_screen_scene = ExtResource("2_4w4j1")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 120.0
+wait_time = 9999.0
 autostart = true

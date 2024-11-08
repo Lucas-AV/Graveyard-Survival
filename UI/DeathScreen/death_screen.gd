@@ -3,7 +3,7 @@ class_name DeathScreen
 
 func on_restart_pressed():
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://scenes/Forest/forest_map.tscn")
+	get_tree().change_scene_to_file("res://scenes/Graveyard/forest_map.tscn")
 
 func on_quit_pressed():
 	get_tree().quit()
@@ -11,11 +11,12 @@ func on_quit_pressed():
 func on_continue_pressed():
 	get_tree().paused = false
 	self.visible = false
-	get_parent().get_node("./UI").visible = false
+	if(get_parent().get_node("./UI") != null):
+		get_parent().get_node("./UI").visible = false
+		get_parent().get_node("./UI").get_node("UpgradesGridUI").visible = false
 	var meta_menu = preload("res://UI/MetaMenu/meta_menu.tscn")
 	var meta_menu_instance = meta_menu.instantiate()
 	add_child(meta_menu_instance)
-	
 
 func _ready():
 	MetaProgression.save()

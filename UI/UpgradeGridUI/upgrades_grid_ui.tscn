@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://b123sm4d36qgk"]
+[gd_scene load_steps=6 format=3 uid="uid://b123sm4d36qgk"]
 
 [ext_resource type="Script" path="res://UI/UpgradeGridUI/upgrades_grid_ui.gd" id="1_70nv6"]
 [ext_resource type="PackedScene" uid="uid://crtpnj62k2313" path="res://UI/UpgradeIconCardGridUI/upgrade_icon.tscn" id="2_dao3j"]
+[ext_resource type="Script" path="res://assets/weapons/weapon_icon_card.gd" id="3_40v1h"]
+[ext_resource type="Texture2D" uid="uid://bdurtsjpvueve" path="res://assets/weapons/WeaponsMinis/axe.png" id="4_kect4"]
+
+[sub_resource type="Resource" id="Resource_tp4fb"]
+resource_local_to_scene = true
+script = ExtResource("3_40v1h")
+weapon_name = "axe"
+texture = ExtResource("4_kect4")
 
 [node name="UpgradesGridUI" type="CanvasLayer"]
 script = ExtResource("1_70nv6")
@@ -26,3 +34,4 @@ columns = 8
 
 [node name="UpgradeIconCardGridUI" parent="MarginContainer/MarginContainer/UpgradeIconGridContainer" instance=ExtResource("2_dao3j")]
 layout_mode = 2
+weapon = SubResource("Resource_tp4fb")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://djkn4ocrd1ni8"]
+[gd_scene load_steps=24 format=3 uid="uid://djkn4ocrd1ni8"]
 
 [ext_resource type="Script" path="res://scenes/Graveyard/forest_map.gd" id="1_cu8fr"]
 [ext_resource type="PackedScene" uid="uid://bo3cin4tsynim" path="res://UI/DeathScreen/death_screen.tscn" id="2_g17ve"]
@@ -12,14 +12,17 @@
 [ext_resource type="PackedScene" uid="uid://bu4ufb2c0ckyq" path="res://managers/ExperienceManager/experience_manager.tscn" id="9_m8ft2"]
 [ext_resource type="PackedScene" uid="uid://c2ea46of3cu2a" path="res://managers/EnemyManager/enemy_manager.tscn" id="10_hp4w3"]
 [ext_resource type="PackedScene" uid="uid://08rix4aqk5gv" path="res://managers/TimerManager/TimerManager.tscn" id="11_s3ivj"]
+[ext_resource type="PackedScene" uid="uid://ooph3jp8vube" path="res://entities/Graveyard Enemies/skeleton_enemy/skeleton_enemy.tscn" id="12_25ekk"]
 [ext_resource type="PackedScene" uid="uid://dviqjf1s3o1he" path="res://managers/UpgradeManager/upgrade_manager.tscn" id="12_wqo4y"]
 [ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="13_0bpgo"]
-[ext_resource type="Resource" uid="uid://dojrbrtqyyjd" path="res://upgrades/axe_upgrades/axe_critical_damage.tres" id="14_yo2x6"]
-[ext_resource type="Resource" uid="uid://c8higel84pwpa" path="res://upgrades/axe_upgrades/axe_critical_rate.tres" id="15_uu3iy"]
+[ext_resource type="PackedScene" uid="uid://ch18i8hnhtt8l" path="res://entities/Graveyard Enemies/zombie_enemy/zombie_enemy.tscn" id="13_4cuts"]
 [ext_resource type="Resource" uid="uid://da0ot1aop1quw" path="res://upgrades/axe_upgrades/axe_rate.tres" id="16_bnmra"]
 [ext_resource type="Resource" uid="uid://dpmix338yobqw" path="res://upgrades/axe_upgrades/axe_damage.tres" id="16_d1ivq"]
+[ext_resource type="Resource" uid="uid://bi2tfbgmojm2r" path="res://upgrades/scythe_upgrades/scythe_ability.tres" id="20_j8l8o"]
 [ext_resource type="PackedScene" uid="uid://ji643x0yt8bp" path="res://UI/UpgradeScreenUI/upgrade_screen_ui.tscn" id="21_kr0fi"]
 [ext_resource type="AudioStream" uid="uid://ce5ysphch6j1g" path="res://scenes/Graveyard/forest_background_music.mp3" id="22_jes2f"]
+[ext_resource type="Resource" uid="uid://c4w4l6foka28r" path="res://upgrades/scythe_upgrades/scythe_damage.tres" id="23_5ln52"]
+[ext_resource type="Resource" uid="uid://cav4fgrfrvyav" path="res://upgrades/scythe_upgrades/scythe_rate.tres" id="24_kspiq"]
 
 [node name="ForestMap" type="Node" node_paths=PackedStringArray("player")]
 script = ExtResource("1_cu8fr")
@@ -56,16 +59,18 @@ collision_layer = 0
 [node name="Managers" type="Node" parent="."]
 
 [node name="ExperienceManager" parent="Managers" instance=ExtResource("9_m8ft2")]
-experience_to_next_level = 1.0
-experience_growth_rate = 1.0
 
 [node name="EnemyManager" parent="Managers" node_paths=PackedStringArray("time_manager") instance=ExtResource("10_hp4w3")]
+spawn_radius = 500
+limit_time = 0.05
+skeleton_enemy_scene = ExtResource("12_25ekk")
+zombie_enemy_scene = ExtResource("13_4cuts")
 time_manager = NodePath("../TimerManager")
 
 [node name="TimerManager" parent="Managers" instance=ExtResource("11_s3ivj")]
 
 [node name="UpgradeManager" parent="Managers" node_paths=PackedStringArray("experience_manager", "upgrades_grid_ui") instance=ExtResource("12_wqo4y")]
-upgrade_pool = Array[ExtResource("13_0bpgo")]([ExtResource("14_yo2x6"), ExtResource("15_uu3iy"), ExtResource("16_d1ivq"), ExtResource("16_bnmra")])
+upgrade_pool = Array[ExtResource("13_0bpgo")]([ExtResource("16_d1ivq"), ExtResource("16_bnmra"), ExtResource("20_j8l8o"), ExtResource("23_5ln52"), ExtResource("24_kspiq")])
 experience_manager = NodePath("../ExperienceManager")
 upgrade_screen_scene = ExtResource("21_kr0fi")
 upgrades_grid_ui = NodePath("../../UI/UpgradesGridUI")

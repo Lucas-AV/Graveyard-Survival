@@ -5,6 +5,7 @@
 
 [node name="EnemyManager" type="Node"]
 script = ExtResource("1_v4nbd")
+spawn_radius = 200
 basic_enemy_scene = ExtResource("2_7ckmc")
 
 [node name="Timer" type="Timer" parent="."]

@@ -1,10 +1,10 @@
 extends Node
 
 @export var max_range: float = 100
-@export var axe_ability: PackedScene
+@export var ability_scene: PackedScene
 @export var damage: float = 5
 
-var valid_axe_upgrades: Array[String] = ["reaper_rate","reaper_damage","reaper_critical_damage","reaper_critical_rate"]
+var valid_reaper_upgrades: Array[String] = ["reaper_rate","reaper_damage","reaper_critical_damage","reaper_critical_rate"]
 
 var base_wait_time: float
 
@@ -16,17 +16,17 @@ func _ready() -> void:
 	self.damage = ceil(damage)
 	
 func on_ability_upgrade_added(upgrade: AbilityUpgrade, current_upgrades: Dictionary):
-	if upgrade.id not in valid_axe_upgrades: return
+	if upgrade.id not in valid_reaper_upgrades: return
 	var upgrade_quantity = current_upgrades[upgrade.id]["quantity"]
 
-	# axe_rate
-	if(upgrade.id == "axe_rate"):
-		var percent_reudction = pow(0.9,upgrade_quantity)
+	# reaper_rate
+	if(upgrade.id == "reaper_rate"):
+		var percent_reudction = pow(0.95,upgrade_quantity)
 		$Timer.wait_time = base_wait_time * percent_reudction
 		$Timer.start()
 	
-	elif(upgrade.id == "axe_damage"):
-		damage = damage * pow(1.1, upgrade_quantity)
+	elif(upgrade.id == "reaper_damage"):
+		damage = damage * pow(1.05, upgrade_quantity)
 	
 
 func on_timer_timeout():
@@ -48,13 +48,13 @@ func on_timer_timeout():
 			return a_distance < b_distance
 	)
 	
-	var axe_ability_instance = axe_ability.instantiate() as AxeAbility
+	var ability_scene_instance = ability_scene.instantiate() as ReaperAbility
 	var foreground_layer = get_tree().get_first_node_in_group("foreground_layer")
-	foreground_layer.add_child(axe_ability_instance)
-	axe_ability_instance.hitbox_component.damage = damage
+	foreground_layer.add_child(ability_scene_instance)
+	ability_scene_instance.hitbox_component.damage = damage
 	
-	axe_ability_instance.global_position = enemies[0].global_position
-	axe_ability_instance.global_position += Vector2.RIGHT.rotated(randf_range(0, TAU)) * 4
+	ability_scene_instance.global_position = enemies.back().global_position
+	ability_scene_instance.global_position += Vector2.RIGHT.rotated(randf_range(0, TAU)) * 4
 	
-	var enemy_direction = enemies[0].global_position - axe_ability_instance.global_position
-	axe_ability_instance.rotation = enemy_direction.angle()
+	var enemy_direction = enemies[0].global_position - ability_scene_instance.global_position
+	ability_scene_instance.rotation = enemy_direction.angle()

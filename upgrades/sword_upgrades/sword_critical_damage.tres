@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_8ylye")
-id = ""
-name = ""
-description = ""
+id = "sword_critical_damage"
+name = "Sword Critical Damage"
+description = "Aumento de crítico em +5%"
 max_quantity = 0

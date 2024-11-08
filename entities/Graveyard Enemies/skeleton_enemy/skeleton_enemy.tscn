@@ -1,10 +1,10 @@
-[gd_scene load_steps=54 format=3 uid="uid://ooph3jp8vube"]
+[gd_scene load_steps=55 format=3 uid="uid://ooph3jp8vube"]
 
 [ext_resource type="Script" path="res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.gd" id="1_ctf5c"]
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_sbd2r"]
 [ext_resource type="PackedScene" uid="uid://r8hgk5glql61" path="res://components/DropComponent/drop_component.tscn" id="3_4ibrh"]
 [ext_resource type="PackedScene" uid="uid://cchn4ng6sdkpp" path="res://items/Soul/soul_droplet.tscn" id="4_4ympr"]
-[ext_resource type="Resource" uid="uid://1la7i45sgmfc" path="res://items/Soul/resources/soul_droplet_basic.tres" id="5_d3etx"]
+[ext_resource type="Resource" uid="uid://lo46galcxyvc" path="res://items/Soul/resources/soul_droplet_rare.tres" id="5_mpcvs"]
 [ext_resource type="PackedScene" uid="uid://bf1idldpccv2q" path="res://components/VelocityComponent/velocity_component.tscn" id="6_ohwui"]
 [ext_resource type="PackedScene" uid="uid://cin30u6r06uxj" path="res://components/HitFlashComponent/hit_flash_component.tscn" id="7_dsk6t"]
 [ext_resource type="Shader" path="res://components/HitFlashComponent/hit_flash_component.gdshader" id="8_rgp4p"]
@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://db4dqbya1mmwa" path="res://components/HurtboxComponent/hurtbox_component.tscn" id="12_hnyxh"]
 [ext_resource type="PackedScene" uid="uid://bmb058g7u5yrl" path="res://components/HitboxComponent/hitbox_component.tscn" id="13_83wxm"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_huhs4"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sd8ba"]
 resource_local_to_scene = true
 shader = ExtResource("8_rgp4p")
 shader_parameter/lerp_percent = 0.0
@@ -315,19 +315,19 @@ y_sort_enabled = true
 collision_layer = 8
 collision_mask = 9
 script = ExtResource("1_ctf5c")
-max_speed = 75
+max_speed = 90
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 bus = &"effects"
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_sbd2r")]
-defense = 5.0
+defense = 30.0
 max_health = 20.0
 
 [node name="DropComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("3_4ibrh")]
 drop_rate = 0.75
 item_scene = ExtResource("4_4ympr")
-item_config = ExtResource("5_d3etx")
+item_config = ExtResource("5_mpcvs")
 health_component = NodePath("../HealthComponent")
 
 [node name="VelocityComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("6_ohwui")]
@@ -336,7 +336,7 @@ sprite = NodePath("../Visuals/AnimatedSprite2D")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_dsk6t")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_huhs4")
+hit_material = SubResource("ShaderMaterial_sd8ba")
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("9_ywdp1")]
 health_component = NodePath("../HealthComponent")
@@ -346,19 +346,19 @@ sprite = NodePath("../Visuals/Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
 visible = false
-scale = Vector2(0.75, 0.75)
 texture = SubResource("AtlasTexture_wntkq")
 offset = Vector2(0, -12)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Visuals"]
-scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_bbtya")
 animation = &"walking_front"
 frame_progress = 0.39965
 offset = Vector2(0, -12)
+flip_h = true
 
 [node name="HurtboxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("12_hnyxh")]
 visible = false
+collision_layer = 0
 health_component = NodePath("../HealthComponent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
@@ -368,6 +368,8 @@ shape = SubResource("RectangleShape2D_3ffcc")
 
 [node name="HitboxComponent" parent="." instance=ExtResource("13_83wxm")]
 visible = false
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
 visible = false

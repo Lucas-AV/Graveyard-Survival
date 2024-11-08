@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_w2few")
-id = ""
-name = ""
-description = ""
+id = "chakram_critical_damage"
+name = "Chakram Critical Damage"
+description = "Aumento de crítico em +5%"
 max_quantity = 0
