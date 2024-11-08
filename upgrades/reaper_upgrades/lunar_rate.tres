@@ -6,5 +6,5 @@
 script = ExtResource("1_b72mx")
 id = "lunar_rate"
 name = "Lunar Rate"
-description = "velocidade de recarga +1%"
+description = "velocidade de recarga +5%"
 max_quantity = 25

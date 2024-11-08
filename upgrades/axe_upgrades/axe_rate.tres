@@ -7,6 +7,6 @@
 script = ExtResource("1_adugl")
 id = "axe_rate"
 name = "Axe Rate"
-description = "velocidade de recarga +1%"
+description = "velocidade de recarga +5%"
 max_quantity = 25
 mini_source = ExtResource("1_7arfl")

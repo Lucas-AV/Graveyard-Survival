@@ -7,6 +7,6 @@
 script = ExtResource("1_u8oye")
 id = "axe_critical_rate"
 name = "Axe Critical Rate"
-description = "Taxa de crítico em +1%"
+description = "Taxa de crítico em +5%"
 max_quantity = 10
 mini_source = ExtResource("1_haehv")

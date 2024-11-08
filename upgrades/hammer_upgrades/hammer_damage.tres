@@ -6,5 +6,5 @@
 script = ExtResource("1_pq4bw")
 id = "hammer_damage"
 name = "Hammer Damage"
-description = "aumento do dano base +1%"
+description = "aumento do dano base +5%"
 max_quantity = 25

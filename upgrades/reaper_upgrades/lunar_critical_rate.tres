@@ -6,5 +6,5 @@
 script = ExtResource("1_5pm55")
 id = "lunar_critical_rate"
 name = "Lunar Critical Rate"
-description = "Taxa de crítico em +1%"
+description = "Taxa de crítico em +5%"
 max_quantity = 0
