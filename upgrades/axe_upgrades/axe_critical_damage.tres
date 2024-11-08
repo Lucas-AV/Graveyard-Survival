@@ -7,6 +7,6 @@
 script = ExtResource("1_eloh4")
 id = "axe_critical_damage"
 name = "Axe Critical Damage"
-description = "Increases Axe Critical Damage by 10%"
+description = "Aumento de crítico em +1%"
 max_quantity = 10
 mini_source = ExtResource("1_km07r")

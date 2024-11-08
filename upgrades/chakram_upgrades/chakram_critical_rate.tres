@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_bun3v")
-id = ""
-name = ""
-description = ""
+id = "chakram_critical_rate"
+name = "chakram Critical rate"
+description = "Taxa de crítico em +1%"
 max_quantity = 0

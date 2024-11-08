@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://dqvkx7to0ia0o"]
+
+[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_5pm55"]
+
+[resource]
+script = ExtResource("1_5pm55")
+id = "lunar_critical_rate"
+name = "Lunar Critical Rate"
+description = "Taxa de crítico em +1%"
+max_quantity = 0

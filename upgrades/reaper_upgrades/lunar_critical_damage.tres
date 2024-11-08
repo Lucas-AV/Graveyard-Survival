@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://bixahrh4fqht4"]
+
+[ext_resource type="Script" path="res://upgrades/general_upgrade.gd" id="1_mu32l"]
+
+[resource]
+script = ExtResource("1_mu32l")
+id = "lunar_critical_damage"
+name = "Lunar Critical damage"
+description = "Aumento de crítico em +1%"
+max_quantity = 0

@@ -27,24 +27,14 @@ func validate_price():
 	%PurchaseButton.disabled = percent < 1
 	if(%PurchaseButton.disabled):
 		return false
-		# disable all buttons
-		disable_buttons()
 	return true
-
-func disable_buttons():
-	for card in get_parent().get_children():
-		card.get_node("MarginContainer/VBoxContainer/PurchaseContainer/VBoxContainer/PurchaseButton").disabled = true
-
-
-func update_price():
-	get_parent().get_parent().get_parent().get_node("./MarginContainer2/Control/HBoxContainer/CurrentControl/Current").text = str(MetaProgression.save_upgrades["upgrade_currency"])
-
+	
 func on_purchase_pressed():
-	if upgrade == null: return # && !validate_price(): return
+	if upgrade == null: return
 	MetaProgression.save_upgrades["upgrade_currency"] -= upgrade.currency_cost
 	MetaProgression.meta_upgrade_added(upgrade)
 	MetaProgression.save()
-	update_price()
+	get_parent().get_parent().get_parent().get_node("./MarginContainer2/Control/HBoxContainer/CurrentControl/Current").text = str(MetaProgression.save_upgrades["upgrade_currency"])
 
 func on_gui_input(event: InputEvent):
 	if event.is_action_pressed("left_click"):
