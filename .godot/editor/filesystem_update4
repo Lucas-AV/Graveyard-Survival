@@ -1,9 +1,14 @@
-res://entities/Graveyard Enemies/zombie_enemy/skeleton_enemy.tscn
+res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.tscn
 res://managers/GameEvents/game_events.gd
-res://scenes/Dungeon Planner/example_layer_map.gd
-res://UI/PauseUI/pause_ui.gd
-res://scenes/Dungeon Planner/example_layer_map.tres
+res://ability/Axe/controller/axe_ability_controller.gd
+res://components/HitFlashComponent/hit_flash_component.gd
+res://components/HitFlashComponent/hit_flash_component.gdshader
+res://items/Soul/soul_droplet.gd
 res://UI/VignetteUI/vignette_ui.gdshader
+res://entities/Graveyard Enemies/skeleton_enemy/skeleton_enemy.tscn
+res://items/Soul/resources/soul_droplet_rare.tres
+res://items/Soul/soul_droplet.tscn
+res://components/HurtboxComponent/hurtbox_component.gd
 res://MetaSystem/MetaUpgrades/meta_attack_damage.tres
 res://MetaSystem/MetaUpgrades/meta_attack_speed.tres
 res://MetaSystem/MetaUpgrades/meta_defense.tres
@@ -15,25 +20,17 @@ res://scenes/Graveyard/forest_tileset.tres
 res://MetaSystem/MetaUpgrades/meta_critical.tres
 res://MetaSystem/MetaUpgrades/meta_insta_kill.tres
 res://MetaSystem/MetaUpgrades/meta_second_chance.tres
-res://components/HitFlashComponent/hit_flash_component.gdshader
-res://components/HitFlashComponent/hit_flash_component.gd
-res://entities/Graveyard Enemies/zombie_enemy/basic_enemy.gd
+res://scenes/Dungeon Planner/example_layer_map.tres
+res://components/DeathComponent/death_component.tscn
+res://components/DeathComponent/death_component.gd
+res://components/HurtboxComponent/hurtbox_component.tscn
+res://managers/EnemyManager/enemy_manager.gd
 res://entities/Graveyard Enemies/zombie_enemy/zombie_enemy.tscn
-res://scenes/Graveyard/forest_map.tscn
-res://ability/Axe/controller/axe_ability_controller.gd
+res://UI/PauseUI/pause_ui.gd
 res://upgrades/scythe_upgrades/scythe_ability.tres
 res://upgrades/scythe_upgrades/scythe_damage.tres
 res://upgrades/scythe_upgrades/scythe_rate.tres
-res://managers/EnemyManager/enemy_manager.gd
-res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.tscn
-res://entities/Graveyard Enemies/skeleton_enemy/skeleton_enemy.tscn
-res://managers/EnemyManager/enemy_manager.tscn
-res://UI/DeathScreen/death_screen.tscn
-res://UI/DeathScreen/death_screen.gd
-res://UI/UpgradeGridUI/upgrades_grid_ui.tscn
-res://managers/TimerManager/timer_manager.gd
-res://components/HealthComponent/health_component.gd
-res://items/Soul/resources/soul_droplet_common.tres
-res://items/Soul/resources/soul_droplet_uncommon.tres
-res://items/Soul/resources/soul_droplet_rare.tres
-res://components/HurtboxComponent/hurtbox_component.gd
+res://scenes/Graveyard/forest_map.tscn
+res://ability/Reaper/controller/reaper_ability_controller.tscn
+res://ability/Reaper/controller/reaper_ability_controller.gd
+res://ability/Reaper/reaper_ability.tscn

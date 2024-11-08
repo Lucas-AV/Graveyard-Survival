@@ -53,7 +53,7 @@ func on_timer_timeout():
 	foreground_layer.add_child(ability_scene_instance)
 	ability_scene_instance.hitbox_component.damage = damage
 	
-	ability_scene_instance.global_position = enemies[0].global_position
+	ability_scene_instance.global_position = enemies.back().global_position
 	ability_scene_instance.global_position += Vector2.RIGHT.rotated(randf_range(0, TAU)) * 4
 	
 	var enemy_direction = enemies[0].global_position - ability_scene_instance.global_position
