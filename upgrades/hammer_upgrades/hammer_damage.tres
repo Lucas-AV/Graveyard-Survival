@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_pq4bw")
-id = ""
-name = ""
-description = ""
-max_quantity = 0
+id = "hammer_damage"
+name = "Hammer Damage"
+description = "aumento do dano base +1%"
+max_quantity = 25

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_wpgrj")
-id = ""
-name = ""
-description = ""
-max_quantity = 0
+id = "hammer_rate"
+name = "Hammer Rate"
+description = "velocidade de recarga +1%"
+max_quantity = 25

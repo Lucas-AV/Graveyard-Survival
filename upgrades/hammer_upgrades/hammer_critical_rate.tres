@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_hu1fl")
-id = ""
-name = ""
-description = ""
+id = "hammer_critical_rate"
+name = "Hammer Critical Rate"
+description = "Taxa de crítico em +1%"
 max_quantity = 0
