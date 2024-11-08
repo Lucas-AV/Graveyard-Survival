@@ -19,7 +19,7 @@ var current_health
 
 func _ready() -> void:
 	var health_multiplier = (get_parent().get_parent().get_parent().get_node("Managers/TimerManager") as TimeManager).arena_difficulty
-	max_health = max_health * pow(1.02,health_multiplier)
+	max_health = max_health * pow(1.0025,health_multiplier)
 	current_health = max_health
 	# Regeneration
 	regen_timer.timeout.connect(regeneration)

@@ -1,3 +1,10 @@
+C:/Users/lucas/Documents/Graveyard Survival
+C:/Users/lucas/Downloads
+res://entities/Graveyard Enemies/saproling_enemy
+C:/Users/lucas
+C:/Users/lucas/Documents
+C:/Users/lucas/Documents/Github/Sword-Of-Many-Shapes
+res://scenes/Graveyard
 res://entities/Graveyard Enemies/zombie_enemy
 res://entities/player
 res://ability
@@ -15,7 +22,3 @@ res://MetaSystem/MetaProgression
 res://MetaSystem/MetaUpgrades
 res://assets/Fonts
 res://upgrades
-res://scenes/Dungeon Planner
-res://UI/HealthBarUI
-res://managers/EnemyManager
-res://scenes

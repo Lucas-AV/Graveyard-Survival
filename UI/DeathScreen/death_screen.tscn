@@ -49,7 +49,7 @@ text = "GAME OVER!"
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-text = "You was killed by a ------"
+text = "You died."
 
 [node name="ContinueButton" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
