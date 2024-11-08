@@ -1,5 +1,6 @@
-res://scenes/Graveyard/forest_map.tscn
+res://entities/Graveyard Enemies/zombie_enemy/skeleton_enemy.tscn
 res://managers/GameEvents/game_events.gd
+res://scenes/Dungeon Planner/example_layer_map.gd
 res://UI/PauseUI/pause_ui.gd
 res://scenes/Dungeon Planner/example_layer_map.tres
 res://UI/VignetteUI/vignette_ui.gdshader
@@ -14,27 +15,25 @@ res://scenes/Graveyard/forest_tileset.tres
 res://MetaSystem/MetaUpgrades/meta_critical.tres
 res://MetaSystem/MetaUpgrades/meta_insta_kill.tres
 res://MetaSystem/MetaUpgrades/meta_second_chance.tres
-res://ability/Axe/controller/axe_ability_controller.gd
-res://components/HitFlashComponent/hit_flash_component.gd
 res://components/HitFlashComponent/hit_flash_component.gdshader
+res://components/HitFlashComponent/hit_flash_component.gd
+res://entities/Graveyard Enemies/zombie_enemy/basic_enemy.gd
+res://entities/Graveyard Enemies/zombie_enemy/zombie_enemy.tscn
+res://scenes/Graveyard/forest_map.tscn
+res://ability/Axe/controller/axe_ability_controller.gd
 res://upgrades/scythe_upgrades/scythe_ability.tres
-res://upgrades/chakram_upgrades/chakram_ability.tres
-res://upgrades/chakram_upgrades/chakram_damage.tres
 res://upgrades/scythe_upgrades/scythe_damage.tres
-res://upgrades/chakram_upgrades/chakram_rate.tres
 res://upgrades/scythe_upgrades/scythe_rate.tres
-res://ability/Chakram/controller/chakram_ability_controller.gd
-res://managers/UpgradeManager/upgrade_manager.tscn
-res://ability/Chakram/controller/chakram_ability_controller.tscn
-res://ability/Chakram/chakram_ability.tscn
-res://ability/Axe/controller/axe_ability_controller.tscn
-res://ability/Reaper/controller/reaper_ability_controller.tscn
-res://ability/Reaper/reaper_ability.tscn
-res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.tscn
-res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd
-res://UI/MetaMenu/meta_menu.tscn
-res://UI/FloatingNumber/floating_text.tscn
+res://managers/EnemyManager/enemy_manager.gd
 res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.tscn
-res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.gd
-res://UI/StartMenuUI/start_menu_ui.tscn
-res://UI/MainMenu/main_menu.tscn
+res://entities/Graveyard Enemies/skeleton_enemy/skeleton_enemy.tscn
+res://managers/EnemyManager/enemy_manager.tscn
+res://UI/DeathScreen/death_screen.tscn
+res://UI/DeathScreen/death_screen.gd
+res://UI/UpgradeGridUI/upgrades_grid_ui.tscn
+res://managers/TimerManager/timer_manager.gd
+res://components/HealthComponent/health_component.gd
+res://items/Soul/resources/soul_droplet_common.tres
+res://items/Soul/resources/soul_droplet_uncommon.tres
+res://items/Soul/resources/soul_droplet_rare.tres
+res://components/HurtboxComponent/hurtbox_component.gd

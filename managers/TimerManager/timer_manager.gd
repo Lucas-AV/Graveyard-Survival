@@ -2,7 +2,7 @@ extends Node
 class_name TimeManager
 signal arena_difficulty_increased(arena_difficulty: int)
 
-@export var difficult_interval = 5
+@export var difficult_interval = 3
 @export var victory_screen_scene: PackedScene
 @onready var timer: Timer = $Timer
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm4udlo7djmws"
-path="res://.godot/imported/GJ24 new enimes sprites Zombie.png-7afbaf34c391c6563fede5f26fc64dd3.ctex"
+path="res://.godot/imported/spritesheet zombie.png-7eda8b5720867fe4c56905ce16b19016.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Enemies/GJ24 new enimes sprites Zombie.png"
-dest_files=["res://.godot/imported/GJ24 new enimes sprites Zombie.png-7afbaf34c391c6563fede5f26fc64dd3.ctex"]
+source_file="res://entities/Graveyard Enemies/zombie_enemy/spritesheet zombie.png"
+dest_files=["res://.godot/imported/spritesheet zombie.png-7eda8b5720867fe4c56905ce16b19016.ctex"]
 
 [params]
 

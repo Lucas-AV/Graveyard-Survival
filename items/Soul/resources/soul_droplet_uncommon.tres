@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://items/Soul/soul_droplet_config.gd" id="1_iprve"]
 
 [resource]
+resource_local_to_scene = true
 script = ExtResource("1_iprve")
 name = "Soul Droplet"
 droplet_index = 2

@@ -2,9 +2,10 @@ extends Node
 
 @export var spawn_radius = 330
 @export var base_spawn_time = 1.0
-@export var limit_time = 0.1
+@export var limit_time = 0.075
 @export var basic_enemy_scene: PackedScene
 @export var skeleton_enemy_scene: PackedScene
+@export var zombie_enemy_scene: PackedScene
 @export var time_manager: TimeManager
 
 var enemy_table = WeightTable.new()
@@ -21,9 +22,11 @@ func on_arena_difficulty_increased(arena_difficulty: int):
 	time_off = min(time_off, 0.75)
 	$Timer.wait_time = base_spawn_time - time_off
 	
-	if arena_difficulty == 6:
+	if arena_difficulty == 9:
 		enemy_table.add_item(skeleton_enemy_scene, 20)
-		
+
+	if arena_difficulty == 15:
+		enemy_table.add_item(zombie_enemy_scene, 30)
 
 func get_spawn_position():
 	var player = get_tree().get_first_node_in_group("player")

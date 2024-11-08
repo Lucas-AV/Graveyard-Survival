@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dl2gauh6k0ujx" path="res://components/HealthComponent/health_component.tscn" id="2_sbd2r"]
 [ext_resource type="PackedScene" uid="uid://r8hgk5glql61" path="res://components/DropComponent/drop_component.tscn" id="3_4ibrh"]
 [ext_resource type="PackedScene" uid="uid://cchn4ng6sdkpp" path="res://items/Soul/soul_droplet.tscn" id="4_4ympr"]
-[ext_resource type="Resource" uid="uid://1la7i45sgmfc" path="res://items/Soul/resources/soul_droplet_basic.tres" id="5_d3etx"]
+[ext_resource type="Resource" uid="uid://bhu22nm6y2k8c" path="res://items/Soul/resources/soul_droplet_uncommon.tres" id="5_t1tx4"]
 [ext_resource type="PackedScene" uid="uid://bf1idldpccv2q" path="res://components/VelocityComponent/velocity_component.tscn" id="6_ohwui"]
 [ext_resource type="PackedScene" uid="uid://cin30u6r06uxj" path="res://components/HitFlashComponent/hit_flash_component.tscn" id="7_dsk6t"]
 [ext_resource type="Shader" path="res://components/HitFlashComponent/hit_flash_component.gdshader" id="8_rgp4p"]
@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://db4dqbya1mmwa" path="res://components/HurtboxComponent/hurtbox_component.tscn" id="12_hnyxh"]
 [ext_resource type="PackedScene" uid="uid://bmb058g7u5yrl" path="res://components/HitboxComponent/hitbox_component.tscn" id="13_83wxm"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_mwtv2"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iktsu"]
 resource_local_to_scene = true
 shader = ExtResource("8_rgp4p")
 shader_parameter/lerp_percent = 0.0
@@ -315,19 +315,19 @@ y_sort_enabled = true
 collision_layer = 8
 collision_mask = 9
 script = ExtResource("1_ctf5c")
-max_speed = 75
+max_speed = 90
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 bus = &"effects"
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_sbd2r")]
-defense = 5.0
-max_health = 5.0
+defense = 50.0
+max_health = 20.0
 
 [node name="DropComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("3_4ibrh")]
 drop_rate = 0.75
 item_scene = ExtResource("4_4ympr")
-item_config = ExtResource("5_d3etx")
+item_config = ExtResource("5_t1tx4")
 health_component = NodePath("../HealthComponent")
 
 [node name="VelocityComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("6_ohwui")]
@@ -336,7 +336,7 @@ sprite = NodePath("../Visuals/AnimatedSprite2D")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_dsk6t")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_mwtv2")
+hit_material = SubResource("ShaderMaterial_iktsu")
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("9_ywdp1")]
 health_component = NodePath("../HealthComponent")
