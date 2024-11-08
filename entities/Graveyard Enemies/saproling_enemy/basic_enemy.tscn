@@ -6,13 +6,13 @@
 [ext_resource type="PackedScene" uid="uid://djrei1dsqu6tg" path="res://components/DeathComponent/death_component.tscn" id="3_kogyt"]
 [ext_resource type="PackedScene" uid="uid://cchn4ng6sdkpp" path="res://items/Soul/soul_droplet.tscn" id="4_5pxdj"]
 [ext_resource type="PackedScene" uid="uid://bf1idldpccv2q" path="res://components/VelocityComponent/velocity_component.tscn" id="4_66pxk"]
-[ext_resource type="Resource" uid="uid://1la7i45sgmfc" path="res://items/Soul/resources/soul_droplet_basic.tres" id="5_4llv0"]
+[ext_resource type="Resource" uid="uid://bptmdkgixgmnd" path="res://items/Soul/resources/soul_droplet_common.tres" id="5_d2gk6"]
 [ext_resource type="PackedScene" uid="uid://db4dqbya1mmwa" path="res://components/HurtboxComponent/hurtbox_component.tscn" id="5_dq3hs"]
 [ext_resource type="Shader" path="res://components/HitFlashComponent/hit_flash_component.gdshader" id="6_oli7w"]
 [ext_resource type="PackedScene" uid="uid://cin30u6r06uxj" path="res://components/HitFlashComponent/hit_flash_component.tscn" id="7_35hwy"]
 [ext_resource type="PackedScene" uid="uid://bmb058g7u5yrl" path="res://components/HitboxComponent/hitbox_component.tscn" id="10_ojvt3"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_qtnwj"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1jf5n"]
 resource_local_to_scene = true
 shader = ExtResource("6_oli7w")
 shader_parameter/lerp_percent = 0.0
@@ -107,7 +107,7 @@ max_health = 10.0
 [node name="DropComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("3_3oieb")]
 drop_rate = 0.75
 item_scene = ExtResource("4_5pxdj")
-item_config = ExtResource("5_4llv0")
+item_config = ExtResource("5_d2gk6")
 health_component = NodePath("../HealthComponent")
 
 [node name="VelocityComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("4_66pxk")]
@@ -116,7 +116,7 @@ sprite = NodePath("../Visuals/AnimatedSprite2D")
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_35hwy")]
 health_component = NodePath("../HealthComponent")
 sprite = NodePath("../Visuals/AnimatedSprite2D")
-hit_material = SubResource("ShaderMaterial_qtnwj")
+hit_material = SubResource("ShaderMaterial_1jf5n")
 
 [node name="DeathComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("3_kogyt")]
 health_component = NodePath("../HealthComponent")

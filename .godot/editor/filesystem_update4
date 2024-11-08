@@ -33,3 +33,8 @@ res://ability/Reaper/reaper_ability.tscn
 res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.tscn
 res://UI/MetaUpgradeCardUI/meta_upgrade_card_ui.gd
 res://UI/MetaMenu/meta_menu.tscn
+res://UI/FloatingNumber/floating_text.tscn
+res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.tscn
+res://entities/Graveyard Enemies/saproling_enemy/basic_enemy.gd
+res://UI/StartMenuUI/start_menu_ui.tscn
+res://UI/MainMenu/main_menu.tscn
