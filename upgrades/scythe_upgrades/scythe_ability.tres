@@ -15,6 +15,6 @@ ability_controller_scene = ExtResource("1_j0i2g")
 id = "scythe_ability"
 name = "Scythe Weapon"
 description = "Foice com ataque circular"
-max_quantity = 1
+max_quantity = 2
 texture_icon = SubResource("AtlasTexture_kun4h")
 mini_source = ExtResource("1_fwsda")
